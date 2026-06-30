@@ -12,7 +12,6 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  ResponsiveContainer,
   Cell,
   PieChart,
   Pie,
@@ -349,7 +348,7 @@ export default function LinguaPortuguesa() {
 
               {/* Pie Chart */}
               <div className="h-[300px] flex items-center justify-center">
-                <ResponsiveContainer width="100%" height="100%">
+                <ChartContainer config={chartConfig} className="h-full w-full">
                   <PieChart>
                     <Pie
                       data={pieData}
@@ -377,7 +376,7 @@ export default function LinguaPortuguesa() {
                       )}
                     />
                   </PieChart>
-                </ResponsiveContainer>
+                </ChartContainer>
               </div>
             </div>
 

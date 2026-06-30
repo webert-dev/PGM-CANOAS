@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, FileText, BookOpen, ChevronDown, Search, ScrollText } from "lucide-react";
+import { ArrowLeft, FileText, BookOpen, Search, ScrollText } from "lucide-react";
 import { useState, useMemo } from "react";
 import { Link } from "react-router";
 import { Input } from "@/components/ui/input";

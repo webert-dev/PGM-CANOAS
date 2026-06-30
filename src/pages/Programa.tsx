@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, BookOpen, ScrollText, Building2, Landmark, Scale, Gavel, Briefcase, Heart, Shield, PiggyBank } from "lucide-react";
+import {
+  ArrowLeft, BookOpen, ScrollText, Building2, Landmark, Scale,
+  Gavel, Briefcase, Heart, Shield, PiggyBank, GitBranch,
+  Link2, FileText, GanttChart, Crosshair, Layers, Library,
+  AlertTriangle, Star
+} from "lucide-react";
 import type { ElementType } from "react";
 import {
   Accordion,
@@ -7,7 +12,173 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router";
+
+// ─── Interdisciplinary Data ─────────────────────────────────
+
+interface DisciplineRef {
+  name: string;
+  icon: ElementType;
+}
+
+interface CrossCuttingNorm {
+  name: string;
+  shortName: string;
+  legislation: string;
+  description: string;
+  disciplines: DisciplineRef[];
+}
+
+interface CrossCuttingTheme {
+  name: string;
+  description: string;
+  disciplines: DisciplineRef[];
+}
+
+const disciplineMap: Record<string, DisciplineRef> = {
+  "constitucional": { name: "Direito Constitucional", icon: Gavel },
+  "administrativo": { name: "Direito Administrativo", icon: Building2 },
+  "civil": { name: "Direito Civil e Consumidor", icon: Scale },
+  "processual-civil": { name: "Direito Processual Civil", icon: Shield },
+  "tributario": { name: "Direito Tributário e Financeiro", icon: PiggyBank },
+  "ambiental": { name: "Direito Ambiental e Urbanístico", icon: Landmark },
+  "trabalho": { name: "Direito do Trabalho e Processo do Trabalho", icon: Briefcase },
+  "previdenciario": { name: "Direito Previdenciário", icon: Heart },
+  "legislacao": { name: "Legislação Profissional", icon: ScrollText },
+  "portugues": { name: "Língua Portuguesa", icon: BookOpen },
+};
+
+const crossCuttingNorms: CrossCuttingNorm[] = [
+  {
+    name: "LINDB",
+    shortName: "LINDB",
+    legislation: "Decreto-Lei nº 4.657/1942 e Lei nº 13.655/2018",
+    description: "Lei de Introdução às Normas do Direito Brasileiro — normas de vigência, interpretação, eficácia, segurança jurídica e responsabilidade de agentes públicos.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap.civil!],
+  },
+  {
+    name: "LGPD",
+    shortName: "LGPD",
+    legislation: "Lei nº 13.709/2018",
+    description: "Lei Geral de Proteção de Dados Pessoais — disciplina o tratamento de dados pessoais por entes públicos e privados.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap.civil!],
+  },
+  {
+    name: "Estatuto da Cidade",
+    shortName: "Estatuto da Cidade",
+    legislation: "Lei nº 10.257/2001",
+    description: "Estabelece normas de ordem pública e interesse social que regulam o uso da propriedade urbana em prol do bem coletivo.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap.ambiental!],
+  },
+  {
+    name: "Lei de Improbidade Administrativa",
+    shortName: "LIA",
+    legislation: "Lei nº 8.429/1992",
+    description: "Dispõe sobre as sanções aplicáveis em caso de enriquecimento ilícito, prejuízo ao erário e violação aos princípios da administração pública.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap["processual-civil"]!],
+  },
+  {
+    name: "Mandado de Segurança",
+    shortName: "Mandado de Segurança",
+    legislation: "Lei nº 12.016/2009",
+    description: "Remédio constitucional para proteger direito líquido e certo contra ato ilegal ou abusivo de autoridade pública.",
+    disciplines: [disciplineMap.constitucional!, disciplineMap["processual-civil"]!, disciplineMap.tributario!],
+  },
+  {
+    name: "Lei do Parcelamento do Solo Urbano",
+    shortName: "Parcelamento do Solo",
+    legislation: "Lei nº 6.766/1979",
+    description: "Dispõe sobre o parcelamento do solo urbano e suas modalidades (loteamento e desmembramento).",
+    disciplines: [disciplineMap.ambiental!, disciplineMap.civil!],
+  },
+  {
+    name: "Lei de Regência da PGM Canoas",
+    shortName: "PGM Canoas",
+    legislation: "Lei Municipal nº 6.817/2025",
+    description: "Lei de Regência da Procuradoria-Geral do Município de Canoas — organização, competências e funcionamento.",
+    disciplines: [disciplineMap.legislacao!, disciplineMap.administrativo!],
+  },
+  {
+    name: "Código Municipal de Meio Ambiente",
+    shortName: "Código Meio Ambiente",
+    legislation: "Lei Municipal nº 4.328/1998",
+    description: "Código Municipal de Meio Ambiente de Canoas — normas de proteção ambiental no âmbito municipal.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap.ambiental!],
+  },
+  {
+    name: "Plano Diretor Urbano Ambiental",
+    shortName: "PDUA",
+    legislation: "Lei Municipal nº 5.961/2015",
+    description: "Plano Diretor Urbano Ambiental de Canoas — diretrizes de ordenação territorial e desenvolvimento urbano.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap.ambiental!],
+  },
+  {
+    name: "Sistema Único de Saúde",
+    shortName: "SUS",
+    legislation: "Lei nº 8.080/1990",
+    description: "Dispõe sobre a organização do Sistema Único de Saúde e as condições para a promoção, proteção e recuperação da saúde.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap.constitucional!],
+  },
+  {
+    name: "Reforma Tributária",
+    shortName: "Reforma Tributária",
+    legislation: "EC nº 132/2023",
+    description: "Reforma do sistema tributário nacional — institui o IBS, CBS e IS (IVA dual) e altera o sistema de tributação sobre consumo.",
+    disciplines: [disciplineMap.constitucional!, disciplineMap.tributario!],
+  },
+  {
+    name: "Desapropriação",
+    shortName: "Desapropriação",
+    legislation: "Decreto-Lei nº 3.365/1941",
+    description: "Dispõe sobre desapropriação por utilidade pública — procedimento, indenização e imissão na posse.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap.ambiental!],
+  },
+];
+
+const crossCuttingThemes: CrossCuttingTheme[] = [
+  {
+    name: "Responsabilidade Civil",
+    description: "Teoria da responsabilidade civil nos diferentes ramos: responsabilidade objetiva do Estado, responsabilidade por dano ambiental e responsabilidade civil contratual e extracontratual.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap.ambiental!, disciplineMap.civil!],
+  },
+  {
+    name: "Prescrição e Decadência",
+    description: "Institutos temporais que limitam o exercício de direitos e pretensões, com regras específicas em cada ramo jurídico.",
+    disciplines: [disciplineMap.civil!, disciplineMap.trabalho!],
+  },
+  {
+    name: "Terceirização",
+    description: "Contratação de terceiros para prestação de serviços: conceito, tipos, efeitos e aplicação nos entes estatais.",
+    disciplines: [disciplineMap.administrativo!, disciplineMap.trabalho!],
+  },
+  {
+    name: "Função Social da Propriedade",
+    description: "Princípio que condiciona o exercício do direito de propriedade ao atendimento de sua função social, com implicações urbanísticas e constitucionais.",
+    disciplines: [disciplineMap.ambiental!, disciplineMap.constitucional!],
+  },
+  {
+    name: "Execução Fiscal e Medida Cautelar Fiscal",
+    description: "Procedimentos especiais de cobrança da dívida ativa e medidas assecuratórias do crédito tributário.",
+    disciplines: [disciplineMap["processual-civil"]!, disciplineMap.tributario!],
+  },
+  {
+    name: "Mediação e Arbitragem",
+    description: "Métodos autocompositivos de resolução de conflitos: arbitragem (Lei nº 9.307/96) e mediação (Lei nº 13.140/15).",
+    disciplines: [disciplineMap.civil!, disciplineMap["processual-civil"]!],
+  },
+  {
+    name: "Funções Essenciais à Justiça",
+    description: "Advocacia pública, Ministério Público e Defensoria Pública como funções essenciais à administração da justiça.",
+    disciplines: [disciplineMap.constitucional!, disciplineMap["processual-civil"]!],
+  },
+];
 
 const disciplines = [
   {
@@ -696,14 +867,14 @@ export default function Programa() {
       </header>
 
       {/* Intro */}
-      <section className="pt-16 pb-10 px-6 border-b border-border">
+      <section className="pt-12 pb-6 px-6">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <h1 className="text-3xl sm:text-4xl font-light tracking-tight mb-4 text-foreground">
+            <h1 className="text-3xl sm:text-4xl font-light tracking-tight mb-3 text-foreground">
               Programa de Estudos
             </h1>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
@@ -711,7 +882,7 @@ export default function Programa() {
               Concurso Público para <strong>Procurador Municipal</strong> da Procuradoria-Geral do Município
               de Canoas. Organizado por disciplina para facilitar sua preparação.
             </p>
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-2">
               <span className="inline-flex items-center text-xs text-muted-foreground bg-secondary px-2.5 py-1 rounded-sm">
                 {disciplines.length} disciplinas
               </span>
@@ -726,67 +897,310 @@ export default function Programa() {
         </div>
       </section>
 
-      {/* Disciplines Accordion */}
-      <section className="py-10 px-6">
+      {/* Tabs Navigation */}
+      <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-2">
-            {disciplines.map((discipline, i) => {
-              const Icon = iconMap[discipline.id] || BookOpen;
-              const isPortuguese = discipline.id === "lingua-portuguesa";
-              return (
-                <motion.div
-                  key={discipline.id}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.03, duration: 0.3 }}
-                >
-                  <AccordionItem
-                    value={discipline.id}
-                    className="border border-border bg-card data-[state=open]:bg-muted/30 transition-colors"
-                  >
-                    <AccordionTrigger className="px-5 py-4 hover:no-underline hover:bg-muted/50 transition-colors">
-                      <div className="flex items-center gap-3 text-left flex-1">
-                        <Icon className="w-4 h-4 text-muted-foreground shrink-0" />
-                        <span className="text-sm font-medium text-foreground">
-                          {discipline.title}
-                        </span>
-                        {isPortuguese && (
-                          <Link
-                            to="/lingua-portuguesa"
-                            onClick={(e) => e.stopPropagation()}
-                            className="ml-auto text-[11px] text-muted-foreground hover:text-foreground bg-muted px-2 py-0.5 rounded-sm transition-colors shrink-0"
-                          >
-                            Dashboard ›
-                          </Link>
-                        )}
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-5 pb-6">
-                      <div className="pt-2 space-y-6">
-                        {discipline.content.map((section, idx) => (
-                          <div key={idx}>
-                            <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">
-                              {section.subtitle}
-                            </h3>
-                            <ul className="space-y-1.5">
-                              {section.items.map((item, itemIdx) => (
-                                <li
-                                  key={itemIdx}
-                                  className="text-sm text-foreground/80 leading-relaxed pl-4 border-l border-border/50"
-                                >
-                                  {item}
-                                </li>
-                              ))}
-                            </ul>
+          <Tabs defaultValue="detalhado" className="w-full">
+            <TabsList className="w-full sm:w-auto mb-8">
+              <TabsTrigger value="detalhado" className="text-xs sm:text-sm gap-1.5">
+                <BookOpen className="w-3.5 h-3.5" />
+                Programa Detalhado
+              </TabsTrigger>
+              <TabsTrigger value="interdisciplinar" className="text-xs sm:text-sm gap-1.5">
+                <GitBranch className="w-3.5 h-3.5" />
+                Observações Interdisciplinares
+              </TabsTrigger>
+            </TabsList>
+
+            {/* ─── TAB 1: Programa Detalhado ───────────── */}
+            <TabsContent value="detalhado" className="mt-0">
+              <Accordion type="single" collapsible className="space-y-2">
+                {disciplines.map((discipline, i) => {
+                  const Icon = iconMap[discipline.id] || BookOpen;
+                  const isPortuguese = discipline.id === "lingua-portuguesa";
+                  return (
+                    <motion.div
+                      key={discipline.id}
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.03, duration: 0.3 }}
+                    >
+                      <AccordionItem
+                        value={discipline.id}
+                        className="border border-border bg-card data-[state=open]:bg-muted/30 transition-colors"
+                      >
+                        <AccordionTrigger className="px-5 py-4 hover:no-underline hover:bg-muted/50 transition-colors">
+                          <div className="flex items-center gap-3 text-left flex-1">
+                            <Icon className="w-4 h-4 text-muted-foreground shrink-0" />
+                            <span className="text-sm font-medium text-foreground">
+                              {discipline.title}
+                            </span>
+                            {isPortuguese && (
+                              <Link
+                                to="/lingua-portuguesa"
+                                onClick={(e) => e.stopPropagation()}
+                                className="ml-auto text-[11px] text-muted-foreground hover:text-foreground bg-muted px-2 py-0.5 rounded-sm transition-colors shrink-0"
+                              >
+                                Dashboard ›
+                              </Link>
+                            )}
                           </div>
-                        ))}
-                      </div>
-                    </AccordionContent>
-                  </AccordionItem>
+                        </AccordionTrigger>
+                        <AccordionContent className="px-5 pb-6">
+                          <div className="pt-2 space-y-6">
+                            {discipline.content.map((section, idx) => (
+                              <div key={idx}>
+                                <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">
+                                  {section.subtitle}
+                                </h3>
+                                <ul className="space-y-1.5">
+                                  {section.items.map((item, itemIdx) => (
+                                    <li
+                                      key={itemIdx}
+                                      className="text-sm text-foreground/80 leading-relaxed pl-4 border-l border-border/50"
+                                    >
+                                      {item}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </motion.div>
+                  );
+                })}
+              </Accordion>
+            </TabsContent>
+
+            {/* ─── TAB 2: Observações Interdisciplinares ─ */}
+            <TabsContent value="interdisciplinar" className="mt-0">
+              <div className="space-y-12">
+                {/* Section Intro */}
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <GitBranch className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h2 className="text-xl font-medium text-foreground mb-1.5">Observações Interdisciplinares</h2>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        Com base no <strong>Anexo III do edital</strong>, este levantamento reúne as normas e temas
+                        que apresentam <strong>incidência em múltiplas áreas</strong> do conteúdo programático.
+                        O estudo desses pontos é estratégico, pois revela os assuntos de maior relevância transversal
+                        para a prova de <strong>Procurador Municipal</strong>. A prova de produção escrita (peça e
+                        discursivas) buscará, sempre que possível, a interdisciplinaridade entre essas áreas.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 mt-4 mb-2">
+                    <Badge variant="secondary" className="gap-1 text-xs">
+                      <FileText className="w-3 h-3" />
+                      {crossCuttingNorms.length} normas transversais
+                    </Badge>
+                    <Badge variant="secondary" className="gap-1 text-xs">
+                      <Link2 className="w-3 h-3" />
+                      {crossCuttingThemes.length} temas coincidentes
+                    </Badge>
+                    <Badge variant="secondary" className="gap-1 text-xs">
+                      <Crosshair className="w-3 h-3" />
+                      Estudo estratégico
+                    </Badge>
+                  </div>
                 </motion.div>
-              );
-            })}
-          </Accordion>
+
+                {/* ── Section 1: Normas Transversais ── */}
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.1 }}
+                >
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="h-px flex-1 bg-border/50" />
+                    <div className="flex items-center gap-2 px-3">
+                      <Layers className="w-4 h-4 text-primary" />
+                      <h3 className="text-sm font-medium text-foreground">
+                        Normas com Incidência em Múltiplas Áreas
+                      </h3>
+                    </div>
+                    <div className="h-px flex-1 bg-border/50" />
+                  </div>
+
+                  <div className="grid gap-3">
+                    {crossCuttingNorms.map((norm, idx) => {
+                      const Icon = norm.disciplines.length > 2 ? Library : FileText;
+                      return (
+                        <motion.div
+                          key={norm.shortName}
+                          initial={{ opacity: 0, y: 8 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.1 + idx * 0.04, duration: 0.3 }}
+                          className="border border-border bg-card rounded-lg p-4 hover:bg-muted/20 transition-colors"
+                        >
+                          <div className="flex items-start gap-3 mb-2">
+                            <div className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                              <Icon className="w-4 h-4 text-primary" />
+                            </div>
+                            <div className="min-w-0 flex-1">
+                              <div className="flex items-center gap-2 flex-wrap">
+                                <h4 className="text-sm font-medium text-foreground">{norm.name}</h4>
+                                <span className="text-[11px] text-muted-foreground bg-muted px-1.5 py-0.5 rounded-sm">
+                                  {norm.legislation}
+                                </span>
+                              </div>
+                              <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+                                {norm.description}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex flex-wrap gap-1.5 ml-11">
+                            {norm.disciplines.map((d) => (
+                              <Badge
+                                key={d.name}
+                                variant="outline"
+                                className="gap-1 text-[11px] py-0.5 h-auto"
+                              >
+                                <d.icon className="w-3 h-3" />
+                                {d.name}
+                              </Badge>
+                            ))}
+                          </div>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                </motion.div>
+
+                {/* ── Section 2: Temas Transversais ── */}
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.2 }}
+                >
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="h-px flex-1 bg-border/50" />
+                    <div className="flex items-center gap-2 px-3">
+                      <GanttChart className="w-4 h-4 text-primary" />
+                      <h3 className="text-sm font-medium text-foreground">
+                        Temas e Assuntos Repetidos
+                      </h3>
+                    </div>
+                    <div className="h-px flex-1 bg-border/50" />
+                  </div>
+
+                  <div className="grid gap-3">
+                    {crossCuttingThemes.map((theme, idx) => (
+                      <motion.div
+                        key={theme.name}
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 + idx * 0.04, duration: 0.3 }}
+                        className="border border-border bg-card rounded-lg p-4 hover:bg-muted/20 transition-colors"
+                      >
+                        <div className="flex items-start gap-3 mb-2">
+                          <div className="w-8 h-8 rounded-md bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                            <AlertTriangle className="w-4 h-4 text-amber-500" />
+                          </div>
+                          <div className="min-w-0 flex-1">
+                            <h4 className="text-sm font-medium text-foreground">{theme.name}</h4>
+                            <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+                              {theme.description}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex flex-wrap gap-1.5 ml-11">
+                          {theme.disciplines.map((d) => (
+                            <Badge
+                              key={d.name}
+                              variant="outline"
+                              className="gap-1 text-[11px] py-0.5 h-auto"
+                            >
+                              <d.icon className="w-3 h-3" />
+                              {d.name}
+                            </Badge>
+                          ))}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+
+                {/* ── Section 3: Observações do Edital ── */}
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.3 }}
+                >
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="h-px flex-1 bg-border/50" />
+                    <div className="flex items-center gap-2 px-3">
+                      <Star className="w-4 h-4 text-primary" />
+                      <h3 className="text-sm font-medium text-foreground">
+                        Observações Importantes do Edital
+                      </h3>
+                    </div>
+                    <div className="h-px flex-1 bg-border/50" />
+                  </div>
+
+                  <div className="border border-border bg-card rounded-lg p-5 space-y-4">
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="text-xs font-semibold text-primary">1</span>
+                      </div>
+                      <p className="text-sm text-foreground/80 leading-relaxed">
+                        A prova engloba o conhecimento das <strong>normas</strong> junto com{' '}
+                        <strong>doutrina</strong> e <strong>posicionamentos jurisprudenciais</strong>.
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="text-xs font-semibold text-primary">2</span>
+                      </div>
+                      <p className="text-sm text-foreground/80 leading-relaxed">
+                        As normas devem ser consideradas em sua{' '}
+                        <strong>totalidade</strong> e com as <strong>alterações vigentes</strong> até a
+                        publicação do edital.
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="text-xs font-semibold text-primary">3</span>
+                      </div>
+                      <p className="text-sm text-foreground/80 leading-relaxed">
+                        A prova de <strong>produção escrita</strong> (peça e discursivas) buscará,
+                        sempre que possível, a <strong>interdisciplinaridade</strong> entre as áreas
+                        do conteúdo programático.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Footer Tip */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.5, duration: 0.5 }}
+                  className="border border-border/50 bg-muted/30 rounded-lg p-4"
+                >
+                  <div className="flex items-start gap-3">
+                    <AlertTriangle className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" />
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      <strong className="text-foreground">Dica estratégica:</strong> Priorize o estudo
+                      das normas e temas com incidência transversal. Cada hora dedicada a um desses
+                      pontos rende aprendizado simultâneo para múltiplas disciplinas — otimizando sua
+                      preparação para as provas objetiva, discursiva e de peça profissional.
+                    </p>
+                  </div>
+                </motion.div>
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 

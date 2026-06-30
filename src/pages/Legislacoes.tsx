@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/accordion";
 import { constituicaoSections } from "@/data/legislacoes/constituicao-federal";
 import { lei8906Sections } from "@/data/legislacoes/lei-8906-1994";
+import { codigoEticaSections } from "@/data/legislacoes/codigo-etica-oab";
 import type { SecaoLegislacao } from "@/data/legislacoes/types";
 
 interface GrupoLegislacao {
@@ -26,12 +27,6 @@ interface GrupoLegislacao {
 
 // Professional legislation with PDF source links (text pending extraction)
 const profLegislationPendente: SecaoLegislacao[] = [
-  {
-    id: "codigo-etica-oab",
-    titulo: "Código de Ética e Disciplina da OAB",
-    subtitulo: "Aprovado pelo Conselho Federal da OAB",
-    texto: `[Texto completo disponível no PDF original]\n\nClique no link abaixo para acessar o arquivo PDF:\n🔗 https://drive.google.com/file/d/1HuSOHqLdmm3ArT7qQtDWQtvpLuhrNhkG/view`,
-  },
   {
     id: "regulamento-geral-oab",
     titulo: "Regulamento Geral do Estatuto da Advocacia e da OAB",
@@ -62,6 +57,7 @@ const grupos: GrupoLegislacao[] = [
         ...s,
         subtitulo: s.subtitulo || "Estatuto da Advocacia e a OAB",
       })),
+      ...codigoEticaSections,
       ...profLegislationPendente,
     ],
   },

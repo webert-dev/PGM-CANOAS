@@ -127,7 +127,13 @@ export default function Landing() {
               to="/programa"
               className="text-sm font-medium text-foreground hover:text-muted-foreground transition-colors"
             >
-              Programa Completo
+              Programa
+            </Link>
+            <Link
+              to="/legislacoes"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Legislações
             </Link>
           </nav>
         </div>

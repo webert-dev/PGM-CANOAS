@@ -69,13 +69,13 @@ export default defineConfig({
     minify: 'esbuild',
   },
   // Optimize dependencies
-  optimizeDeps: {
-    include: [
-      'react',
-      'react-dom',
-      'react-router',
-      '@convex-dev/auth/react',
-    ],
+  optimizeDeps: {    include: [
+        'react',
+        'react-dom',
+        'react-router',
+        '@convex-dev/auth/react',
+        'recharts',
+      ],
   },
   // Performance hints
   server: {

@@ -14,6 +14,7 @@ import "./types/global.d.ts";
 const Landing = lazy(() => import("./pages/Landing.tsx"));
 const Programa = lazy(() => import("./pages/Programa.tsx"));
 const LinguaPortuguesa = lazy(() => import("./pages/LinguaPortuguesa.tsx"));
+const Legislacoes = lazy(() => import("./pages/Legislacoes.tsx"));
 const AuthPage = lazy(() => import("./pages/Auth.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
@@ -65,6 +66,7 @@ createRoot(document.getElementById("root")!).render(
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/programa" element={<Programa />} />
+              <Route path="/legislacoes" element={<Legislacoes />} />
               <Route path="/lingua-portuguesa" element={<LinguaPortuguesa />} />
               <Route path="/auth" element={<AuthPage redirectAfterAuth="/" />} /> {/* TODO: change redirect after auth to correct page */}
               <Route path="*" element={<NotFound />} />

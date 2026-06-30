@@ -7,6 +7,8 @@ import {
   Filter, Layers, Star, Lightbulb, PenSquare,
 } from "lucide-react";
 import { Link } from "react-router";
+import { questionsData } from "@/data/lingua-portuguesa-questions";
+import type { Question } from "@/data/lingua-portuguesa-questions";
 import {
   ChartContainer,
   ChartTooltip,

@@ -273,7 +273,10 @@ export default function Landing() {
                   transition={{ delay: i * 0.03, duration: 0.4 }}
                   className="bg-card p-6 group hover:bg-muted/50 transition-colors duration-200"
                 >
-                  <Link to="/programa" className="block">
+                  <Link
+                        to={discipline.title === "Língua Portuguesa" ? "/lingua-portuguesa" : "/programa"}
+                        className="block"
+                      >
                     <div className="flex items-start gap-4">
                       <div className="mt-0.5">
                         <Icon className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" />

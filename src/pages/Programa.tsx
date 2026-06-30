@@ -732,6 +732,7 @@ export default function Programa() {
           <Accordion type="single" collapsible className="space-y-2">
             {disciplines.map((discipline, i) => {
               const Icon = iconMap[discipline.id] || BookOpen;
+              const isPortuguese = discipline.id === "lingua-portuguesa";
               return (
                 <motion.div
                   key={discipline.id}
@@ -744,11 +745,20 @@ export default function Programa() {
                     className="border border-border bg-card data-[state=open]:bg-muted/30 transition-colors"
                   >
                     <AccordionTrigger className="px-5 py-4 hover:no-underline hover:bg-muted/50 transition-colors">
-                      <div className="flex items-center gap-3 text-left">
+                      <div className="flex items-center gap-3 text-left flex-1">
                         <Icon className="w-4 h-4 text-muted-foreground shrink-0" />
                         <span className="text-sm font-medium text-foreground">
                           {discipline.title}
                         </span>
+                        {isPortuguese && (
+                          <Link
+                            to="/lingua-portuguesa"
+                            onClick={(e) => e.stopPropagation()}
+                            className="ml-auto text-[11px] text-muted-foreground hover:text-foreground bg-muted px-2 py-0.5 rounded-sm transition-colors shrink-0"
+                          >
+                            Dashboard ›
+                          </Link>
+                        )}
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="px-5 pb-6">

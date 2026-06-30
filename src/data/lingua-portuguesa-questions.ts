@@ -140,6 +140,7 @@ export const questionsData: Question[] = [
   {
     id: 11, qid: "Q3825319", topic: "Características Gerais", year: 2025,
     associatedText: "A língua portuguesa é o idioma falado por mais de 265 milhões de pessoas espalhadas por todos os continentes, e a língua mais falada no hemisfério sul. O português tem origens romanas, assim como o espanhol, italiano e francês.\n\nSegundo a Comunidade dos Países de Língua Portuguesa, o português é reconhecido como idioma oficial não só em Portugal, mas também em outras nações, incluindo Brasil, Angola, Cabo Verde, Guiné-Bissau, Guiné Equatorial, Moçambique, Timor-Leste e São Tomé e Príncipe.\n\nO português também é uma das línguas oficiais em Macau.\n\nO idioma, no Brasil, tem raízes europeias, já que a língua foi trazida e imposta pelos colonizadores em 1500. Porém, após mais de cinco séculos, a língua que falamos por aqui se distanciou consideravelmente da língua-mãe.\n\nA primeira diferença que notamos ao comparar as duas variedades é o sotaque.\n\nFonte: Academia Brasileira de Letras. Adaptado.",
+    text: "Sobre as características gerais da Língua Portuguesa, assinale a alternativa CORRETA:",
     options: [
       { label: "A", text: "É uma língua românica derivada do latim vulgar, falada por cerca de 265 milhões de pessoas." },
       { label: "B", text: "É a língua mais falada no hemisfério norte." },
@@ -494,6 +495,7 @@ export const questionsData: Question[] = [
   },
   {
     id: 40, qid: "Q2741834", topic: "Análise das estruturas linguísticas", year: 2023,
+    associatedText: "A quem pertence o conhecimento?\n\nAos cientistas, pesquisadores e pensadores que o produzem? Àqueles a quem é ensinado que, se o aprendem, são também seus coproprietários? À sociedade que deve dele beneficiar-se e que, sabendo ou não disso, oferece as condições culturais, políticas, econômicas e morais para a sua busca, o seu desenvolvimento, a sua multiplicação e transformação? Aos governos que o financiam, quando o financiam, e que deveriam manter boas políticas públicas para a sua produção, desenvolvimento e apropriação social?\n\nPelo conhecimento tradicional, às comunidades indígenas, aos sertanejos, aos agricultores, às populações ribeirinhas, aos seringueiros, àqueles, enfim, herdeiros ativos de um longo e depurado saber.\n\nA todos e a nenhum? A uns mais, a outros menos? Como? Por quê? Para quê?\n\n(Fonte: ComCiência - adaptado.)",
     text: "Na frase 'O advogado, que atua há mais de vinte anos, é referência na área', a oração 'que atua há mais de vinte anos' é:",
     options: [
       { label: "A", text: "Oração subordinada adjetiva restritiva." },
@@ -506,6 +508,7 @@ export const questionsData: Question[] = [
   },
   {
     id: 41, qid: "Q3424193", topic: "Conjunções coordenativas aditivas", year: 2023,
+    associatedText: "As máquinas não conseguem realizar (pelo menos ainda) as atividades consideradas exclusivamente humanas, como liderar, empatizar, criar e julgar outros humanos. Essa questão de decisões legais realizadas por máquinas ainda é bastante polêmica, mas, em alguns casos, os algoritmos podem ser excelentes referências.\n\nCom relação à criatividade, esse tem sido um tema constante entre os estudiosos. Há algoritmos para escrever canções, imitar estilos de grandes pintores e ajudar nas decisões criativas em um set de filmagem, por exemplo.\n\nO Watson (o famoso robô da IBM) conseguiu, em 2016, criar o trailer para um filme de terror da Century Fox Studios (Morgan) analisando o visual, o som e a composição de centenas de trailers de filmes de terror a fim de identificar padrões.\n\nOs algoritmos, então, seriam ferramentas úteis para substituir profissionais medianos, que se baseiam em gostos mais populares e comuns para criar peças — sejam pinturas, músicas, esculturas, ilustrações ou vídeos — ou para auxiliar nos trabalhos mais demorados e acelerar protótipos.\n\nMas para se criar algo realmente original, brilhante e inesperado, que se transforme em uma experiência memorável, ainda são necessários talentos exclusivamente humanos.\n\n(Fonte: Atitude pró-inovação, 2021 — Adaptado.)",
     text: "Assinale a alternativa em que a conjunção destacada expressa ideia de ADIÇÃO:",
     options: [
       { label: "A", text: "Estudou muito, portanto passou no concurso." },
@@ -518,7 +521,7 @@ export const questionsData: Question[] = [
   },
   {
     id: 42, qid: "Q3424195", topic: "Inferência Textual", year: 2023,
-    associatedText: "Maria chegou atrasada à audiência. O juiz já havia proferido a sentença.",
+    associatedText: "As máquinas não conseguem realizar (pelo menos ainda) as atividades consideradas exclusivamente humanas, como liderar, empatizar, criar e julgar outros humanos. Essa questão de decisões legais realizadas por máquinas ainda é bastante polêmica, mas, em alguns casos, os algoritmos podem ser excelentes referências.\n\nCom relação à criatividade, esse tem sido um tema constante entre os estudiosos. Há algoritmos para escrever canções, imitar estilos de grandes pintores e ajudar nas decisões criativas em um set de filmagem, por exemplo.\n\nO Watson (o famoso robô da IBM) conseguiu, em 2016, criar o trailer para um filme de terror da Century Fox Studios (Morgan) analisando o visual, o som e a composição de centenas de trailers de filmes de terror a fim de identificar padrões.\n\nOs algoritmos, então, seriam ferramentas úteis para substituir profissionais medianos, que se baseiam em gostos mais populares e comuns para criar peças — sejam pinturas, músicas, esculturas, ilustrações ou vídeos — ou para auxiliar nos trabalhos mais demorados e acelerar protótipos.\n\nMas para se criar algo realmente original, brilhante e inesperado, que se transforme em uma experiência memorável, ainda são necessários talentos exclusivamente humanos.\n\n(Fonte: Atitude pró-inovação, 2021 — Adaptado.)",
     text: "Infere-se do texto que:",
     options: [
       { label: "A", text: "Maria é advogada e perdeu o prazo." },

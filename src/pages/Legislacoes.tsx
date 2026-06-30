@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import {
   ArrowLeft, FileText, BookOpen, Search, ScrollText, ExternalLink,
-  Scale, Building2, Shield, Gavel
+  Scale, Building2, Gavel
 } from "lucide-react";
 import { useState, useMemo } from "react";
 import { Link } from "react-router";

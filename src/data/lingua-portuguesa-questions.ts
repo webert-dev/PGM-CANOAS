@@ -952,7 +952,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 78, qid: "Q2845141", topic: "Interpretação de Texto", year: 2024,
-    text: "Leia o texto:\n\n'No Brasil, o acesso à justiça é um direito constitucional. No entanto, grande parte da população ainda enfrenta barreiras para exercer esse direito.'\n\nO texto aponta que:",
+    associatedText: "No Brasil, o acesso à justiça é um direito constitucional. No entanto, grande parte da população ainda enfrenta barreiras para exercer esse direito.",
+    text: "O texto aponta que:",
     options: [
       { label: "A", text: "O acesso à justiça é pleno no Brasil." },
       { label: "B", text: "Apesar de ser um direito constitucional, o acesso à justiça encontra obstáculos." },
@@ -1048,7 +1049,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 86, qid: "Q4026983", topic: "Interpretação de Texto", year: 2023,
-    text: "Leia o texto:\n\n'A administração pública deve obediência aos princípios constitucionais. Qualquer ato que os desrespeite é nulo e passível de anulação.'\n\nO texto afirma que:",
+    associatedText: "A administração pública deve obediência aos princípios constitucionais. Qualquer ato que os desrespeite é nulo e passível de anulação.",
+    text: "O texto afirma que:",
     options: [
       { label: "A", text: "A administração pública pode desrespeitar princípios constitucionais." },
       { label: "B", text: "Atos que desrespeitam princípios constitucionais são válidos." },
@@ -1060,7 +1062,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 87, qid: "Q4166655", topic: "Sentidos do texto", year: 2023,
-    text: "Leia:\n\n'Mais importante que a lei é a justiça. A lei pode ser injusta; a justiça, nunca.'\n\nO texto sugere que:",
+    associatedText: "Mais importante que a lei é a justiça. A lei pode ser injusta; a justiça, nunca.",
+    text: "O texto sugere que:",
     options: [
       { label: "A", text: "Lei e justiça são sinônimos." },
       { label: "B", text: "A justiça é um conceito superior ao da lei." },
@@ -1168,7 +1171,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 96, qid: "Q4026983", topic: "Interpretação de Texto", year: 2023,
-    text: "'O princípio da legalidade é um dos pilares do Direito Administrativo. Nenhum ato pode ser praticado sem previsão legal.'\n\nO texto afirma que, no Direito Administrativo:",
+    associatedText: "O princípio da legalidade é um dos pilares do Direito Administrativo. Nenhum ato pode ser praticado sem previsão legal.",
+    text: "O texto afirma que, no Direito Administrativo:",
     options: [
       { label: "A", text: "Tudo é permitido se não houver lei proibindo." },
       { label: "B", text: "Só é permitido o que a lei autoriza." },
@@ -1180,7 +1184,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 97, qid: "Q4166655", topic: "Sentidos do texto", year: 2023,
-    text: "Leia o trecho:\n\n'O servidor público deve pautar sua conduta pela ética e pela moralidade. Desvios de conduta serão rigorosamente punidos.'\n\nO texto sugere que:",
+    associatedText: "O servidor público deve pautar sua conduta pela ética e pela moralidade. Desvios de conduta serão rigorosamente punidos.",
+    text: "O texto sugere que:",
     options: [
       { label: "A", text: "A ética é opcional para o servidor público." },
       { label: "B", text: "Condutas antiéticas podem resultar em punição." },
@@ -1348,7 +1353,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 111, qid: "Q2115119", topic: "Interpretação de Texto", year: 2024,
-    text: "'A lei é clara: ninguém será obrigado a fazer ou deixar de fazer algo senão em virtude de lei.'\n\nO texto expressa o princípio da:",
+    associatedText: "A lei é clara: ninguém será obrigado a fazer ou deixar de fazer algo senão em virtude de lei.",
+    text: "O texto expressa o princípio da:",
     options: [
       { label: "A", text: "Legalidade." },
       { label: "B", text: "Moralidade." },
@@ -1372,7 +1378,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 113, qid: "Q2270094", topic: "Sentidos do texto", year: 2024,
-    text: "Leia: 'Conhecer a lei é o primeiro passo para exercer a cidadania.'\n\nO texto sugere que:",
+    associatedText: "Conhecer a lei é o primeiro passo para exercer a cidadania.",
+    text: "O texto sugere que:",
     options: [
       { label: "A", text: "A cidadania independe do conhecimento da lei." },
       { label: "B", text: "Conhecer a lei é condição para o exercício pleno da cidadania." },

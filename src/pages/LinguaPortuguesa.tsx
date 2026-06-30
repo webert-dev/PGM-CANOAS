@@ -691,15 +691,19 @@ function QuestionCard({
   index,
   selected,
   showExplanation,
+  showAssociated,
   onSelect,
   onToggleExplanation,
+  onToggleAssociated,
 }: {
   question: Question;
   index: number;
   selected: string | null;
   showExplanation: boolean;
+  showAssociated: boolean;
   onSelect: (answer: string) => void;
   onToggleExplanation: () => void;
+  onToggleAssociated: () => void;
 }) {
   const isCorrect = selected === question.correctAnswer;
   const isWrong = selected !== null && selected !== question.correctAnswer;
@@ -716,6 +720,36 @@ function QuestionCard({
         </div>
         <span className="text-[11px] text-muted-foreground">{question.year} • Banca Objetiva</span>
       </div>
+
+      {/* Associated Text (collapsible) */}
+      {question.associatedText && (
+        <div className="px-5 pt-2">
+          <button
+            onClick={onToggleAssociated}
+            className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground
+                       transition-colors mb-2 group"
+          >
+            <FileText className="w-3.5 h-3.5" />
+            <span>Texto associado</span>
+            {showAssociated ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+          </button>
+          <AnimatePresence>
+            {showAssociated && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="overflow-hidden"
+              >
+                <div className="p-4 mb-3 rounded-sm bg-muted/40 border-l-2 border-border text-sm text-foreground/80 leading-relaxed whitespace-pre-line italic">
+                  {question.associatedText}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      )}
 
       {/* Question text */}
       <div className="px-5 py-4">
@@ -820,6 +854,7 @@ function QuestionCard({
 function TabRepositorioQuestoes() {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const [explanations, setExplanations] = useState<Record<number, boolean>>({});
+  const [associatedTexts, setAssociatedTexts] = useState<Record<number, boolean>>({});
   const [filter, setFilter] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -829,6 +864,10 @@ function TabRepositorioQuestoes() {
 
   const toggleExplanation = useCallback((qId: number) => {
     setExplanations(prev => ({ ...prev, [qId]: !prev[qId] }));
+  }, []);
+
+  const toggleAssociated = useCallback((qId: number) => {
+    setAssociatedTexts(prev => ({ ...prev, [qId]: !prev[qId] }));
   }, []);
 
   const filteredQuestions = questionsData.filter(q => {
@@ -912,8 +951,10 @@ function TabRepositorioQuestoes() {
               index={q.id}
               selected={selectedAnswers[q.id] ?? null}
               showExplanation={explanations[q.id] ?? false}
+              showAssociated={associatedTexts[q.id] ?? false}
               onSelect={(answer) => handleSelect(q.id, answer)}
               onToggleExplanation={() => toggleExplanation(q.id)}
+              onToggleAssociated={() => toggleAssociated(q.id)}
             />
           </motion.div>
         ))}

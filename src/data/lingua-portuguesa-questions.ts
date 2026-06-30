@@ -3,6 +3,7 @@ export interface Question {
   qid: string;
   topic: string;
   year: number;
+  associatedText?: string;
   text: string;
   options: { label: string; text: string }[];
   correctAnswer: string;
@@ -62,7 +63,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 5, qid: "Q4460499", topic: "Interpretação de Texto", year: 2026,
-    text: "Leia o trecho a seguir:\n\n'O Atlas deve seu nome ao titã da mitologia grega que, segundo a lenda, foi condenado por Zeus a carregar os céus para sempre nos ombros. A primeira pessoa a publicar um livro de mapas usando esse nome foi o cartógrafo flamengo Gerardus Mercator, em 1595.'\n\nDe acordo com o texto, qual a origem do nome 'Atlas' para designar uma coleção de mapas?",
+    associatedText: "O Atlas deve seu nome ao titã da mitologia grega que, segundo a lenda, foi condenado por Zeus a carregar os céus para sempre nos ombros. A primeira pessoa a publicar um livro de mapas usando esse nome foi o cartógrafo flamengo Gerardus Mercator, em 1595.",
+    text: "De acordo com o texto, qual a origem do nome 'Atlas' para designar uma coleção de mapas?",
     options: [
       { label: "A", text: "Foi nomeado em homenagem ao deus grego Atlas, que criou a cartografia." },
       { label: "B", text: "O nome foi dado pelo cartógrafo Gerardus Mercator ao publicar seu livro de mapas em 1595." },
@@ -110,7 +112,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 9, qid: "Q3998489", topic: "Equivalência e substituição de palavras", year: 2025,
-    text: "'A língua portuguesa é o idioma falado por mais de 265 milhões de pessoas espalhadas por todos os continentes, e a língua mais falada no hemisfério sul.'\n\nAssinale a alternativa em que a substituição da palavra sublinhada NÃO altera o sentido original do texto:",
+    associatedText: "A língua portuguesa é o idioma falado por mais de 265 milhões de pessoas espalhadas por todos os continentes, e a língua mais falada no hemisfério sul.",
+    text: "Assinale a alternativa em que a substituição da palavra sublinhada NÃO altera o sentido original do texto:",
     options: [
       { label: "A", text: "'espalhadas' por 'distribuídas'" },
       { label: "B", text: "'espalhadas' por 'dispersas'" },
@@ -146,7 +149,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 12, qid: "Q3998486", topic: "Equivalência e substituição de palavras", year: 2025,
-    text: "'A língua portuguesa é o idioma falado por mais de 265 milhões de pessoas espalhadas por todos os continentes.'\n\nA palavra 'idioma' pode ser substituída, sem alteração de sentido, por:",
+    associatedText: "A língua portuguesa é o idioma falado por mais de 265 milhões de pessoas espalhadas por todos os continentes.",
+    text: "A palavra 'idioma' pode ser substituída, sem alteração de sentido, por:",
     options: [
       { label: "A", text: "dialeto" },
       { label: "B", text: "linguagem" },
@@ -158,7 +162,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 13, qid: "Q3998484", topic: "Conjunções coordenativas adversativas", year: 2025,
-    text: "'A língua portuguesa é falada em vários continentes, ______ é a mais falada no hemisfério sul.'\n\nAssinale a conjunção que preenche a lacuna estabelecendo relação de adversidade:",
+    associatedText: "A língua portuguesa é falada em vários continentes, ______ é a mais falada no hemisfério sul.",
+    text: "Assinale a conjunção que preenche a lacuna estabelecendo relação de adversidade:",
     options: [
       { label: "A", text: "portanto" },
       { label: "B", text: "e" },
@@ -206,7 +211,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 17, qid: "Q2981709", topic: "Sentidos do texto", year: 2023,
-    text: "Leia o trecho:\n\n'Era uma vez uma menina que adorava ler. Todos os dias, depois da escola, ela corria para a biblioteca e passava horas entre livros. Para ela, cada livro era uma janela para um mundo novo.'\n\nO trecho 'cada livro era uma janela para um mundo novo' sugere que:",
+    associatedText: "Era uma vez uma menina que adorava ler. Todos os dias, depois da escola, ela corria para a biblioteca e passava horas entre livros. Para ela, cada livro era uma janela para um mundo novo.",
+    text: "O trecho 'cada livro era uma janela para um mundo novo' sugere que:",
     options: [
       { label: "A", text: "Os livros tinham formato de janela." },
       { label: "B", text: "A leitura permitia à menina conhecer novas realidades." },
@@ -400,7 +406,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 33, qid: "Q2741625", topic: "Sentidos do texto", year: 2023,
-    text: "Leia o texto:\n\n'Os concurseiros são como atletas: treinam diariamente, enfrentam desafios e buscam a excelência. Cada edital é uma nova competição.'\n\nA comparação entre concurseiros e atletas sugere que:",
+    associatedText: "Os concurseiros são como atletas: treinam diariamente, enfrentam desafios e buscam a excelência. Cada edital é uma nova competição.",
+    text: "A comparação entre concurseiros e atletas sugere que:",
     options: [
       { label: "A", text: "Concurseiros praticam esportes." },
       { label: "B", text: "A preparação para concursos exige disciplina e dedicação constantes." },
@@ -472,7 +479,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 39, qid: "Q2741621", topic: "Sentidos do texto", year: 2023,
-    text: "Leia o texto:\n\n'O direito não é apenas um conjunto de normas; é uma ferramenta de transformação social. Através dele, garantimos liberdades e construímos uma sociedade mais justa.'\n\nA ideia central do texto é que o direito:",
+    associatedText: "O direito não é apenas um conjunto de normas; é uma ferramenta de transformação social. Através dele, garantimos liberdades e construímos uma sociedade mais justa.",
+    text: "A ideia central do texto é que o direito:",
     options: [
       { label: "A", text: "É apenas um conjunto de regras a serem seguidas." },
       { label: "B", text: "Deve ser estudado apenas por advogados." },
@@ -508,7 +516,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 42, qid: "Q3424195", topic: "Inferência Textual", year: 2023,
-    text: "Leia: 'Maria chegou atrasada à audiência. O juiz já havia proferido a sentença.'\n\nInfere-se do texto que:",
+    associatedText: "Maria chegou atrasada à audiência. O juiz já havia proferido a sentença.",
+    text: "Infere-se do texto que:",
     options: [
       { label: "A", text: "Maria é advogada e perdeu o prazo." },
       { label: "B", text: "A sentença foi proferida antes da chegada de Maria." },
@@ -748,7 +757,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 62, qid: "Q2115119", topic: "Interpretação de Texto", year: 2024,
-    text: "'A justiça tarda, mas não falha.'\n\nO provérbio sugere que:",
+    associatedText: "A justiça tarda, mas não falha.",
+    text: "O provérbio sugere que:",
     options: [
       { label: "A", text: "A justiça nunca é aplicada corretamente." },
       { label: "B", text: "A justiça pode demorar, mas eventualmente é feita." },
@@ -772,7 +782,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 64, qid: "Q2270094", topic: "Sentidos do texto", year: 2024,
-    text: "Leia o trecho:\n\n'Mais importante do que ganhar é competir. Mais valioso do que vencer é participar.'\n\nO texto defende a ideia de que:",
+    associatedText: "Mais importante do que ganhar é competir. Mais valioso do que vencer é participar.",
+    text: "O texto defende a ideia de que:",
     options: [
       { label: "A", text: "Vencer é o único objetivo importante." },
       { label: "B", text: "O processo de participar é mais significativo que o resultado." },
@@ -904,7 +915,8 @@ export const questionsData: Question[] = [
   },
   {
     id: 75, qid: "Q4166617", topic: "Interpretação de Texto", year: 2023,
-    text: "Leia o texto:\n\n'O Brasil possui uma das maiores cargas tributárias do mundo. No entanto, o retorno em serviços públicos à população está entre os piores.'\n\nO texto estabelece uma relação de:",
+    associatedText: "O Brasil possui uma das maiores cargas tributárias do mundo. No entanto, o retorno em serviços públicos à população está entre os piores.",
+    text: "O texto estabelece uma relação de:",
     options: [
       { label: "A", text: "Causa e consequência direta." },
       { label: "B", text: "Contraste entre carga tributária e retorno social." },

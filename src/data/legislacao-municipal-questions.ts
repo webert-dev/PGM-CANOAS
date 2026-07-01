@@ -1371,7 +1371,6 @@ export const questionsData: Question[] = [
     ],
     correctAnswer: "A",
     explanation: "A formulação de consultas à PGM deve, obrigatoriamente, conter fundamentação técnica e conclusiva do órgão ou autoridade consulente. Referências: Lei nº 6.817/2025, Art. 29, I.",
-    {
     id: 122, qid: "PGM-C122", topic: "Legislação da PGM", year: 2025,
     text: "Com base na Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), a respeito das prerrogativas dos Procuradores e do regime de acordos judiciais, analise as assertivas abaixo:\n\nI. O Procurador Municipal deve abster-se de recorrer de decisões que estejam em conformidade com acórdãos em incidente de assunção de competência ou de resolução de demandas repetitivas, desde que a matéria fática não seja controversa.\nII. A proposta de acordo em processos judiciais ou extrajudiciais cujo proveito econômico seja superior a 1000 (mil) salários mínimos deve ser obrigatoriamente apreciada pelo Conselho Superior da PGM.\nIII. É permitido ao Procurador Municipal reconhecer a procedência do pedido da parte adversa, desde que tal providência esteja em conformidade com parecer vinculante da PGM e não haja controvérsia sobre matéria fática.\n\nEstá(ão) CORRETA(S):",
     options: [

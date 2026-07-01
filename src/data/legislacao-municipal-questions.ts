@@ -1371,6 +1371,60 @@ export const questionsData: Question[] = [
     ],
     correctAnswer: "A",
     explanation: "A formulação de consultas à PGM deve, obrigatoriamente, conter fundamentação técnica e conclusiva do órgão ou autoridade consulente. Referências: Lei nº 6.817/2025, Art. 29, I.",
+  {
+    id: 122, qid: "PGM-C122", topic: "Legislação da PGM", year: 2025,
+    text: "Com base na Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), a respeito das prerrogativas dos Procuradores e do regime de acordos judiciais, analise as assertivas abaixo:\n\nI. O Procurador Municipal deve abster-se de recorrer de decisões que estejam em conformidade com acórdãos em incidente de assunção de competência ou de resolução de demandas repetitivas, desde que a matéria fática não seja controversa.\nII. A proposta de acordo em processos judiciais ou extrajudiciais cujo proveito econômico seja superior a 1000 (mil) salários mínimos deve ser obrigatoriamente apreciada pelo Conselho Superior da PGM.\nIII. É permitido ao Procurador Municipal reconhecer a procedência do pedido da parte adversa, desde que tal providência esteja em conformidade com parecer vinculante da PGM e não haja controvérsia sobre matéria fática.\n\nEstá(ão) CORRETA(S):",
+    options: [
+      { label: "A", text: "Apenas os itens I e II." }, { label: "B", text: "Apenas os itens II e III." }, { label: "C", text: "Apenas os itens I e III." }, { label: "D", text: "Todos os itens." },
+    ],
+    correctAnswer: "D",
+    explanation: "Item I (Correto): Dever funcional do Procurador previsto no Art. 16, § 2º, visando evitar prolongamento inútil de lides que seguem teses pacificadas. Item II (Correto): O Conselho Superior da PGM detém competência para opinar sobre acordos de vulto superiores a 1.000 salários mínimos (Art. 12, II). Item III (Correto): A Lei de Regência autoriza o reconhecimento do pedido da parte adversa quando amparado em parecer vinculante ou jurisprudência consolidada (Art. 16, §§ 1º e 2º). Referências: Lei nº 6.817/2025, Art. 12, II; Art. 16, §§ 1º e 2º.",
+  },
+  {
+    id: 123, qid: "PGM-C123", topic: "Direito Administrativo (Estatuto)", year: 2025,
+    text: "Segundo o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), atualizado pela Lei nº 6.698/2023, o servidor que perder o cônjuge, companheiro, pais, madrasta, padrasto, filhos, enteados, menor sob guarda ou tutela e irmãos, terá direito a afastamento (luto), considerado como de efetivo exercício, por:",
+    options: [
+      { label: "A", text: "02 dias." }, { label: "B", text: "05 dias." }, { label: "C", text: "08 dias." }, { label: "D", text: "15 dias." },
+    ],
+    correctAnswer: "C",
+    explanation: "Para o rol de parentes mais próximos (cônjuge, pais, filhos, irmãos), o Estatuto de Canoas prevê o afastamento de 08 dias. A mesma alteração de 2023 fixou prazo de apenas 02 dias para falecimento de tios, padrasto e madrasta. Referências: Lei nº 2.214/1984, Art. 75, IV (redação da Lei nº 6.698/2023).",
+  },
+  {
+    id: 124, qid: "PGM-C124", topic: "Direito Administrativo (Licitações)", year: 2025,
+    text: "Conforme o Decreto Municipal nº 59/2024, que regula o Procedimento Administrativo Especial de Punição (PAEP), assinale a alternativa que indica CORRETAMENTE a autoridade competente para aplicar a sanção de IMPEDIMENTO de licitar e contratar com o Município de Canoas:",
+    options: [
+      { label: "A", text: "O Prefeito Municipal, exclusivamente." }, { label: "B", text: "O Procurador-Geral do Município." }, { label: "C", text: "O Secretário Municipal da pasta interessada ou autoridade equivalente na Administração Indireta." }, { label: "D", text: "O Controlador-Geral do Município." },
+    ],
+    correctAnswer: "C",
+    explanation: "O sistema do PAEP em Canoas divide as competências: multas, suspensões e o impedimento de licitar são aplicados pelos Secretários da pasta interessada, enquanto a declaração de inidoneidade é de competência exclusiva do Prefeito. Referências: Decreto nº 59/2024, Art. 8º, III.",
+  },
+  {
+    id: 125, qid: "PGM-C125", topic: "Lei Orgânica Municipal", year: 2025,
+    text: "No âmbito da Lei Orgânica do Município de Canoas (LOM), a respeito da autonomia e do processo legislativo, assinale a alternativa INCORRETA:",
+    options: [
+      { label: "A", text: "A autonomia do Município expressa-se, entre outras formas, pela administração própria no que respeite ao seu interesse local." }, { label: "B", text: "O Município poderá delegar ao Estado, mediante convênio, a execução de serviços de sua competência concorrente, assegurados os recursos necessários." }, { label: "C", text: "Dependerá do voto favorável de, no mínimo, dois terços dos membros da Câmara a autorização para a alteração da Lei Orgânica do Município." }, { label: "D", text: "O Prefeito poderá enviar mensagem à Câmara para propor modificação em projetos de leis orçamentárias mesmo após iniciada a votação na Comissão Permanente de Finanças." },
+    ],
+    correctAnswer: "D",
+    explanation: "A alternativa D está incorreta porque, conforme o rito orçamentário, o Prefeito só pode enviar mensagens para propor modificações nos projetos de leis orçamentárias (PPA, LDO e LOA) enquanto não tiver sido iniciada a votação na Comissão Permanente de Finanças e Orçamento. Referências: LOM Canoas, Art. 147, § 4º.",
+  },
+  {
+    id: 126, qid: "PGM-C126", topic: "Direito Urbanístico", year: 2025,
+    text: "Segundo o Plano Diretor Urbano Ambiental (Lei nº 5.961/2015), o licenciamento de obras de urbanização deverá ser requerido no prazo de 180 dias do registro imobiliário do parcelamento do solo. Uma vez licenciadas, as referidas obras deverão ser concluídas no prazo máximo de:",
+    options: [
+      { label: "A", text: "02 anos." }, { label: "B", text: "03 anos." }, { label: "C", text: "04 anos, admitindo-se renovação precedida por análise da Comissão de Controle Urbanístico (CCU)." }, { label: "D", text: "05 anos, vedada qualquer prorrogação." },
+    ],
+    correctAnswer: "C",
+    explanation: "O PDUA estabelece o prazo de 4 anos para a conclusão das obras de urbanização. A Lei nº 6.759/2024 transferiu para a CCU a responsabilidade pela análise da renovação desse prazo. Referências: Lei nº 5.961/2015, Art. 246; Lei nº 6.759/2024.",
+  },
+  {
+    id: 127, qid: "PGM-C127", topic: "Direito Previdenciário Municipal", year: 2025,
+    text: "De acordo com a Lei Complementar nº 14/2025 (Reestruturação do RPPS de Canoas), sobre o cálculo dos proventos de aposentadoria para os servidores que ingressarem no regime após a publicação da lei, a média aritmética simples será calculada sobre:",
+    options: [
+      { label: "A", text: "80% das maiores remunerações de contribuição desde julho de 1994." }, { label: "B", text: "90% das maiores remunerações de contribuição desde julho de 1994 ou desde o início da contribuição." }, { label: "C", text: "100% de todo o período contributivo do servidor, sem qualquer descarte." }, { label: "D", text: "A média das últimas 12 remunerações que antecedem o pedido de aposentadoria." },
+    ],
+    correctAnswer: "B",
+    explanation: "A regra previdenciária de Canoas de 2025 é mais benéfica que a federal atual (que usa 100%), pois permite que o cálculo utilize a média aritmética de 90% das maiores remunerações, descartando automaticamente os 10% menores valores do histórico contributivo. Referências: LC nº 14/2025, Art. 44.",
+  },
   }
 
 ];

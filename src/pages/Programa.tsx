@@ -3,7 +3,7 @@ import {
   ArrowLeft, BookOpen, ScrollText, Building2, Landmark, Scale,
   Gavel, Briefcase, Heart, Shield, PiggyBank, GitBranch,
   Link2, FileText, GanttChart, Crosshair, Layers, Library,
-  AlertTriangle, Star
+  AlertTriangle, Star, MapPin
 } from "lucide-react";
 import type { ElementType } from "react";
 import {
@@ -268,6 +268,27 @@ const disciplines = [
           "Lei nº 8.906/1994 (Estatuto da Advocacia e a Ordem dos Advogados do Brasil).",
           "Regulamento Geral e Código de Ética e Disciplina da OAB.",
           "Lei Municipal nº 6.817/2025 (Lei de Regência da Procuradoria-Geral do Município de Canoas).",
+        ],
+      },
+    ],
+  },
+  {
+    id: "legislacao-municipal",
+    title: "Legislação Municipal de Canoas",
+    icon: MapPin,
+    isInterdisciplinary: true,
+    content: [
+      {
+        subtitle: "Disciplina Interdisciplinar — 30 questões da Banca Objetiva",
+        items: [
+          "Lei de Regência da PGM (Lei nº 6.817/2025): funções exclusivas, Conselho Superior, estágio probatório, teletrabalho.",
+          "Código Tributário Municipal (Lei nº 1.783/1977): IPTU, ITBI, ISSQN, Conselho de Contribuintes.",
+          "Estatuto dos Servidores (Lei nº 2.214/1984): posse, exercício, férias, reintegração, prazos atualizados.",
+          "RPPS — LC nº 14/2025: taxa de administração, aposentadoria, pensão por morte, alíquotas.",
+          "Código de Meio Ambiente (Lei nº 4.328/1998): infrações, agravantes, atenuantes, prazos.",
+          "PDUA (Lei nº 5.961/2015): EIV, Direito de Preempção, IA Máximo.",
+          "Decretos Regulamentares: PAD (Decreto 462/2016), PAEP (Decreto 59/2024), SRP (Decreto 45/2024).",
+          "Lei Orgânica Municipal: competências privativas do Prefeito, processo legislativo, bens municipais.",
         ],
       },
     ],
@@ -832,6 +853,7 @@ const disciplines = [
 const iconMap: Record<string, ElementType> = {
   "lingua-portuguesa": BookOpen,
   "legislacao-profissional": ScrollText,
+  "legislacao-municipal": MapPin,
   "direito-administrativo": Building2,
   "direito-ambiental-urbanistico": Landmark,
   "direito-civil-consumidor": Scale,
@@ -914,10 +936,10 @@ export default function Programa() {
 
             {/* ─── TAB 1: Programa Detalhado ───────────── */}
             <TabsContent value="detalhado" className="mt-0">
-              <Accordion type="single" collapsible className="space-y-2">
-                {disciplines.map((discipline, i) => {
+              <Accordion type="single" collapsible className="space-y-2">                  {disciplines.map((discipline, i) => {
                   const Icon = iconMap[discipline.id] || BookOpen;
                   const isPortuguese = discipline.id === "lingua-portuguesa";
+                  const isMunicipal = discipline.id === "legislacao-municipal";
                   return (
                     <motion.div
                       key={discipline.id}
@@ -942,6 +964,15 @@ export default function Programa() {
                                 className="ml-auto text-[11px] text-muted-foreground hover:text-foreground bg-muted px-2 py-0.5 rounded-sm transition-colors shrink-0"
                               >
                                 Dashboard ›
+                              </Link>
+                            )}
+                            {isMunicipal && (
+                              <Link
+                                to="/legislacao-municipal"
+                                onClick={(e) => e.stopPropagation()}
+                                className="ml-auto text-[11px] text-sky-600 hover:text-sky-700 bg-sky-50 dark:bg-sky-950/50 px-2 py-0.5 rounded-sm transition-colors shrink-0 border border-sky-200/50"
+                              >
+                                Questões ›
                               </Link>
                             )}
                           </div>

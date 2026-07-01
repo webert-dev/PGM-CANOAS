@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Calendar, FileText, Scale, Landmark, Building2, Gavel, Shield, Heart, Briefcase, PiggyBank, ScrollText } from "lucide-react";
+import { ArrowRight, BookOpen, Calendar, FileText, Scale, Landmark, Building2, Gavel, Shield, Heart, Briefcase, PiggyBank, ScrollText, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router";
 
@@ -51,6 +51,13 @@ const disciplines = [
     description: "Estatuto da Advocacia, Código de Ética da OAB e Lei de Regência da PGM de Canoas.",
     icon: ScrollText,
     topics: 3,
+  },
+  {
+    title: "Legislação Municipal de Canoas",
+    description: "Disciplina interdisciplinar com questões baseadas em 547 modelos da Banca Objetiva — Lei de Regência da PGM, CTM, ITBI, ISSQN, Estatuto do Servidor, RPPS, PDUA e mais.",
+    icon: MapPin,
+    topics: 30,
+    isInterdisciplinary: true,
   },
   {
     title: "Direito Administrativo",
@@ -280,22 +287,29 @@ export default function Landing() {
                   className="bg-card p-6 group hover:bg-muted/50 transition-colors duration-200"
                 >
                   <Link
-                        to={discipline.title === "Língua Portuguesa" ? "/lingua-portuguesa" : "/programa"}
+                        to={discipline.title === "Língua Portuguesa" ? "/lingua-portuguesa" : discipline.isInterdisciplinary ? "/legislacao-municipal" : "/programa"}
                         className="block"
                       >
                     <div className="flex items-start gap-4">
-                      <div className="mt-0.5">
-                        <Icon className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" />
+                      <div className={`mt-0.5 w-8 h-8 rounded-lg flex items-center justify-center ${discipline.isInterdisciplinary ? 'bg-sky-500/10' : ''}`}>
+                        <Icon className={`w-5 h-5 transition-colors ${discipline.isInterdisciplinary ? 'text-sky-500' : 'text-muted-foreground group-hover:text-foreground'}`} />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-sm font-medium text-foreground mb-1.5 group-hover:text-foreground transition-colors">
-                          {discipline.title}
-                        </h3>
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className={`text-sm font-medium transition-colors ${discipline.isInterdisciplinary ? 'text-sky-700 dark:text-sky-300' : 'text-foreground group-hover:text-foreground'}`}>
+                            {discipline.title}
+                          </h3>
+                          {discipline.isInterdisciplinary && (
+                            <span className="text-[10px] font-medium text-sky-500 bg-sky-50 dark:bg-sky-950/50 px-1.5 py-0.5 rounded-sm border border-sky-200/50">
+                              Interdisciplinar
+                            </span>
+                          )}
+                        </div>
                         <p className="text-xs text-muted-foreground leading-relaxed mb-2 line-clamp-2">
                           {discipline.description}
                         </p>
                         <span className="text-[11px] text-muted-foreground/60">
-                          {discipline.topics} tópicos
+                          {discipline.topics} {discipline.isInterdisciplinary ? 'questões' : 'tópicos'}
                         </span>
                       </div>
                     </div>

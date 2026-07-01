@@ -303,16 +303,16 @@ export const questionsData: Question[] = [
     explanation: "No rito administrativo ambiental de Canoas, o prazo para a defesa da autuação é de 07 dias, a contar da ciência da notificação. Referências: Lei nº 4.328/1998, Art. 118.",
   },
   {
-    id: 25, qid: "PGM-C25", topic: "Legislação da PGM", year: 2025,
-    text: "De acordo com a Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), com as alterações introduzidas pela Lei nº 6.833/2025, é considerada função EXCLUSIVA da Procuradoria-Geral do Município:",
+    id: 25, qid: "PGM-C25", topic: "Lei Orgânica Municipal", year: 2025,
+    text: "Com base na Lei Orgânica do Município de Canoas, sobre a fiscalização contábil e financeira, as contas do Município ficarão à disposição de qualquer contribuinte para exame e apreciação, durante:",
     options: [
-      { label: "A", text: "A fiscalização direta das contas de todas as entidades que recebem subvenção do Município." },
-      { label: "B", text: "A representação judicial, extrajudicial e a consultoria da autarquia CANOASPREV." },
-      { label: "C", text: "A instauração de ofício de inquéritos policiais para apuração de crimes tributários." },
-      { label: "D", text: "A nomeação de interventores em hospitais privados que prestam serviços ao SUS." },
+      { label: "A", text: "15 dias, a partir de 1º de fevereiro." },
+      { label: "B", text: "30 dias, a partir de 15 de janeiro de cada exercício." },
+      { label: "C", text: "60 dias, logo após o encerramento do exercício financeiro." },
+      { label: "D", text: "Todo o período da sessão legislativa ordinária." },
     ],
     correctAnswer: "B",
-    explanation: "A Lei nº 6.833/2025 alterou a Lei de Regência da PGM para incluir expressamente a representação judicial, extrajudicial e a consultoria da autarquia CANOASPREV como função exclusiva da Procuradoria-Geral. Referências: Lei nº 6.817/2025, Art. 4º, IV; Art. 5º, § 4º.",
+    explanation: "Conforme a Lei Orgânica de Canoas e o modelo observado nas questões da banca Objetiva (Modelos de Questões nº 484), as contas ficam disponíveis por 30 dias, a partir de 15 de janeiro, para qualquer cidadão. Referências: Lei Orgânica de Canoas, Art. ...",
   },
   {
     id: 26, qid: "PGM-C26", topic: "Direito Tributário Municipal", year: 2025,
@@ -507,7 +507,7 @@ export const questionsData: Question[] = [
     explanation: "Conforme o PDUA de Canoas, a lei que define áreas para o exercício do direito de preempção deve fixar um prazo de vigência, o qual possui o limite máximo de 05 anos, sendo permitida a renovação após um intervalo. Referências: Lei nº 5.961/2015, Art. 116, § 2º.",
   },
   {
-    id: 42, qid: "PGM-C42", topic: "Legislação da PGM", year: 2025,
+    id: 42, qid: "PGM-C42", topic: "Direito Previdenciário Municipal", year: 2025,
     text: "De acordo com a Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), com as alterações introduzidas pela Lei nº 6.833/2025, é considerada função EXCLUSIVA da Procuradoria-Geral do Município:",
     options: [
       { label: "A", text: "A fiscalização direta das contas de todas as entidades que recebem subvenção do Município." },

@@ -19,11 +19,11 @@ const stagger = { animate: { transition: { staggerChildren: 0.06 } } };
 // ─── TAB 1: Statistical Data ──────────────────────────────
 
 const categoryData = [
-  { name: "Dir. Administrativo", questions: 11, percentage: 26.2, color: "oklch(0.5 0.12 180)" },
-  { name: "Dir. Tributário Municipal", questions: 9, percentage: 21.4, color: "oklch(0.55 0.15 200)" },
-  { name: "Legislação da PGM", questions: 8, percentage: 19.0, color: "oklch(0.45 0.11 250)" },
+  { name: "Dir. Administrativo", questions: 12, percentage: 28.6, color: "oklch(0.5 0.12 180)" },
+  { name: "Dir. Tributário Municipal", questions: 8, percentage: 19.0, color: "oklch(0.55 0.15 200)" },
   { name: "Dir. Ambiental/Urbanístico", questions: 8, percentage: 19.0, color: "oklch(0.48 0.14 140)" },
-  { name: "Dir. Previdenciário", questions: 5, percentage: 11.9, color: "oklch(0.6 0.13 30)" },
+  { name: "Legislação Municipal", questions: 7, percentage: 16.7, color: "oklch(0.45 0.11 250)" },
+  { name: "Dir. Previdenciário", questions: 6, percentage: 14.3, color: "oklch(0.6 0.13 30)" },
   { name: "Dir. Financeiro", questions: 1, percentage: 2.4, color: "oklch(0.52 0.1 280)" },
 ];
 

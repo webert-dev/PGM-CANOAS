@@ -1371,7 +1371,6 @@ export const questionsData: Question[] = [
     ],
     correctAnswer: "A",
     explanation: "A formulação de consultas à PGM deve, obrigatoriamente, conter fundamentação técnica e conclusiva do órgão ou autoridade consulente. Referências: Lei nº 6.817/2025, Art. 29, I.",
-  {
     id: 122, qid: "PGM-C122", topic: "Legislação da PGM", year: 2025,
     text: "Com base na Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), a respeito das prerrogativas dos Procuradores e do regime de acordos judiciais, analise as assertivas abaixo:\n\nI. O Procurador Municipal deve abster-se de recorrer de decisões que estejam em conformidade com acórdãos em incidente de assunção de competência ou de resolução de demandas repetitivas, desde que a matéria fática não seja controversa.\nII. A proposta de acordo em processos judiciais ou extrajudiciais cujo proveito econômico seja superior a 1000 (mil) salários mínimos deve ser obrigatoriamente apreciada pelo Conselho Superior da PGM.\nIII. É permitido ao Procurador Municipal reconhecer a procedência do pedido da parte adversa, desde que tal providência esteja em conformidade com parecer vinculante da PGM e não haja controvérsia sobre matéria fática.\n\nEstá(ão) CORRETA(S):",
     options: [
@@ -1416,7 +1415,6 @@ export const questionsData: Question[] = [
     correctAnswer: "C",
     explanation: "O PDUA estabelece o prazo de 4 anos para a conclusão das obras de urbanização. A Lei nº 6.759/2024 transferiu para a CCU a responsabilidade pela análise da renovação desse prazo. Referências: Lei nº 5.961/2015, Art. 246; Lei nº 6.759/2024.",
   },
-  {
     id: 127, qid: "PGM-C127", topic: "Direito Previdenciário Municipal", year: 2025,
     text: "De acordo com a Lei Complementar nº 14/2025 (Reestruturação do RPPS de Canoas), sobre o cálculo dos proventos de aposentadoria para os servidores que ingressarem no regime após a publicação da lei, a média aritmética simples será calculada sobre:",
     options: [
@@ -1425,6 +1423,5 @@ export const questionsData: Question[] = [
     correctAnswer: "B",
     explanation: "A regra previdenciária de Canoas de 2025 é mais benéfica que a federal atual (que usa 100%), pois permite que o cálculo utilize a média aritmética de 90% das maiores remunerações, descartando automaticamente os 10% menores valores do histórico contributivo. Referências: LC nº 14/2025, Art. 44.",
   },
-  }
 
 ];

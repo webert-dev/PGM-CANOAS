@@ -19,12 +19,12 @@ const stagger = { animate: { transition: { staggerChildren: 0.06 } } };
 // ─── TAB 1: Statistical Data ──────────────────────────────
 
 const categoryData = [
-  { name: "Dir. Administrativo", questions: 12, percentage: 28.6, color: "oklch(0.5 0.12 180)" },
-  { name: "Dir. Tributário Municipal", questions: 8, percentage: 19.0, color: "oklch(0.55 0.15 200)" },
-  { name: "Dir. Ambiental/Urbanístico", questions: 8, percentage: 19.0, color: "oklch(0.48 0.14 140)" },
-  { name: "Legislação Municipal", questions: 7, percentage: 16.7, color: "oklch(0.45 0.11 250)" },
-  { name: "Dir. Previdenciário", questions: 6, percentage: 14.3, color: "oklch(0.6 0.13 30)" },
-  { name: "Dir. Financeiro", questions: 1, percentage: 2.4, color: "oklch(0.52 0.1 280)" },
+  { name: "Dir. Administrativo", questions: 20, percentage: 26.7, color: "oklch(0.5 0.12 180)" },
+  { name: "Legislação da PGM", questions: 16, percentage: 21.3, color: "oklch(0.45 0.11 250)" },
+  { name: "Dir. Tributário Municipal", questions: 13, percentage: 17.3, color: "oklch(0.55 0.15 200)" },
+  { name: "Lei Orgânica Municipal", questions: 10, percentage: 13.3, color: "oklch(0.5 0.1 300)" },
+  { name: "Dir. Ambiental/Urbanístico", questions: 9, percentage: 12.0, color: "oklch(0.48 0.14 140)" },
+  { name: "Dir. Previdenciário", questions: 7, percentage: 9.3, color: "oklch(0.6 0.13 30)" },
 ];
 
 const coverageAnalysis = [
@@ -263,8 +263,8 @@ function TabAnaliseEstatistica() {
         className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border rounded-sm overflow-hidden mb-14"
       >
         {[
-          { value: "42", label: "Questões elaboradas", icon: FileText },
-          { value: "8", label: "Áreas temáticas", icon: BarChart3 },
+          { value: "75", label: "Questões elaboradas", icon: FileText },
+          { value: "10", label: "Áreas temáticas", icon: BarChart3 },
           { value: "547", label: "Modelos de questões analisados", icon: Layers },
           { value: "2024–25", label: "Legislação vigente", icon: TrendingUp },
         ].map((stat) => {
@@ -283,7 +283,7 @@ function TabAnaliseEstatistica() {
       <motion.div variants={fadeIn}>
         <h2 className="text-xl font-medium mb-2 text-foreground">Distribuição por Área Temática</h2>
         <p className="text-sm text-muted-foreground mb-10 max-w-xl leading-relaxed">
-          Distribuição das 42 questões de Legislação Municipal organizadas por área do direito com incidência local.
+          Distribuição das 75 questões de Legislação Municipal organizadas por área do direito com incidência local.
         </p>
         <div className="grid gap-px bg-border rounded-sm overflow-hidden">
           {categoryData.map((cat) => (
@@ -778,7 +778,7 @@ export default function LegislacaoMunicipal() {
               variants={fadeIn}
               className="text-sm text-muted-foreground max-w-2xl leading-relaxed"
             >
-              Disciplina interdisciplinar com <strong>42 questões</strong> elaboradas a partir da análise de{" "}
+              Disciplina interdisciplinar com <strong>75 questões</strong> elaboradas a partir da análise de{" "}
               <strong>547 modelos</strong> da Banca Objetiva, adaptadas à legislação municipal de Canoas.
               Abrange as normas locais com incidência em Direito Administrativo, Tributário, Previdenciário,
               Ambiental/Urbanístico e a Lei de Regência da PGM.

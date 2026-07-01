@@ -914,4 +914,463 @@ export const questionsData: Question[] = [
     correctAnswer: "D",
     explanation: "O Decreto nº 240/2025 limita a legitimidade para consultas ao Prefeito, Vice-Prefeito, Secretários e Presidentes da Administração Indireta. O Legislativo não possui essa prerrogativa consultiva direta via decreto do Executivo. Referências: Decreto nº 240/2025, Art. 2º, Parágrafo Único.",
   },
+  {
+    id: 76, qid: "PGM-C76", topic: "Lei Orgânica Municipal", year: 2025,
+    text: "No que tange à competência privativa do Prefeito de Canoas para a sanção e o veto de projetos de lei, a Lei Orgânica estabelece que o veto parcial somente poderá abranger:",
+    options: [
+      { label: "A", text: "Palavras isoladas dentro de um parágrafo." }, { label: "B", text: "Expressões que alterem o sentido da norma, ainda que incompletas." }, { label: "C", text: "Texto integral de artigo, parágrafo, inciso ou alínea." }, { label: "D", text: "Apenas artigos inteiros, sendo vedado o veto a parágrafos isolados." },
+    ],
+    correctAnswer: "C",
+    explanation: "Seguindo a simetria com a Constituição Federal, a Lei Orgânica de Canoas proíbe o veto de palavra. O veto parcial deve abranger obrigatoriamente o texto integral de artigo, parágrafo, inciso ou alínea. Referências: LOM Canoas, Art. 54, § 3º.",
+  },
+
+  {
+    id: 77, qid: "PGM-C77", topic: "Legislação da PGM", year: 2025,
+    text: "Com base na Lei de Regência da PGM (Lei nº 6.817/2025), o parecer jurídico terá efeito normativo e vinculante para os órgãos da Administração Pública Municipal após:",
+    options: [
+      { label: "A", text: "A simples assinatura do Procurador responsável." }, { label: "B", text: "A aprovação por despacho do Procurador-Geral, independentemente de publicação." }, { label: "C", text: "A publicação de sua ementa no Diário Oficial do Município." }, { label: "D", text: "A homologação pelo Conselho Municipal de Contribuintes." },
+    ],
+    correctAnswer: "C",
+    explanation: "O efeito normativo e vinculante (obrigatoriedade de seguir o entendimento) para toda a Administração Direta e Indireta surge após a publicação da ementa do parecer no Diário Oficial. Referências: Lei nº 6.817/2025, Art. 25, § 3º.",
+  },
+
+  {
+    id: 78, qid: "PGM-C78", topic: "Direito Administrativo (Estatuto)", year: 2025,
+    text: "De acordo com o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), o servidor que ocasionar prejuízo à Fazenda Municipal por omissão em efetuar recolhimento nos prazos legais será obrigado a repor a importância:",
+    options: [
+      { label: "A", text: "De uma só vez." }, { label: "B", text: "Em até 10 parcelas mensais." }, { label: "C", text: "Mediante desconto em folha não excedente a 10% da remuneração." }, { label: "D", text: "No prazo de 30 dias após o trânsito em julgado administrativo." },
+    ],
+    correctAnswer: "A",
+    explanation: "Diferente de outros prejuízos que podem ser parcelados em folha (até 20%), nos casos de alcance, desfalque ou omissão de recolhimento de valores devidos, o servidor deve repor o montante de uma só vez. Referências: Lei nº 2.214/1984, Art. 208, § 1º.",
+  },
+
+  {
+    id: 79, qid: "PGM-C79", topic: "Legislação da PGM", year: 2025,
+    text: "A Lei de Regência da PGM atribui à Procuradoria-Geral a função de promover a unificação da jurisprudência administrativa. Segundo o Art. 5º da Lei nº 6.817/2025, essa unificação possui uma exceção expressa. Trata-se da jurisprudência:",
+    options: [
+      { label: "A", text: "Ambiental." }, { label: "B", text: "Tributária." }, { label: "C", text: "Previdenciária." }, { label: "D", text: "Relativa a servidores públicos." },
+    ],
+    correctAnswer: "B",
+    explanation: "A lei de regência exclui expressamente a matéria tributária da competência da PGM para unificação de jurisprudência administrativa. Referências: Lei nº 6.817/2025, Art. 5º, X.",
+  },
+
+  {
+    id: 80, qid: "PGM-C80", topic: "Direito Administrativo (Licitações)", year: 2025,
+    text: "Conforme o Decreto Municipal nº 59/2024, que regula o Procedimento Administrativo Especial de Punição (PAEP) contra fornecedores, a autoridade competente para aplicar a sanção de DECLARAÇÃO DE INIDONEIDADE para licitar ou contratar com a Administração Pública Municipal é:",
+    options: [
+      { label: "A", text: "O Secretário da pasta interessada." }, { label: "B", text: "O Procurador-Geral do Município." }, { label: "C", text: "O Prefeito Municipal." }, { label: "D", text: "O Controlador-Geral do Município." },
+    ],
+    correctAnswer: "C",
+    explanation: "Enquanto advertências e multas podem ser aplicadas por Secretários, a declaração de inidoneidade (sanção mais grave) é de competência exclusiva do Prefeito. Referências: Decreto Municipal nº 59/2024, Art. 8º, IV.",
+  },
+
+  {
+    id: 81, qid: "PGM-C81", topic: "Lei Orgânica Municipal", year: 2025,
+    text: "Segundo a Lei Orgânica de Canoas, o Prefeito deve solicitar licença à Câmara Municipal quando tiver de afastar-se do Município ou do cargo por prazo superior a:",
+    options: [
+      { label: "A", text: "05 dias." }, { label: "B", text: "07 dias." }, { label: "C", text: "10 dias." }, { label: "D", text: "15 dias." },
+    ],
+    correctAnswer: "D",
+    explanation: "Conforme a Lei Orgânica, o Prefeito só necessita de licença da Câmara para ausências superiores a 15 dias. Referências: LOM Canoas, Art. 66, XXIX.",
+  },
+
+  {
+    id: 82, qid: "PGM-C82", topic: "Legislação da PGM", year: 2025,
+    text: "De acordo com o Decreto Municipal nº 240/2025, que regulamenta a Lei de Regência da PGM, os processos de consulta iniciados sem o despacho de determinadas autoridades legitimadas deverão ser devolvidos para que seja colhida a devida chancela. Assinale a alternativa que NÃO apresenta uma autoridade cuja chancela é exigida para o prosseguimento da consulta:",
+    options: [
+      { label: "A", text: "Secretários Municipais, titulares ou adjuntos." }, { label: "B", text: "Presidentes de entidades da Administração Pública Indireta." }, { label: "C", text: "Subprefeitos." }, { label: "D", text: "Chefes de Unidade de Saúde ou Diretores de Escola." },
+    ],
+    correctAnswer: "D",
+    explanation: "O decreto regulamentar limita a legitimidade para consultas ao Prefeito, Vice, Secretários (titulares/adjuntos), Subprefeitos e Presidentes da Indireta. Diretores de escola ou unidades de saúde não possuem essa competência direta. Referências: Decreto nº 240/2025, Art. 4º, § 3º; Lei nº 6.817/2025, Art. 29.",
+  },
+
+  {
+    id: 83, qid: "PGM-C83", topic: "Direito Administrativo (Licitações)", year: 2025,
+    text: "Conforme o Decreto Municipal nº 60/2024, que regula a modalidade de licitação 'diálogo competitivo' em Canoas, o instrumento convocatório estabelecerá o prazo máximo para as candidaturas dos interessados na fase de qualificação, o qual NÃO poderá ser inferior a:",
+    options: [
+      { label: "A", text: "15 (quinze) dias úteis." }, { label: "B", text: "25 (vinte e cinco) dias úteis." }, { label: "C", text: "30 (trinta) dias úteis." }, { label: "D", text: "45 (quarenta e cinco) dias corridos." },
+    ],
+    correctAnswer: "B",
+    explanation: "Para o diálogo competitivo, a norma municipal fixa o prazo mínimo de 25 dias úteis para a apresentação de candidaturas na fase inicial. Referências: Decreto Municipal nº 60/2024, Art. 7º, § 1º.",
+  },
+
+  {
+    id: 84, qid: "PGM-C84", topic: "Direito Previdenciário Municipal", year: 2025,
+    text: "Segundo a Lei Complementar nº 14/2025 (Regime Próprio de Previdência), o servidor ativo poderá optar pela inclusão de determinadas parcelas (como adicional noturno e serviço extraordinário) na sua remuneração de contribuição. Sobre essa opção, é CORRETO afirmar que:",
+    options: [
+      { label: "A", text: "Deve ser formalizada por escrito e por iniciativa do servidor, relativamente a cada uma das parcelas especificadas." }, { label: "B", text: "Ocorre de forma automática no momento da investidura em cargo que possua tais vantagens." }, { label: "C", text: "Pode ser feita verbalmente perante a chefia imediata, com validade imediata." }, { label: "D", text: "Uma vez realizada, a opção é irretratável e não admite a exclusão posterior da parcela." },
+    ],
+    correctAnswer: "A",
+    explanation: "A reestruturação previdenciária exige que a inclusão de verbas variáveis seja feita por iniciativa individual do servidor, por escrito e discriminando cada parcela. Referências: LC nº 14/2025, Art. 19, § 2º.",
+  },
+
+  {
+    id: 85, qid: "PGM-C85", topic: "Direito Tributário Municipal", year: 2025,
+    text: "O Código Tributário de Canoas (Lei nº 1.783/1977) estabelece o rito para a cobrança da Contribuição de Melhoria. Antes do início da obra, a Administração deve publicar o memorial descritivo e o orçamento, fixando prazo para impugnação pelos interessados. Esse prazo NÃO poderá ser inferior a:",
+    options: [
+      { label: "A", text: "15 dias." }, { label: "B", text: "20 dias." }, { label: "C", text: "30 dias." }, { label: "D", text: "45 dias." },
+    ],
+    correctAnswer: "C",
+    explanation: "O Código Tributário de Canoas garante um prazo de defesa/impugnação de, no mínimo, 30 dias após a publicação dos dados da obra pública. Referências: Lei nº 1.783/1977, Art. 51, II.",
+  },
+
+  {
+    id: 86, qid: "PGM-C86", topic: "Direito Administrativo (Estatuto)", year: 2025,
+    text: "De acordo com o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), constitui dever do funcionário atender, com preferência a qualquer outro serviço, as requisições destinadas à:",
+    options: [
+      { label: "A", text: "Promoção de eventos culturais nos bairros." }, { label: "B", text: "Defesa da Fazenda Municipal." }, { label: "C", text: "Atualização do site oficial da Prefeitura." }, { label: "D", text: "Organização de associações de moradores." },
+    ],
+    correctAnswer: "B",
+    explanation: "O Estatuto prevê o dever de priorizar o atendimento a requisições (documentos, papéis, informações) que visem a defesa jurídica e financeira do Município. Referências: Lei nº 2.214/1984, Art. 191, XII.",
+  },
+
+  {
+    id: 87, qid: "PGM-C87", topic: "Legislação da PGM", year: 2025,
+    text: "A Lei de Regência da PGM (Lei nº 6.817/2025) assegura aos Procuradores Municipais a prerrogativa de requisitar informações escritas, exames e diligências. O atendimento a essas requisições deve ocorrer, caso outro prazo não tenha sido fixado, dentro do prazo máximo de:",
+    options: [
+      { label: "A", text: "05 dias." }, { label: "B", text: "07 dias úteis." }, { label: "C", text: "15 dias." }, { label: "D", text: "30 dias." },
+    ],
+    correctAnswer: "C",
+    explanation: "A Lei de Regência da PGM Canoas estabelece o prazo padrão de 15 dias para o cumprimento de requisições feitas pelos Procuradores aos demais órgãos municipais. Referências: Lei nº 6.817/2025, Art. 18, § 2º.",
+  },
+
+  {
+    id: 88, qid: "PGM-C88", topic: "Direito Administrativo (Licitações)", year: 2025,
+    text: "Conforme o Decreto Municipal nº 59/2024 (PAEP), define-se como o procedimento que visa o retorno do fornecedor anteriormente sancionado ao status de apto a contratar com a Administração Pública Municipal:",
+    options: [
+      { label: "A", text: "Reabilitação." }, { label: "B", text: "Remissão de infração." }, { label: "C", text: "Repactuação administrativa." }, { label: "D", text: "Saneamento contratual." },
+    ],
+    correctAnswer: "A",
+    explanation: "A reabilitação é o termo técnico definido no decreto para o processo de recuperação do status de aptidão do fornecedor sancionado. Referências: Decreto Municipal nº 59/2024, Art. 2º, IX.",
+  },
+
+  {
+    id: 89, qid: "PGM-C89", topic: "Direito Urbanístico", year: 2025,
+    text: "Segundo o Plano Diretor Urbano Ambiental (Lei nº 5.961/2015), a Estratégia de Infraestrutura e Saneamento é expressa por diversos programas e planos. Assinale a alternativa que apresenta um plano que NÃO faz parte desta estratégia conforme o Art. 44 da referida lei:",
+    options: [
+      { label: "A", text: "Plano de Drenagem Urbana." }, { label: "B", text: "Plano de Esgotamento Sanitário." }, { label: "C", text: "Plano de Gerenciamento de Resíduos Sólidos." }, { label: "D", text: "Plano de Exploração de Recursos Minerais Privados." },
+    ],
+    correctAnswer: "D",
+    explanation: "A lei elenca planos específicos (Drenagem, Esgoto, Água, Resíduos, Energia, Comunicação). O item D não consta no rol de planos estratégicos de infraestrutura do Art. 44. Referências: Lei nº 5.961/2015, Art. 44.",
+  },
+
+  {
+    id: 90, qid: "PGM-C90", topic: "Direito Administrativo", year: 2025,
+    text: "De acordo com a Lei Complementar nº 6/2016, a Guarda Municipal de Canoas fundamenta-se em princípios mínimos de atuação. Assinale a alternativa que apresenta um desses princípios:",
+    options: [
+      { label: "A", text: "O uso prioritário da força letal em locais públicos." }, { label: "B", text: "O respeito à diversidade étnica, cultural, religiosa e sexual." }, { label: "C", text: "A subordinação técnica exclusiva ao Poder Judiciário Estadual." }, { label: "D", text: "A prevalência da vontade individual do agente sobre a ordem estabelecida." },
+    ],
+    correctAnswer: "B",
+    explanation: "Entre os princípios fundamentais da Guarda Municipal de Canoas está expressamente previsto o respeito à diversidade em suas diversas formas. Referências: LC nº 6/2016, Art. 3º, V.",
+  },
+
+  {
+    id: 91, qid: "PGM-C91", topic: "Direito Administrativo (Licitações)", year: 2025,
+    text: "Conforme o Decreto Municipal nº 549/2023, nos casos em que o parecer jurídico da PGM indicar a necessidade de atendimento a recomendações na fase interna da licitação, cabe ao agente de contratação responsável:",
+    options: [
+      { label: "A", text: "Encerrar o processo e abrir um novo certame." }, { label: "B", text: "Realizar os ajustes necessários no edital com base nas informações técnicas." }, { label: "C", text: "Justificar ao Prefeito o não atendimento por conveniência política." }, { label: "D", text: "Solicitar que a própria PGM redija as alterações no edital." },
+    ],
+    correctAnswer: "B",
+    explanation: "Na fase interna da licitação, cabe ao agente de contratação (e não à PGM) efetivar as alterações sugeridas no edital com base nos subsídios técnicos encaminhados pela secretaria requisitante. Referências: Decreto nº 549/2023, Art. 14, § 3º.",
+  },
+
+  {
+    id: 92, qid: "PGM-C92", topic: "Legislação da PGM", year: 2025,
+    text: "De acordo com o Decreto Municipal nº 240/2025, que regulamenta a atuação da Procuradoria-Geral, os processos de consulta iniciados sem o despacho de determinadas autoridades serão devolvidos. Assinale a alternativa que apresenta a autoridade cuja chancela é exigida para o prosseguimento da consulta:",
+    options: [
+      { label: "A", text: "Diretores de Escolas Municipais." }, { label: "B", text: "Chefes de Unidades Básicas de Saúde." }, { label: "C", text: "Presidentes de entidades da Administração Pública Indireta." }, { label: "D", text: "Coordenadores de Centros de Referência de Assistência Social (CRAS)." },
+    ],
+    correctAnswer: "C",
+    explanation: "O decreto estabelece que processos de consulta sem o despacho do Prefeito, Vice, Secretários (titulares/adjuntos), Subprefeitos ou Presidentes de entidades da Indireta serão devolvidos. Referências: Decreto nº 240/2025, Art. 4º, § 3º.",
+  },
+
+  {
+    id: 93, qid: "PGM-C93", topic: "Direito Administrativo (PAD)", year: 2025,
+    text: "Conforme o Decreto Municipal nº 462/2016, que regulamenta o Processo Administrativo Disciplinar (PAD) em Canoas, no curso da instrução, é assegurado ao indiciado o direito de arrolar testemunhas em número não superior a:",
+    options: [
+      { label: "A", text: "03 (três)." }, { label: "B", text: "05 (cinco)." }, { label: "C", text: "07 (sete)." }, { label: "D", text: "10 (dez)." },
+    ],
+    correctAnswer: "C",
+    explanation: "A norma procedimental do PAD em Canoas fixa expressamente o limite máximo de 07 (sete) testemunhas para o indiciado. Referências: Decreto nº 462/2016, Art. 14, IV.",
+  },
+
+  {
+    id: 94, qid: "PGM-C94", topic: "Direito Previdenciário Municipal", year: 2025,
+    text: "Segundo a Lei Complementar nº 14/2025 (Regime Próprio de Previdência), o benefício de pensão por morte concedido ao filho ou irmão do servidor, de ambos os sexos, cessará obrigatoriamente quando este completar a idade de:",
+    options: [
+      { label: "A", text: "16 anos." }, { label: "B", text: "18 anos." }, { label: "C", text: "21 anos." }, { label: "D", text: "24 anos, se comprovada matrícula em curso de graduação." },
+    ],
+    correctAnswer: "C",
+    explanation: "Seguindo a simetria com o Regime Geral (RGPS) e a reforma previdenciária, a lei municipal define que o benefício de pensão cessa aos 21 anos para filhos e irmãos, sem a extensão por curso universitário. Referências: LC nº 14/2025, Art. 57, II.",
+  },
+
+  {
+    id: 95, qid: "PGM-C95", topic: "Direito Administrativo (Licitações)", year: 2025,
+    text: "De acordo com o Decreto Municipal nº 549/2023, nos casos em que o parecer jurídico da PGM indicar a necessidade de atendimento a condicionantes ou recomendações na fase interna da licitação, a responsabilidade de realizar os ajustes necessários no edital, com base nas informações técnicas, é do:",
+    options: [
+      { label: "A", text: "Procurador Municipal que emitiu o parecer." }, { label: "B", text: "Agente de contratação responsável pela fase interna." }, { label: "C", text: "Secretário Municipal da pasta requisitante." }, { label: "D", text: "Controlador-Geral do Município." },
+    ],
+    correctAnswer: "B",
+    explanation: "O decreto determina que, após o parecer jurídico, cabe ao agente de contratação responsável pela fase interna realizar os ajustes necessários no edital, munido das informações técnicas da secretaria. Referências: Decreto nº 549/2023, Art. 14, § 3º.",
+  },
+
+  {
+    id: 96, qid: "PGM-C96", topic: "Direito Urbanístico", year: 2025,
+    text: "Com base no Plano Diretor Urbano Ambiental (Lei nº 5.961/2015), as praças são classificadas, para fins de planejamento estratégico, como:",
+    options: [
+      { label: "A", text: "Equipamentos urbanos de infraestrutura básica." }, { label: "B", text: "Equipamentos comunitários de caráter local." }, { label: "C", text: "Áreas de preservação permanente de uso restrito." }, { label: "D", text: "Zonas de silêncio absoluto vinculadas ao aeródromo." },
+    ],
+    correctAnswer: "B",
+    explanation: "O PDUA distingue equipamentos urbanos (redes de água, luz, esgoto) de equipamentos comunitários, incluindo expressamente as praças neste último grupo, como espaços de convivência local. Referências: Lei nº 5.961/2015, Art. 219, VI e VII.",
+  },
+
+  {
+    id: 97, qid: "PGM-C97", topic: "Lei Orgânica Municipal", year: 2025,
+    text: "Conforme a Lei Orgânica do Município de Canoas, a iniciativa popular no processo legislativo será exercida mediante a apresentação à Câmara de projeto de lei subscrito por, no mínimo:",
+    options: [
+      { label: "A", text: "1% do eleitorado municipal." }, { label: "B", text: "2% do eleitorado municipal." }, { label: "C", text: "5% do eleitorado que tenha votado nas últimas eleições municipais." }, { label: "D", text: "10% do total de cidadãos residentes no Município." },
+    ],
+    correctAnswer: "C",
+    explanation: "A Lei Orgânica exige o apoio de 5% do eleitorado que votou nas últimas eleições para a deflagração do processo legislativo por iniciativa popular. Referências: LOM Canoas, Art. 51.",
+  },
+
+  {
+    id: 98, qid: "PGM-C98", topic: "Direito Previdenciário Municipal", year: 2025,
+    text: "Segundo a Lei Complementar nº 14/2025, o servidor ativo poderá optar pela inclusão de parcelas como o adicional noturno e serviço extraordinário na sua remuneração de contribuição previdenciária. Sobre a exclusão dessas parcelas da base de cálculo após a opção, é correto afirmar que:",
+    options: [
+      { label: "A", text: "É vedada por se tratar de opção irretratável." }, { label: "B", text: "Pode ser formalizada por escrito e por iniciativa do servidor a qualquer tempo." }, { label: "C", text: "Ocorre automaticamente se o servidor deixar de perceber a parcela por mais de 30 dias." }, { label: "D", text: "Depende de autorização prévia da Diretoria Previdenciária do CANOASPREV." },
+    ],
+    correctAnswer: "B",
+    explanation: "A nova lei previdenciária permite não só a inclusão por opção do servidor, mas também a sua exclusão da remuneração de contribuição, desde que formalizada por escrito e por iniciativa do servidor ativo. Referências: LC nº 14/2025, Art. 19, § 2º.",
+  },
+
+  {
+    id: 99, qid: "PGM-C99", topic: "Direito Administrativo (Licitações)", year: 2025,
+    text: "De acordo com o Decreto Municipal nº 60/2024, que regula a modalidade 'diálogo competitivo' em Canoas, a licitação será conduzida por comissão de contratação composta de, no mínimo:",
+    options: [
+      { label: "A", text: "02 servidores efetivos." }, { label: "B", text: "03 servidores efetivos ou empregados públicos do quadro permanente." }, { label: "C", text: "05 membros, sendo obrigatoriamente 01 Procurador e 01 Auditor." }, { label: "D", text: "03 membros de livre nomeação do Prefeito, independentemente do vínculo." },
+    ],
+    correctAnswer: "B",
+    explanation: "O regulamento do diálogo competitivo em Canoas exige uma comissão composta de pelo menos 03 servidores efetivos ou empregados públicos pertencentes aos quadros permanentes. Referências: Decreto nº 60/2024, Art. 4º.",
+  },
+
+  {
+    id: 100, qid: "PGM-C100", topic: "Direito Administrativo (PAD)", year: 2025,
+    text: "Conforme o Decreto Municipal nº 462/2016, a solicitação de prorrogação do prazo para conclusão dos trabalhos da comissão processante de um PAD deve ser feita com uma antecedência mínima de seu término de:",
+    options: [
+      { label: "A", text: "05 (cinco) dias." }, { label: "B", text: "10 (dez) dias." }, { label: "C", text: "15 (quinze) dias." }, { label: "D", text: "30 (trinta) dias." },
+    ],
+    correctAnswer: "B",
+    explanation: "A solicitação de prorrogação do PAD deve ocorrer com no mínimo 10 (dez) dias de antecedência do término do prazo original. Referências: Decreto nº 462/2016, Art. 12, XIII.",
+  },
+
+  {
+    id: 101, qid: "PGM-C101", topic: "Lei Orgânica Municipal", year: 2025,
+    text: "Segundo a Lei Orgânica de Canoas, o Prefeito Municipal deve remeter mensagem à Câmara por ocasião da abertura do período legislativo anual para expor a situação dos negócios municipais. Essa atribuição é classificada como:",
+    options: [
+      { label: "A", text: "Competência exclusiva da Câmara." }, { label: "B", text: "Competência comum com o Poder Judiciário." }, { label: "C", text: "Competência privativa do Prefeito." }, { label: "D", text: "Atribuição delegável ao Secretário de Fazenda." },
+    ],
+    correctAnswer: "C",
+    explanation: "A apresentação da mensagem anual à Câmara é uma das atribuições típicas de Chefia de Governo, classificada pela Lei Orgânica como competência privativa do Prefeito. Referências: LOM Canoas, Art. 66, XXV.",
+  },
+{
+    id: 102, qid: "PGM-C102", topic: "Legislação da PGM", year: 2025,
+    text: "De acordo com a Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), sobre as requisições de informações, documentos ou diligências feitas pelos Procuradores aos demais órgãos municipais, assinale a alternativa que indica o prazo máximo para atendimento, caso outro não tenha sido fixado:",
+    options: [
+      { label: "A", text: "05 (cinco) dias úteis." }, { label: "B", text: "10 (dez) dias corridos." }, { label: "C", text: "15 (quinze) dias." }, { label: "D", text: "30 (trinta) dias." },
+    ],
+    correctAnswer: "C",
+    explanation: "A Lei de Regência da PGM e seu decreto regulamentar fixam o prazo padrão de 15 (quinze) dias para o cumprimento das requisições feitas pelos Procuradores. Referências: Lei nº 6.817/2025, Art. 18, § 2º; Decreto nº 240/2025, Art. 5º, § 3º.",
+  },
+
+  {
+    id: 103, qid: "PGM-C103", topic: "Direito Administrativo (Estatuto)", year: 2025,
+    text: "Conforme o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), com as alterações introduzidas pela Lei nº 6.484/2021, o prazo para que o nomeado tome posse no cargo público e o prazo para o início do efetivo exercício são, respectivamente:",
+    options: [
+      { label: "A", text: "05 dias úteis e o primeiro dia útil subsequente à posse." }, { label: "B", text: "10 dias úteis e 05 dias úteis." }, { label: "C", text: "30 dias corridos e 15 dias corridos." }, { label: "D", text: "15 dias úteis e 10 dias úteis." },
+    ],
+    correctAnswer: "A",
+    explanation: "Conforme a redação atualizada do Estatuto pela Lei 6.484/2021, o prazo de posse foi reduzido para 5 dias úteis e o exercício deve ocorrer no primeiro dia útil subsequente. Referências: Lei nº 2.214/1984, Art. 65 e Art. 69.",
+  },
+
+  {
+    id: 104, qid: "PGM-C104", topic: "Direito Tributário Municipal", year: 2025,
+    text: "Segundo o Código Tributário Municipal (Lei nº 1.783/1977), o rito para a cobrança da Contribuição de Melhoria exige a publicação prévia de diversos elementos. O prazo para que os interessados impugnem qualquer desses elementos NÃO poderá ser inferior a:",
+    options: [
+      { label: "A", text: "15 dias." }, { label: "B", text: "20 dias." }, { label: "C", text: "30 dias." }, { label: "D", text: "60 dias." },
+    ],
+    correctAnswer: "C",
+    explanation: "O Código Tributário de Canoas é explícito ao garantir um prazo mínimo de 30 dias para impugnação dos elementos da obra pública antes do início da cobrança da Contribuição de Melhoria. Referências: Lei nº 1.783/1977, Art. 51, II.",
+  },
+
+  {
+    id: 105, qid: "PGM-C105", topic: "Direito Urbanístico", year: 2025,
+    text: "Com base no Plano Diretor Urbano Ambiental (Lei nº 5.961/2015), a Estratégia de Infraestrutura e Saneamento do Município de Canoas é composta por diversos planos setoriais. Assinale a alternativa que apresenta um plano que NÃO integra esta estratégia, conforme o Art. 44 da lei:",
+    options: [
+      { label: "A", text: "Plano de Drenagem Urbana." }, { label: "B", text: "Plano de Gerenciamento de Resíduos Sólidos." }, { label: "C", text: "Plano de Redes de Comunicação." }, { label: "D", text: "Plano de Expansão do Setor Eletrometalmecânico Privado." },
+    ],
+    correctAnswer: "D",
+    explanation: "O Art. 44 do PDUA elenca 6 planos estratégicos (Drenagem, Esgoto, Água, Resíduos, Energia e Comunicação). O item D (setor eletrometalmecânico privado) não faz parte dessa estratégia pública de infraestrutura. Referências: Lei nº 5.961/2015, Art. 44.",
+  },
+
+  {
+    id: 106, qid: "PGM-C106", topic: "Direito Previdenciário Municipal", year: 2025,
+    text: "De acordo com a Lei Complementar nº 14/2025 (Regime Próprio de Previdência), o benefício de pensão por morte será concedido aos dependentes do servidor. No caso de filho, pessoa a ele equiparada ou irmão, de ambos os sexos, a pensão cessará obrigatoriamente quando o beneficiário completar:",
+    options: [
+      { label: "A", text: "16 anos." }, { label: "B", text: "18 anos." }, { label: "C", text: "21 anos." }, { label: "D", text: "24 anos, se universitário." },
+    ],
+    correctAnswer: "C",
+    explanation: "A nova lei previdenciária de 2025 extinguiu a extensão da pensão para universitários, fixando o limite de idade em 21 anos para filhos e irmãos, seguindo o padrão federal. Referências: LC nº 14/2025, Art. 57, II.",
+  },
+
+  {
+    id: 107, qid: "PGM-C107", topic: "Direito Administrativo (PAD)", year: 2025,
+    text: "Segundo o Decreto Municipal nº 462/2016, que regulamenta o Processo Administrativo Disciplinar (PAD) em Canoas, o servidor indiciado tem o direito de arrolar testemunhas para a sua defesa. O número máximo de testemunhas permitido pela norma é de:",
+    options: [
+      { label: "A", text: "03 (três)." }, { label: "B", text: "05 (cinco)." }, { label: "C", text: "07 (sete)." }, { label: "D", text: "10 (dez)." },
+    ],
+    correctAnswer: "C",
+    explanation: "O regulamento do PAD no Município de Canoas estabelece o teto de 07 (sete) testemunhas para o indiciado no curso da instrução processual. Referências: Decreto nº 462/2016, Art. 14, IV.",
+  },
+
+  {
+    id: 108, qid: "PGM-C108", topic: "Lei Orgânica Municipal", year: 2025,
+    text: "Conforme a Lei Orgânica do Município de Canoas, compete privativamente ao Prefeito Municipal a iniciativa de leis que disponham sobre determinadas matérias. Assinale a alternativa que indica uma matéria de iniciativa EXCLUSIVA do Prefeito:",
+    options: [
+      { label: "A", text: "Criação e extinção de cargos do Poder Legislativo." }, { label: "B", text: "Regime jurídico dos servidores e aumento de sua remuneração no âmbito do Executivo." }, { label: "C", text: "Elaboração do Regimento Interno da Câmara Municipal." }, { label: "D", text: "Fixação do subsídio dos Vereadores para a legislatura subsequente." },
+    ],
+    correctAnswer: "B",
+    explanation: "Matérias sobre regime jurídico, remuneração, estabilidade e aposentadoria de servidores do Executivo são de iniciativa privativa do Prefeito. As demais alternativas referem-se a competências exclusivas da Câmara. Referências: LOM Canoas, Art. 46, I; Art. 66.",
+  },
+
+  {
+    id: 109, qid: "PGM-C109", topic: "Direito Ambiental Municipal", year: 2025,
+    text: "Segundo o Código Municipal de Meio Ambiente (Lei nº 4.328/1998), no processo administrativo ambiental, das decisões proferidas em primeira instância caberá recurso para o Conselho Municipal de Meio Ambiente no prazo de:",
+    options: [
+      { label: "A", text: "05 dias." }, { label: "B", text: "07 dias." }, { label: "C", text: "15 dias." }, { label: "D", text: "10 dias úteis." },
+    ],
+    correctAnswer: "B",
+    explanation: "No rito do contencioso administrativo ambiental de Canoas, o prazo para recurso contra decisão de primeira instância é de 07 dias. Referências: Lei nº 4.328/1998, Art. 118.",
+  },
+
+  {
+    id: 110, qid: "PGM-C110", topic: "Legislação da PGM", year: 2025,
+    text: "De acordo com o Decreto Municipal nº 240/2025, os pareceres da PGM aprovados pelo Procurador-Geral, após a publicação de sua ementa no Diário Oficial, passam a ter efeito normativo e vinculante para a Administração Pública Municipal. Todavia, a lei de regência estabelece uma EXCEÇÃO a esse efeito vinculante automático. Trata-se da matéria:",
+    options: [
+      { label: "A", text: "Ambiental." }, { label: "B", text: "Tributária." }, { label: "C", text: "Previdenciária." }, { label: "D", text: "De pessoal e recursos humanos." },
+    ],
+    correctAnswer: "B",
+    explanation: "A Lei de Regência da PGM e o decreto 240/2025 excluem expressamente a matéria tributária do efeito normativo e vinculante automático das ementas de pareceres publicados. Referências: Lei nº 6.817/2025, Art. 25, § 3º; Decreto nº 240/2025.",
+  },
+
+  {
+    id: 111, qid: "PGM-C111", topic: "Direito Administrativo (Estatuto)", year: 2025,
+    text: "Conforme o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), o servidor público que, por dolo ou culpa, causar prejuízos a terceiros, responderá perante a Fazenda Municipal em:",
+    options: [
+      { label: "A", text: "Ação de execução direta imediata." }, { label: "B", text: "Ação de regresso, após o trânsito em julgado de condenação do Município." }, { label: "C", text: "Procedimento administrativo de desconto obrigatório, independentemente de processo judicial." }, { label: "D", text: "Sindicância investigatória sumária, com desconto limitado a 10% da remuneração." },
+    ],
+    correctAnswer: "B",
+    explanation: "O Estatuto segue a teoria da responsabilidade objetiva do Estado: o ente paga o dano ao terceiro e busca o ressarcimento contra o servidor (dolo/culpa) via ação de regresso. Referências: Lei nº 2.214/1984, Art. 208, § 2º.",
+  },
+
+  {
+    id: 112, qid: "PGM-C112", topic: "Legislação da PGM", year: 2025,
+    text: "De acordo com o Decreto Municipal nº 240/2025, os processos de consulta à Procuradoria-Geral do Município que forem iniciados sem o despacho de determinadas autoridades serão devolvidos para a devida chancela. Assinale a alternativa que apresenta uma autoridade legitimada a dar tal despacho, conforme a norma:",
+    options: [
+      { label: "A", text: "Diretores de Escolas Municipais." }, { label: "B", text: "Chefes de Unidades Básicas de Saúde." }, { label: "C", text: "Coordenadores de Centros de Referência de Assistência Social." }, { label: "D", text: "Presidentes de entidades da Administração Pública Indireta." },
+    ],
+    correctAnswer: "D",
+    explanation: "O decreto regulamentar da PGM estabelece que processos de consulta iniciados sem o despacho do Prefeito, Vice, Secretários (titulares ou adjuntos) ou Presidentes de entidades da Administração Indireta serão devolvidos. Referências: Decreto nº 240/2025, Art. 4º, § 3º.",
+  },
+
+  {
+    id: 113, qid: "PGM-C113", topic: "Direito Urbanístico", year: 2025,
+    text: "Segundo a Lei Ordinária nº 5.961/2015 (Plano Diretor Urbano Ambiental), para fins de análise do Estudo de Impacto de Vizinhança (EIV), o conceito de 'vizinhança' compreende:",
+    options: [
+      { label: "A", text: "Apenas os proprietários de imóveis lindeiros ao empreendimento em um raio de 100 metros." }, { label: "B", text: "A população fixa ou flutuante de determinado setor urbano que utiliza a infraestrutura básica disponibilizada na área de influência direta e indireta da atividade." }, { label: "C", text: "Exclusivamente os moradores residentes na mesma zona de uso e ocupação do solo definida no mapa." }, { label: "D", text: "O conjunto de associações de moradores legalmente constituídas no bairro de implantação do projeto." },
+    ],
+    correctAnswer: "B",
+    explanation: "O Plano Diretor de Canoas define vizinhança, para fins de EIV, como a população fixa ou flutuante de um setor urbano que utiliza a infraestrutura básica na área de influência direta ou indireta da atividade. Referências: Lei nº 5.961/2015, Art. 218, § 1º.",
+  },
+
+  {
+    id: 114, qid: "PGM-C114", topic: "Direito Previdenciário Municipal", year: 2025,
+    text: "Conforme a Lei Complementar nº 14/2025, que reestrutura o RPPS de Canoas, o benefício de pensão por morte concedido aos dependentes de segurado falecido será equivalente a uma cota familiar de:",
+    options: [
+      { label: "A", text: "50% do valor da aposentadoria, acrescida de cotas de 20 pontos percentuais por dependente." }, { label: "B", text: "100% da média das remunerações, independentemente do número de dependentes." }, { label: "C", text: "60% do valor da aposentadoria recebida pelo segurado ou daquela a que teria direito, acrescida de cotas de 10 pontos percentuais por dependente, até o limite de 100%." }, { label: "D", text: "70% do valor do último vencimento básico do servidor em atividade." },
+    ],
+    correctAnswer: "C",
+    explanation: "A nova legislação previdenciária de 2025 adotou o sistema de cotas para a pensão por morte: uma cota familiar de 60% do valor da aposentadoria, acrescida de cotas de 10 pontos percentuais por dependente, limitada ao máximo de 100%. Referências: LC nº 14/2025, Art. 55.",
+  },
+
+  {
+    id: 115, qid: "PGM-C115", topic: "Legislação da PGM", year: 2025,
+    text: "De acordo com a Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), a Procuradoria-Geral do Município de Canoas rege-se pelos seguintes princípios institucionais:",
+    options: [
+      { label: "A", text: "Unidade, indivisibilidade e autonomia técnico-jurídica." }, { label: "B", text: "Hierarquia militar, disciplina funcional e obediência política." }, { label: "C", text: "Supremacia do interesse privado, celeridade e desburocratização total." }, { label: "D", text: "Centralização de decisões, rotatividade de cargos e publicidade restrita." },
+    ],
+    correctAnswer: "A",
+    explanation: "A PGM Canoas rege-se pelos princípios institucionais da unidade, indivisibilidade e autonomia técnico-jurídica. Referências: Lei nº 6.817/2025, Art. 2º, § 1º.",
+  },
+
+  {
+    id: 116, qid: "PGM-C116", topic: "Direito Administrativo (Licitações)", year: 2025,
+    text: "Segundo o Decreto Municipal nº 110/2024, os processos licitatórios realizados pelo Município de Canoas cujos valores estimados sejam de até determinado patamar deverão ser destinados EXCLUSIVAMENTE à participação de microempresas (ME) e empresas de pequeno porte (EPP). Esse valor limite é de:",
+    options: [
+      { label: "A", text: "R$ 50.000,00." }, { label: "B", text: "R$ 80.000,00." }, { label: "C", text: "R$ 150.000,00." }, { label: "D", text: "R$ 250.000,00." },
+    ],
+    correctAnswer: "B",
+    explanation: "O regulamento municipal para o tratamento diferenciado de ME/EPP em Canoas determina que licitações com valor estimado de até R$ 80.000,00 sejam exclusivas para essas empresas. Referências: Decreto nº 110/2024, Art. 5º.",
+  },
+
+  {
+    id: 117, qid: "PGM-C117", topic: "Direito Administrativo", year: 2025,
+    text: "Conforme a Lei Complementar nº 6/2016 (Lei da Guarda Municipal), constitui um dos princípios mínimos de atuação da Guarda Municipal de Canoas:",
+    options: [
+      { label: "A", text: "O uso prioritário da força letal em manifestações públicas." }, { label: "B", text: "O respeito à diversidade étnica, cultural, religiosa e sexual." }, { label: "C", text: "A subordinação técnica exclusiva ao comando da Polícia Militar Estadual." }, { label: "D", text: "A vedação absoluta à atuação em conjunto com órgãos de defesa civil." },
+    ],
+    correctAnswer: "B",
+    explanation: "Entre os princípios fundamentais da Guarda Municipal de Canoas está o respeito à diversidade étnica, cultural, religiosa e sexual. Referências: LC nº 6/2016, Art. 3º, V.",
+  },
+
+  {
+    id: 118, qid: "PGM-C118", topic: "Direito Tributário Municipal", year: 2025,
+    text: "O Código Tributário de Canoas (Lei nº 1.783/1977) estabelece o rito para a cobrança da Contribuição de Melhoria. No que tange ao prazo para que os interessados possam impugnar qualquer dos elementos do projeto publicados previamente pela Administração, a lei fixa que este NÃO poderá ser inferior a:",
+    options: [
+      { label: "A", text: "15 dias." }, { label: "B", text: "20 dias." }, { label: "C", text: "30 dias." }, { label: "D", text: "60 dias." },
+    ],
+    correctAnswer: "C",
+    explanation: "No rito de lançamento da Contribuição de Melhoria, o Código Tributário Municipal exige a fixação de um prazo para impugnação que não poderá ser inferior a 30 dias após a publicação prévia dos elementos da obra. Referências: Lei nº 1.783/1977, Art. 51, II.",
+  },
+
+  {
+    id: 119, qid: "PGM-C119", topic: "Direito Administrativo (PAD)", year: 2025,
+    text: "Segundo o Decreto Municipal nº 462/2016, que regulamenta o Processo Administrativo Disciplinar (PAD), o relatório final elaborado pela comissão processante deve atender a requisitos específicos. É correto afirmar que o relatório:",
+    options: [
+      { label: "A", text: "Poderá propor o arquivamento do processo caso não tenha sido possível apurar a autoria ou se os fatos não constituírem infração." }, { label: "B", text: "Deve utilizar linguagem adjetivada e digressões de natureza pessoal para enfatizar a gravidade da conduta." }, { label: "C", text: "É um documento de caráter sigiloso que não pode conter sugestões de melhoria para o serviço público." }, { label: "D", text: "Vincula a autoridade julgadora, que não poderá divergir das conclusões da comissão." },
+    ],
+    correctAnswer: "A",
+    explanation: "O decreto que regulamenta o PAD prevê que o relatório da comissão poderá propor o arquivamento caso a autoria não seja apurada ou os fatos não constituam infração. O relatório deve ser imparcial e em linguagem objetiva. Referências: Decreto nº 462/2016, Art. 21, § 2º e § 3º.",
+  },
+
+  {
+    id: 120, qid: "PGM-C120", topic: "Direito Administrativo (Licitações)", year: 2025,
+    text: "De acordo com o Decreto Municipal nº 549/2023, na fase interna das licitações, caso o parecer jurídico da PGM aponte a necessidade de ajustes no edital, a responsabilidade de realizar tais alterações, munido das informações técnicas, recai sobre o:",
+    options: [
+      { label: "A", text: "Procurador Municipal que subscreveu o parecer." }, { label: "B", text: "Agente de contratação responsável pela fase interna." }, { label: "C", text: "Secretário Municipal da pasta interessada, pessoalmente." }, { label: "D", text: "Controlador-Geral do Município." },
+    ],
+    correctAnswer: "B",
+    explanation: "Conforme a norma sobre a fase interna das licitações, nos casos de parecer jurídico indicando recomendações, cabe ao agente de contratação responsável pela fase interna realizar os ajustes necessários no edital. Referências: Decreto nº 549/2023, Art. 14, § 3º.",
+  },
+
+  {
+    id: 121, qid: "PGM-C121", topic: "Legislação da PGM", year: 2025,
+    text: "Conforme a Lei de Regência da PGM (Lei nº 6.817/2025), a formulação de consultas jurídicas à Procuradoria-Geral pelos secretários e subprefeitos deve observar requisitos formais. Assinale a alternativa que apresenta um desses requisitos previstos no Art. 29 da referida lei:",
+    options: [
+      { label: "A", text: "Fundamentação técnica e conclusiva do órgão ou autoridade consulente." }, { label: "B", text: "Solicitação verbal prévia em audiência com o Procurador-Geral." }, { label: "C", text: "Dispensa de documentos anexos para garantir o sigilo dos fatos." }, { label: "D", text: "Indicação obrigatória do Procurador que deve realizar a análise." },
+    ],
+    correctAnswer: "A",
+    explanation: "A formulação de consultas à PGM deve, obrigatoriamente, conter fundamentação técnica e conclusiva do órgão ou autoridade consulente. Referências: Lei nº 6.817/2025, Art. 29, I.",
+  }
+
 ];

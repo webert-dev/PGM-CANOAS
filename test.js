@@ -2,18 +2,8 @@
 // Inspiradas em 547 modelos de questões da Banca Objetiva para cargos jurídicos
 // Adaptadas à legislação municipal de Canoas/RS conforme edital
 
-export interface Question {
-  id: number;
-  qid: string;
-  topic: string;
-  year: number;
-  text: string;
-  options: { label: string; text: string }[];
-  correctAnswer: string;
-  explanation: string;
-}
 
-export const questionsData: Question[] = [
+const questionsData = [
     {    id: 1,
     qid: "PGM-C01",
     topic: "Direito Tributário Municipal",

@@ -16,6 +16,7 @@ import {
 import { constituicaoSections } from "@/data/legislacoes/constituicao-federal";
 import { lei8906Sections } from "@/data/legislacoes/lei-8906-1994";
 import { codigoEticaSections } from "@/data/legislacoes/codigo-etica-oab";
+import { VadeMecumText } from "@/components/VadeMecumText";
 import type { SecaoLegislacao } from "@/data/legislacoes/types";
 
 interface GrupoLegislacao {
@@ -25,21 +26,8 @@ interface GrupoLegislacao {
   secoes: SecaoLegislacao[];
 }
 
-// Professional legislation with PDF source links (text pending extraction)
-const profLegislationPendente: SecaoLegislacao[] = [
-  {
-    id: "regulamento-geral-oab",
-    titulo: "Regulamento Geral do Estatuto da Advocacia e da OAB",
-    subtitulo: "Aprovado pelo Conselho Federal da OAB",
-    texto: `[Texto completo disponível no PDF original]\n\nClique no link abaixo para acessar o arquivo PDF:\n🔗 https://drive.google.com/file/d/1fjRQ98N_rqKcCohVI_mD6cjIAjH99LkD/view`,
-  },
-  {
-    id: "lei-municipal-6817-2025",
-    titulo: "Lei Municipal nº 6.817/2025",
-    subtitulo: "Lei de Regência da Procuradoria-Geral do Município de Canoas",
-    texto: `[Texto completo disponível no PDF original]\n\nClique no link abaixo para acessar o arquivo PDF:\n🔗 https://drive.google.com/file/d/1K-j28nPFYrz_Wk4gcs-kj0COlbFxJovV/view`,
-  },
-];
+import { regulamentoGeralOabSections } from "@/data/legislacoes/regulamento-geral-oab";
+import { lei6817Sections } from "@/data/legislacoes/lei-6817-2025";
 
 const grupos: GrupoLegislacao[] = [
   {
@@ -58,7 +46,8 @@ const grupos: GrupoLegislacao[] = [
         subtitulo: s.subtitulo || "Estatuto da Advocacia e a OAB",
       })),
       ...codigoEticaSections,
-      ...profLegislationPendente,
+      ...regulamentoGeralOabSections,
+      ...lei6817Sections,
     ],
   },
 ];
@@ -245,7 +234,6 @@ export default function Legislacoes() {
                                     O texto completo desta norma está disponível no PDF original.
                                     Faça o download clicando no link abaixo:
                                   </p>
-                                  {/* Extract the Google Drive link from the text */}
                                   {section.texto.split("\n").filter(l => l.includes("drive.google.com")).map((link, li) => {
                                     const url = link.replace("🔗 ", "").trim();
                                     return (
@@ -254,18 +242,18 @@ export default function Legislacoes() {
                                         href={url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-2 text-xs text-primary hover:text-primary/80 transition-colors bg-primary/5 px-3 py-2 rounded-sm"
+                                        className="inline-flex items-center gap-2 px-3 py-2 bg-muted rounded-md text-sm font-medium hover:bg-muted/80 transition-colors"
                                       >
-                                        <ExternalLink className="w-3.5 h-3.5" />
-                                        Abrir PDF no Google Drive
+                                        <ExternalLink className="w-4 h-4" />
+                                        Abrir PDF Original
                                       </a>
                                     );
                                   })}
                                 </div>
                               ) : (
-                                <pre className="text-xs text-foreground/80 leading-relaxed font-sans whitespace-pre-wrap">
-                                  {section.texto}
-                                </pre>
+                                <div className="mt-4">
+                                  <VadeMecumText content={section.texto} />
+                                </div>
                               )}
                             </div>
                           </AccordionContent>

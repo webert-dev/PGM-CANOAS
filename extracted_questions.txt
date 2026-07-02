@@ -1,0 +1,593 @@
+QUESTÃO 127. Segundo o Decreto Municipal nº 110/2024, os processos licitatórios realizados pelo Município de Canoas cujos valores estimados sejam de até determinado patamar deverão ser destinados EXCLUSIVAMENTE à participação de microempresas (ME) e empresas de pequeno porte (EPP). Esse valor limite é de:
+A) R$ 50.000,00. B) R$ 80.000,00. C) R$ 150.000,00. D) R$ 250.000,00.
+QUESTÃO 128. Conforme a Lei Complementar nº 6/2016 (Lei da Guarda Municipal), constitui um dos princípios mínimos de atuação da Guarda Municipal de Canoas:
+A) O uso prioritário da força letal em manifestações públicas. B) O respeito à diversidade étnica, cultural, religiosa e sexual. C) A subordinação técnica exclusiva ao comando da Polícia Militar Estadual. D) A vedação absoluta à atuação em conjunto com órgãos de defesa civil.
+QUESTÃO 129. O Código Tributário de Canoas (Lei nº 1.783/1977) estabelece o rito para a cobrança da Contribuição de Melhoria. No que tange ao prazo para que os interessados possam impugnar qualquer dos elementos do projeto publicados previamente pela Administração, a lei fixa que este NÃO poderá ser inferior a:
+A) 15 dias. B) 20 dias. C) 30 dias. D) 60 dias.
+QUESTÃO 130. Segundo o Decreto Municipal nº 462/2016, que regulamenta o Processo Administrativo Disciplinar (PAD), o relatório final elaborado pela comissão processante deve atender a requisitos específicos. É correto afirmar que o relatório:
+A) Poderá propor o arquivamento do processo caso não tenha sido possível apurar a autoria ou se os fatos não constituírem infração. B) Deve utilizar linguagem adjetivada e digressões de natureza pessoal para enfatizar a gravidade da conduta. C) É um documento de caráter sigiloso que não pode conter sugestões de melhoria para o serviço público. D) Vincula a autoridade julgadora, que não poderá divergir das conclusões da comissão.
+QUESTÃO 131. De acordo com o Decreto Municipal nº 549/2023, na fase interna das licitações, caso o parecer jurídico da PGM aponte a necessidade de ajustes no edital, a responsabilidade de realizar tais alterações, munido das informações técnicas, recai sobre o:
+A) Procurador Municipal que subscreveu o parecer. B) Agente de contratação responsável pela fase interna. C) Secretário Municipal da pasta interessada, pessoalmente. D) Controlador-Geral do Município.
+QUESTÃO 132. Conforme a Lei de Regência da PGM (Lei nº 6.817/2025), a formulação de consultas jurídicas à Procuradoria-Geral pelos secretários e subprefeitos deve observar requisitos formais. Assinale a alternativa que apresenta um desses requisitos previstos no Art. 29 da referida lei:
+A) Fundamentação técnica e conclusiva do órgão ou autoridade consulente. B) Solicitação verbal prévia em audiência com o Procurador-Geral. C) Dispensa de documentos anexos para garantir o sigilo dos fatos. D) Indicação obrigatória do Procurador que deve realizar a análise.
+GABARITO COMENTADO
+QUESTÃO 123
+Alternativa Correta: D
+Explicação:
+ O decreto regulamentar da PGM estabelece que processos de consulta iniciados sem o despacho do Prefeito, Vice, Secretários (titulares ou adjuntos), 
+Presidentes de entidades da Administração Indireta
+ ou autoridade com delegação expressa serão devolvidos. Diretores de escolas ou chefes de postos de saúde não possuem essa legitimidade direta para chancelar consultas.
+Referências:
+ Decreto Municipal nº 240/2025, Art. 4º, § 3º.
+QUESTÃO 124
+Alternativa Correta: B
+Explicação:
+ O Plano Diretor de Canoas define vizinhança, para fins de Estudo de Impacto de Vizinhança (EIV), como a 
+população fixa ou flutuante
+ de um setor urbano que utiliza a 
+infraestrutura básica
+ na área de influência direta ou indireta da atividade.
+Referências:
+ Lei nº 5.961/2015, Art. 218, § 1º.
+QUESTÃO 125
+Alternativa Correta: C
+Explicação:
+ A nova legislação previdenciária de 2025 adotou o sistema de cotas para a pensão por morte: uma 
+cota familiar de 60%
+ do valor da aposentadoria (ou daquela a que teria direito), acrescida de 
+cotas de 10 pontos percentuais por dependente
+, limitada ao máximo de 100%.
+Referências:
+ Lei Complementar nº 14/2025, Art. 55.
+QUESTÃO 126
+Alternativa Correta: A
+Explicação:
+ A PGM Canoas rege-se pelos princípios institucionais da 
+unidade, indivisibilidade e autonomia técnico-jurídica
+.
+Referências:
+ Lei Municipal nº 6.817/2025, Art. 2º, § 1º.
+QUESTÃO 127
+Alternativa Correta: B
+Explicação:
+ O regulamento municipal para o tratamento diferenciado de ME/EPP em Canoas determina que licitações com valor estimado de até 
+R$ 80.000,00
+ sejam exclusivas para essas empresas.
+Referências:
+ Decreto Municipal nº 110/2024, Art. 5º.
+QUESTÃO 128
+Alternativa Correta: B
+Explicação:
+ Entre os princípios fundamentais da Guarda Municipal de Canoas está o 
+respeito à diversidade étnica, cultural, religiosa e sexual
+.
+Referências:
+ Lei Complementar nº 6/2016, Art. 3º, V.
+QUESTÃO 129
+Alternativa Correta: C
+Explicação:
+ No rito de lançamento da Contribuição de Melhoria, o Código Tributário Municipal exige a fixação de um prazo para impugnação que 
+não poderá ser inferior a 30 dias
+ após a publicação prévia dos elementos da obra.
+Referências:
+ Lei Municipal nº 1.783/1977, Art. 51, II.
+QUESTÃO 130
+Alternativa Correta: A
+Explicação:
+ O decreto que regulamenta o PAD prevê que o relatório da comissão poderá 
+propor o arquivamento
+ caso a autoria não seja apurada ou os fatos não constituam infração. O relatório deve ser imparcial e em linguagem objetiva.
+Referências:
+ Decreto Municipal nº 462/2016, Art. 21, § 2º e § 3º.
+QUESTÃO 131
+Alternativa Correta: B
+Explicação:
+ Conforme a norma sobre a fase interna das licitações, nos casos de parecer jurídico indicando recomendações, cabe ao 
+agente de contratação responsável pela fase interna
+ realizar os ajustes necessários no edital.
+Referências:
+ Decreto Municipal nº 549/2023, Art. 14, § 3º.
+QUESTÃO 132
+Alternativa Correta: A
+Explicação:
+ A formulação de consultas à PGM deve, obrigatoriamente, conter 
+fundamentação técnica e conclusiva
+ do órgão ou autoridade consulente.
+Referências:
+ Lei Municipal nº 6.817/2025, Art. 29, I.
+ 
+ 
+Com base no perfil detalhista e literal da banca 
+Objetiva Concursos
+ (observado nos modelos de questões para cargos jurídicos) e na legislação municipal de Canoas, elaborei este caderno de questões focado no Poder Executivo (Prefeito e Procuradores) e nas normas estruturais do Município.
+CADERNO DE QUESTÕES OBJETIVAS - PGM CANOAS
+QUESTÃO 01. Segundo a Lei Orgânica do Município de Canoas, compete privativamente ao Prefeito Municipal, EXCETO:
+A) Representar o Município em juízo e fora dele.
+ B) Nomear e exonerar os Secretários Municipais e os Diretores de Autarquias.
+ C) Dispor sobre a organização e o funcionamento da administração municipal, na forma da lei.
+ D) Elaborar o Regimento Interno do Poder Legislativo e dispor sobre sua polícia.
+QUESTÃO 02. De acordo com a Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), sobre as funções institucionais e o regime jurídico dos Procuradores, analise os itens abaixo:
+I. A consultoria jurídica da Administração Municipal Direta é função exclusiva da PGM.
+ II. O Procurador-Geral do Município será de livre escolha e nomeação do Prefeito, dentre cidadãos com mais de 35 anos de idade.
+ III. É vedado ao Procurador Municipal confessar, desistir ou acordar em processos judiciais, sem que haja hipóteses de exceção previstas na lei.
+Está(ão) CORRETO(S):
+A) Apenas o item I.
+ B) Apenas os itens I e II.
+ C) Apenas os itens II e III.
+ D) Todos os itens.
+QUESTÃO 03. Conforme o Estatuto dos Funcionários Públicos de Canoas (Lei nº 2.214/1984), a investidura em cargo público que ocorre quando um servidor demitido retorna ao serviço por força de decisão judicial ou administrativa, com ressarcimento de vantagens, denomina-se:
+A) Readaptação.
+ B) Reintegração.
+ C) Reversão.
+ D) Aproveitamento.
+QUESTÃO 04. No que tange às manifestações jurídicas da Procuradoria-Geral, o Decreto Municipal nº 240/2025 estabelece que o parecer é a modalidade de manifestação jurídica formal e conclusiva. Sobre o efeito dessas manifestações, a Lei nº 6.817/2025 preceitua que:
+A) O parecer terá efeito normativo e vinculante para toda a Administração após a publicação de sua ementa no Diário Oficial, sem exceções.
+ B) O parecer terá efeito apenas opinativo, nunca podendo vincular os órgãos da Administração Direta.
+ C) O parecer, após ter sua ementa publicada no Diário Oficial, terá efeito normativo e vinculante em relação aos órgãos e entidades da Administração Pública Municipal, à exceção dos temas tributários.
+ D) As notas técnicas possuem o mesmo efeito vinculante dos pareceres publicados.
+QUESTÃO 05. Sobre o Imposto sobre a Propriedade Predial e Territorial Urbana (IPTU) em Canoas, conforme a Lei Municipal nº 1.783/1977 e a Lei nº 1.943/1979, assinale a alternativa CORRETA:
+A) O contribuinte do imposto é exclusivamente o proprietário do imóvel, não podendo a posse ser fato gerador.
+ B) Para fins tributários, o território do Município de Canoas é dividido em zonas urbanas, de expansão urbana e rurais, com alíquotas distintas para cada uma.
+ C) O fato gerador do IPTU é a propriedade, o domínio útil ou a posse de bem imóvel, localizado no Município, considerando-se, para fins tributários, que todo o território de Canoas é urbano.
+ D) A base de cálculo do imposto é o valor de mercado do imóvel, considerando-se inclusive os bens móveis mantidos no local para seu aformoseamento.
+GABARITO COMENTADO
+QUESTÃO 01
+Alternativa Correta: D
+Explicação:
+ A alternativa 
+D
+ está incorreta porque a competência para elaborar o Regimento Interno e dispor sobre sua organização e polícia é 
+exclusiva da Câmara Municipal
+. As alternativas 
+A
+, 
+B
+ e 
+C
+ descrevem competências 
+privativas do Prefeito
+, conforme o Art. 66 da Lei Orgânica.
+Referências:
+ LOM Canoas, Art. 18, II e III; Art. 66, I, II e VI.
+QUESTÃO 02
+Alternativa Correta: A
+Explicação do Item I (Correto):
+ A lei de regência define como função exclusiva da PGM a consultoria jurídica e a representação judicial/extrajudicial da Administração Direta.
+Explicação do Item II (Incorreto):
+ A idade mínima para o cargo de Procurador-Geral é de 
+30 anos
+, e não 35.
+Explicação do Item III (Incorreto):
+ Embora seja a regra geral, o Procurador 
+pode
+ confessar ou desistir se estiver em conformidade com jurisprudência pacificada dos tribunais superiores ou parecer vinculante da PGM.
+Referências:
+ Lei nº 6.817/2025, Art. 4º, I; Art. 6º; Art. 16, §§ 1º e 2º.
+QUESTÃO 03
+Alternativa Correta: B
+Explicação:
+ A 
+Reintegração
+ é o retorno do servidor ao cargo anteriormente ocupado quando invalidada sua demissão por decisão judicial ou administrativa. A 
+Readaptação
+ (A) refere-se à mudança de cargo por limitação física ou mental. A 
+Reversão
+ (C) é o retorno do aposentado. O 
+Aproveitamento
+ (D) é o retorno do servidor em disponibilidade.
+Referências:
+ Lei nº 2.214/1984, Art. 43.
+QUESTÃO 04
+Alternativa Correta: C
+Explicação:
+ A Lei de Regência da PGM Canoas é explícita ao dizer que o parecer aprovado e com ementa publicada vincula a Administração Municipal, criando uma norma interna obrigatória, mas 
+exclui expressamente a matéria tributária
+ desse efeito vinculante automático.
+Referências:
+ Lei nº 6.817/2025, Art. 25, §3º.
+QUESTÃO 05
+Alternativa Correta: C
+Explicação:
+ Conforme a legislação tributária de Canoas, o fato gerador do IPTU inclui a posse. Além disso, a lei estabelece uma ficção jurídica para fins fiscais de que 
+todo o território de Canoas é urbano
+. A base de cálculo é o valor venal, e não se consideram bens móveis para este fim.
+Referências:
+ Lei nº 1.783/1977, Art. 109, Parágrafo Único; Art. 110. LOM, Art. 129.
+ 
+Dando continuidade ao simulado, aqui estão mais 05 questões elaboradas com base no perfil da banca 
+Objetiva Concursos
+ e na legislação municipal de Canoas, focando especialmente nas atribuições e regime jurídico do Prefeito e dos Procuradores.
+CADERNO DE QUESTÕES OBJETIVAS - PARTE 3
+QUESTÃO 12. De acordo com a Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), sobre o cargo de Procurador-Geral Adjunto, analise as assertivas abaixo:
+I. Será de livre escolha e nomeação pelo Prefeito, obrigatoriamente dentre os servidores de carreira da PGM.
+ II. Deve ser cidadão com mais de 30 anos de idade e possuir, no mínimo, 5 anos no exercício da advocacia ou em cargo de carreira jurídica de Estado.
+ III. Entre suas atribuições está a de coordenar as atividades dos órgãos de assessoramento e execução da Procuradoria-Geral.
+Está(ão) CORRETA(S):
+A) Apenas o item II.
+ B) Apenas os itens I e III.
+ C) Apenas os itens II e III.
+ D) Todos os itens.
+QUESTÃO 13. Conforme a Lei Orgânica do Município de Canoas, no que se refere às relações financeiras e informacionais entre o Prefeito e a Câmara Municipal, assinale a alternativa INCORRETA:
+A) Compete ao Prefeito colocar à disposição da Câmara, até o dia 10 de cada mês, a parcela correspondente ao duodécimo de sua dotação orçamentária.
+ B) O Prefeito deve prestar as informações solicitadas pela Câmara Municipal, sobre fatos relacionados ao Executivo, no prazo de 30 dias.
+ C) O Prefeito deve colocar à disposição da Câmara, dentro de 5 dias de sua requisição, as quantias que devam ser despendidas de uma só vez.
+ D) Compete ao Prefeito solicitar licença à Câmara quando tiver de afastar-se do Município ou do cargo por mais de 15 dias.
+QUESTÃO 14. O Estatuto dos Funcionários Públicos do Município de Canoas (Lei nº 2.214/1984) define quem são as autoridades competentes para a aplicação de penalidades disciplinares. Sobre esse tema, assinale a alternativa CORRETA:
+A) Os Secretários Municipais são competentes para aplicar qualquer penalidade prevista no estatuto, inclusive a demissão.
+ B) O Prefeito Municipal e o Presidente da Câmara são competentes para aplicar penalidades disciplinares em qualquer caso.
+ C) As chefias intermediárias podem aplicar penas de suspensão de até 15 dias.
+ D) A pena de cassação de aposentadoria é de competência exclusiva do Procurador-Geral do Município.
+QUESTÃO 15. A Lei de Regência da PGM (Lei nº 6.817/2025) estabelece garantias e prerrogativas para os Procuradores Municipais no exercício de suas funções. Sobre as requisições feitas pelos Procuradores aos demais órgãos municipais, é correto afirmar que:
+A) O atendimento a essas requisições deve ocorrer dentro do prazo máximo de 15 dias, se outro prazo não tiver sido fixado.
+ B) As requisições dos Procuradores têm caráter meramente sugestivo, não gerando dever de cumprimento pelos Secretários.
+ C) O prazo para resposta a uma requisição da PGM é de 5 dias úteis, improrrogáveis.
+ D) Somente o Procurador-Geral pode requisitar informações escritas e exames aos órgãos da Administração Direta.
+QUESTÃO 16. Segundo o Decreto Municipal nº 88/2013, que disciplina a instauração e a instrução de processos administrativos em Canoas, o processo administrativo compreende fases específicas. Assinale a alternativa que indica a sequência CORRETA dessas fases:
+A) Instauração, manifestação do interessado, instrução, decisão e relatório.
+ B) Instrução, instauração, relatório, manifestação do interessado e decisão.
+ C) Instauração, instrução, manifestação do interessado, relatório e decisão.
+ D) Notificação, instrução, relatório e arquivamento.
+GABARITO COMENTADO
+QUESTÃO 12
+Alternativa Correta: C
+Explicação do Item II (Correto):
+ A lei exige idade superior a 30 anos e o tempo mínimo de 5 anos de advocacia ou carreira jurídica para o cargo de Adjunto.
+Explicação do Item III (Correto):
+ Esta é uma atribuição expressa do Procurador-Geral Adjunto prevista no inciso II do Art. 8º.
+Explicação do Item I (Incorreto):
+ A nomeação é preferencialmente, e não obrigatoriamente, dentre os servidores de carreira.
+Referências:
+ Lei nº 6.817/2025, Art. 8º, caput e incisos I e II.
+QUESTÃO 13
+Alternativa Correta: B
+Explicação:
+ A alternativa 
+B
+ está incorreta porque o prazo para o Prefeito prestar informações solicitadas pela Câmara é de 
+15 dias
+, e não 30. As demais alternativas citam prazos corretos da Lei Orgânica: 10 dias para o duodécimo, 5 dias para quantias de uma só vez e licença para afastamento superior a 15 dias.
+Referências:
+ LOM Canoas, Art. 66, incisos XV, XVI e XXIX.
+QUESTÃO 14
+Alternativa Correta: B
+Explicação:
+ O Prefeito e o Presidente da Câmara possuem competência plena para aplicar qualquer penalidade.
+Explicação da Alternativa A:
+ Incorreta. Secretários só podem aplicar multas e suspensões limitadas a 30 dias.
+Explicação da Alternativa C:
+ Incorreta. Demais chefias só aplicam advertência e repreensão.
+Explicação da Alternativa D:
+ Incorreta. A cassação de aposentadoria, por ser pena grave, segue a regra do Prefeito ou Presidente da Câmara.
+Referências:
+ Lei nº 2.214/1984, Art. 226, incisos I, II e III.
+QUESTÃO 15
+Alternativa Correta: A
+Explicação:
+ A lei de regência garante que as requisições dos Procuradores devem ser atendidas em até 15 dias, salvo se outro prazo for fixado. A inobservância desse prazo pode até gerar sanções disciplinares ao agente que omitir a informação.
+Explicação da Alternativa D:
+ Incorreta. A prerrogativa de requisitar informações é assegurada a todos os Procuradores Municipais no exercício de suas funções, não apenas ao Geral.
+Referências:
+ Lei nº 6.817/2025, Art. 18, § 1º, V e § 2º.
+QUESTÃO 16
+Alternativa Correta: C
+Explicação:
+ O Decreto nº 88/2013 estabelece explicitamente no seu Artigo 5º que o processo compreende as fases de instauração, instrução, manifestação do interessado, relatório e decisão.
+Referências:
+ Decreto Municipal nº 88/2013, Art. 5º e Art. 12.
+ 
+Dando prosseguimento ao simulado para o cargo de Procurador Municipal de Canoas, elaborei mais 10 questões focadas no Poder Executivo, com ênfase nas atribuições do Prefeito, do Procurador-Geral e no regime jurídico da PGM, mantendo o rigor literal da banca 
+Objetiva Concursos
+.
+CADERNO DE QUESTÕES OBJETIVAS - PARTE 4
+QUESTÃO 17. De acordo com a Lei Orgânica do Município de Canoas, o Prefeito Municipal deve apresentar à Câmara Municipal o Plano de Metas de sua gestão. Sobre esse documento, assinale o prazo correto para sua apresentação:
+A) Em até 90 dias após a posse.
+ B) Em até 120 dias após a posse.
+ C) No mesmo prazo definido para a apresentação do Plano Plurianual (PPA).
+ D) Até o encerramento do primeiro semestre do primeiro ano de mandato.
+QUESTÃO 18. Conforme a Lei Municipal nº 6.817/2025 (Lei de Regência da PGM Canoas), integram o Conselho Superior da Procuradoria-Geral do Município, EXCETO:
+A) O Procurador-Geral do Município, na qualidade de Presidente.
+ B) O Presidente da Associação dos Procuradores do Município de Canoas.
+ C) O Controlador-Geral do Município.
+ D) Um membro dentre os Procuradores Municipais de cada uma das diretorias da PGM, eleito por seus pares.
+QUESTÃO 19. A respeito das proibições aplicadas aos Procuradores Municipais no exercício de suas funções, segundo a Lei nº 6.817/2025, analise as assertivas abaixo:
+I. É vedado ao Procurador Municipal receber percentagens ou vantagens nos processos submetidos ao seu exame, exceto os honorários advocatícios de sucumbência.
+ II. É vedado ao Procurador Municipal o desempenho de atribuições de caráter não jurídico, ressalvada a participação em conselhos e comissões.
+ III. O Procurador Municipal está dispensado do registro de ponto, mas o Procurador-Geral pode exigir a apresentação de relatórios periódicos de atividades.
+Está(ão) CORRETA(S):
+A) Apenas o item I.
+ B) Apenas os itens I e II.
+ C) Apenas os itens II e III.
+ D) Todos os itens.
+QUESTÃO 20. Segundo o Decreto Municipal nº 240/2025, as consultas jurídicas à PGM são restritas a determinadas autoridades. Estão legitimados a formular consultas, conforme o referido decreto, EXCETO:
+A) O Prefeito e o Vice-Prefeito.
+ B) Os Secretários Municipais, titulares ou adjuntos.
+ C) Os Presidentes de entidades da Administração Pública Indireta.
+ D) Qualquer Vereador, no exercício de sua função fiscalizadora.
+QUESTÃO 21. No que tange à competência privativa do Prefeito de Canoas para a sanção e o veto de projetos de lei, a Lei Orgânica estabelece que o veto parcial somente poderá abranger:
+A) Palavras isoladas dentro de um parágrafo.
+ B) Expressões que alterem o sentido da norma, ainda que incompletas.
+ C) Texto integral de artigo, parágrafo, inciso ou alínea.
+ D) Apenas artigos inteiros, sendo vedado o veto a parágrafos isolados.
+QUESTÃO 22. Com base na Lei de Regência da PGM (Lei nº 6.817/2025), o parecer jurídico terá efeito normativo e vinculante para os órgãos da Administração Pública Municipal após:
+A) A simples assinatura do Procurador responsável.
+ B) A aprovação por despacho do Procurador-Geral, independentemente de publicação.
+ C) A publicação de sua ementa no Diário Oficial do Município.
+ D) A homologação pelo Conselho Municipal de Contribuintes.
+QUESTÃO 23. De acordo com o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), o servidor que ocasionar prejuízo à Fazenda Municipal por omissão em efetuar recolhimento nos prazos legais será obrigado a repor a importância:
+A) De uma só vez.
+ B) Em até 10 parcelas mensais.
+ C) Mediante desconto em folha não excedente a 10% da remuneração.
+ D) No prazo de 30 dias após o trânsito em julgado administrativo.
+QUESTÃO 24. A Lei de Regência da PGM atribui à Procuradoria-Geral a função de promover a unificação da jurisprudência administrativa. Segundo o Art. 5º da Lei nº 6.817/2025, essa unificação possui uma exceção expressa. Trata-se da jurisprudência:
+A) Ambiental.
+ B) Tributária.
+ C) Previdenciária.
+ D) Relativa a servidores públicos.
+QUESTÃO 25. Conforme o Decreto Municipal nº 59/2024, que regula o Procedimento Administrativo Especial de Punição (PAEP) contra fornecedores, a autoridade competente para aplicar a sanção de DECLARAÇÃO DE INIDONEIDADE para licitar ou contratar com a Administração Pública Municipal é:
+A) O Secretário da pasta interessada.
+ B) O Procurador-Geral do Município.
+ C) O Prefeito Municipal.
+ D) O Controlador-Geral do Município.
+QUESTÃO 26. Segundo a Lei Orgânica de Canoas, o Prefeito deve solicitar licença à Câmara Municipal quando tiver de afastar-se do Município ou do cargo por prazo superior a:
+A) 05 dias.
+ B) 07 dias.
+ C) 10 dias.
+ D) 15 dias.
+GABARITO COMENTADO
+QUESTÃO 17
+Alternativa Correta: C
+Explicação:
+ Embora o texto original previsse 120 dias, a redação atualizada pela Emenda à LOM nº 34/2017 vinculou o prazo do Plano de Metas ao mesmo prazo definido para a apresentação do Plano Plurianual (PPA).
+Referências:
+ LOM Canoas, Art. 66-A, 
+caput
+.
+QUESTÃO 18
+Alternativa Correta: C
+Explicação:
+ O Controlador-Geral não integra o Conselho Superior da PGM. O conselho é composto pelo Procurador-Geral, pelo Presidente da Associação dos Procuradores e por representantes eleitos das diretorias da própria PGM.
+Referências:
+ Lei nº 6.817/2025, Art. 11, I, II e III.
+QUESTÃO 19
+Alternativa Correta: D
+Explicação do Item I (Correto):
+ Proibição prevista no Art. 17, I, ressalvando honorários.
+Explicação do Item II (Correto):
+ Vedação prevista no Art. 22.
+Explicação do Item III (Correto):
+ Dispensa de ponto e possibilidade de relatórios previstos nos Arts. 20 e 20, § 1º.
+Referências:
+ Lei nº 6.817/2025, Arts. 17, 20 e 22.
+QUESTÃO 20
+Alternativa Correta: D
+Explicação:
+ O Decreto nº 240/2025 limita a legitimidade para consultas ao Prefeito, Vice-Prefeito, Secretários (titulares ou adjuntos) e Presidentes da Administração Indireta. O Legislativo não possui essa prerrogativa consultiva direta via decreto regulamentar do Executivo.
+Referências:
+ Decreto Municipal nº 240/2025, Art. 2º, Parágrafo Único.
+QUESTÃO 21
+Alternativa Correta: C
+Explicação:
+ Seguindo a simetria com a Constituição Federal, a Lei Orgânica de Canoas proíbe o "veto de palavra". O veto parcial deve abranger obrigatoriamente o texto integral de artigo, parágrafo, inciso ou alínea.
+Referências:
+ LOM Canoas, Art. 54, § 3º.
+QUESTÃO 22
+Alternativa Correta: C
+Explicação:
+ O efeito normativo e vinculante (obrigatoriedade de seguir o entendimento) para toda a Administração Direta e Indireta surge após a publicação da ementa do parecer no Diário Oficial.
+Referências:
+ Lei nº 6.817/2025, Art. 25, § 3º.
+QUESTÃO 23
+Alternativa Correta: A
+Explicação:
+ Diferente de outros prejuízos que podem ser parcelados em folha (até 20%), nos casos de alcance, desfalque ou omissão de recolhimento de valores devidos, o servidor deve repor o montante de uma só vez.
+Referências:
+ Lei nº 2.214/1984, Art. 208, § 1º.
+QUESTÃO 24
+Alternativa Correta: B
+Explicação:
+ A lei de regência exclui expressamente a matéria tributária da competência da PGM para unificação de jurisprudência administrativa.
+Referências:
+ Lei nº 6.817/2025, Art. 5º, X.
+QUESTÃO 25
+Alternativa Correta: C
+Explicação:
+ Enquanto advertências e multas podem ser aplicadas por Secretários, a declaração de inidoneidade (sanção mais grave) é de competência exclusiva do Prefeito.
+Referências:
+ Decreto Municipal nº 59/2024, Art. 8º, IV.
+QUESTÃO 26
+Alternativa Correta: D
+Explicação:
+ Conforme a Lei Orgânica, o Prefeito só necessita de licença da Câmara para ausências superiores a 15 dias.
+Referências:
+ LOM Canoas, Art. 66, XXIX.
+ 
+Retomando o rigor técnico e a sequência correta, elaborei este caderno de questões inéditas para o cargo de 
+Procurador Municipal de Canoas
+ iniciando na 
+questão 122
+, focando em temas complexos das normas locais recentes e no perfil detalhista da banca 
+Objetiva Concursos
+.
+CADERNO DE QUESTÕES OBJETIVAS INÉDITAS - PGM CANOAS (PARTE 15)
+QUESTÃO 122. Com base na Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), a respeito das prerrogativas dos Procuradores e do regime de acordos judiciais, analise as assertivas abaixo:
+I. O Procurador Municipal deve abster-se de recorrer de decisões que estejam em conformidade com acórdãos em incidente de assunção de competência ou de resolução de demandas repetitivas, desde que a matéria fática não seja controversa.
+  II. A proposta de acordo em processos judiciais ou extrajudiciais cujo proveito econômico seja superior a 1000 (mil) salários mínimos deve ser obrigatoriamente apreciada pelo Conselho Superior da PGM.
+  III. É permitido ao Procurador Municipal reconhecer a procedência do pedido da parte adversa, desde que tal providência esteja em conformidade com parecer vinculante da PGM e não haja controvérsia sobre matéria fática.
+Está(ão) CORRETA(S):
+A) Apenas os itens I e II.
+  B) Apenas os itens II e III.
+  C) Apenas os itens I e III.
+  D) Todos os itens.
+QUESTÃO 123. Segundo o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), atualizado pela Lei nº 6.698/2023, o servidor que perder o cônjuge, companheiro, pais, madrasta, padrasto, filhos, enteados, menor sob guarda ou tutela e irmãos, terá direito a afastamento (luto), considerado como de efetivo exercício, por:
+A) 02 dias.
+  B) 05 dias.
+  C) 08 dias.
+  D) 15 dias.
+QUESTÃO 124. Conforme o Decreto Municipal nº 59/2024, que regula o Procedimento Administrativo Especial de Punição (PAEP), assinale a alternativa que indica CORRETAMENTE a autoridade competente para aplicar a sanção de IMPEDIMENTO de licitar e contratar com o Município de Canoas:
+A) O Prefeito Municipal, exclusivamente.
+  B) O Procurador-Geral do Município.
+  C) O Secretário Municipal da pasta interessada ou autoridade equivalente na Administração Indireta.
+  D) O Controlador-Geral do Município.
+QUESTÃO 125. No âmbito da Lei Orgânica do Município de Canoas (LOM), a respeito da autonomia e do processo legislativo, assinale a alternativa INCORRETA:
+A) A autonomia do Município expressa-se, entre outras formas, pela administração própria no que respeite ao seu interesse local.
+  B) O Município poderá delegar ao Estado, mediante convênio, a execução de serviços de sua competência concorrente, assegurados os recursos necessários.
+  C) Dependerá do voto favorável de, no mínimo, dois terços dos membros da Câmara a autorização para a alteração da Lei Orgânica do Município.
+  D) O Prefeito poderá enviar mensagem à Câmara para propor modificação em projetos de leis orçamentárias mesmo após iniciada a votação na Comissão Permanente de Finanças.
+QUESTÃO 126. Segundo o Plano Diretor Urbano Ambiental (Lei nº 5.961/2015), o licenciamento de obras de urbanização deverá ser requerido no prazo de 180 dias do registro imobiliário do parcelamento do solo. Uma vez licenciadas, as referidas obras deverão ser concluídas no prazo máximo de:
+A) 02 anos.
+  B) 03 anos.
+  C) 04 anos, admitindo-se renovação precedida por análise da Comissão de Controle Urbanístico (CCU).
+  D) 05 anos, vedada qualquer prorrogação.
+QUESTÃO 127. De acordo com a Lei Complementar nº 14/2025 (Reestruturação do RPPS de Canoas), sobre o cálculo dos proventos de aposentadoria para os servidores que ingressarem no regime após a publicação da lei, a média aritmética simples será calculada sobre:
+A) 80% das maiores remunerações de contribuição desde julho de 1994.
+  B) 90% das maiores remunerações de contribuição desde julho de 1994 ou desde o início da contribuição.
+  C) 100% de todo o período contributivo do servidor, sem qualquer descarte.
+  D) A média das últimas 12 remunerações que antecedem o pedido de aposentadoria.
+GABARITO COMENTADO
+QUESTÃO 122
+Alternativa Correta: D
+Item I (Correto):
+ Trata-se de um dever funcional do Procurador previsto no Art. 16, § 2º, visando evitar o prolongamento inútil de lides que seguem teses já pacificadas pelos Tribunais Superiores.
+Item II (Correto):
+ O Conselho Superior da PGM detém competência para opinar sobre acordos de vulto, definidos pela lei como superiores a 1.000 salários mínimos.
+Item III (Correto):
+ Embora vigore o princípio da indisponibilidade, a Lei de Regência autoriza o reconhecimento do pedido da parte adversa quando amparado em parecer vinculante ou jurisprudência consolidada.
+Referências:
+ Lei Municipal nº 6.817/2025, Art. 12, II; Art. 16, §§ 1º e 2º.
+QUESTÃO 123
+Alternativa Correta: C
+Explicação:
+ Para o rol de parentes mais próximos, o Estatuto de Canoas prevê o afastamento de 
+08 dias
+. Importante notar que a mesma alteração de 2023 fixou o prazo de apenas 
+02 dias
+ para o falecimento de tios, padrasto e madrasta.
+Referências:
+ Lei nº 2.214/1984, Art. 75, IV (redação da Lei nº 6.698/2023).
+QUESTÃO 124
+Alternativa Correta: C
+Explicação:
+ O sistema do PAEP em Canoas divide as competências: enquanto multas, suspensões e o 
+impedimento de licitar
+ são aplicados pelos Secretários da pasta interessada, a pena de 
+declaração de inidoneidade
+ é de competência exclusiva do Prefeito.
+Referências:
+ Decreto Municipal nº 59/2024, Art. 8º, III.
+QUESTÃO 125
+Alternativa Correta: D
+Explicação:
+ A alternativa 
+D
+ está incorreta porque, conforme o rito orçamentário, o Prefeito só pode enviar mensagens para propor modificações nos projetos de leis orçamentárias (PPA, LDO e LOA) 
+enquanto não tiver sido iniciada a votação
+, na Comissão Permanente de Finanças e Orçamento, da parte cuja alteração é proposta.
+Referências:
+ Lei Orgânica de Canoas, Art. 147, § 4º.
+QUESTÃO 126
+Alternativa Correta: C
+Explicação:
+ O Plano Diretor (PDUA) estabelece o prazo de 
+4 anos
+ para a conclusão das obras. A legislação municipal foi alterada pela Lei nº 6.759/2024, que transferiu para a CCU a responsabilidade pela análise da renovação desse prazo.
+Referências:
+ Lei nº 5.961/2015, Art. 246; Lei nº 6.759/2024.
+QUESTÃO 127
+Alternativa Correta: B
+Explicação:
+ A nova regra previdenciária de Canoas de 2025 é mais benéfica que a federal atual (que usa 100%), pois permite que o cálculo utilize a média aritmética de 
+90% das maiores remunerações
+, descartando automaticamente os 10% menores valores do histórico contributivo.
+Referências:
+ Lei Complementar nº 14/2025, Art. 44.
+Dando continuidade à preparação técnica e exaustiva para o concurso de 
+Procurador Municipal de Canoas
+, elaborei este caderno de questões inéditas a partir da 
+questão 134
+. O foco recai sobre normas locais complexas, prazos procedimentais de decretos recentes e detalhes literais da legislação, seguindo o padrão de exigência da banca 
+Objetiva Concursos
+.
+CADERNO DE QUESTÕES OBJETIVAS INÉDITAS - PGM CANOAS (PARTE 17)
+QUESTÃO 134. No âmbito do Processo Administrativo Disciplinar (PAD) em Canoas, regido pelo Decreto Municipal nº 462/2016, a solicitação de prorrogação do prazo para a conclusão dos trabalhos da comissão deve observar requisitos específicos. De acordo com a redação atualizada da norma, esse pedido deve ser feito com antecedência mínima de seu término de:
+A) 05 (cinco) dias.
+ B) 10 (dez) dias.
+ C) 15 (quinze) dias.
+ D) 20 (vinte) dias.
+QUESTÃO 135. Conforme o Decreto Municipal nº 60/2024, que regulamenta a modalidade de licitação "diálogo competitivo" no Município de Canoas, a fase de qualificação possui um prazo regulamentar para a apresentação das candidaturas dos interessados. Esse prazo estabelecido no instrumento convocatório NÃO poderá ser inferior a:
+A) 15 (quinze) dias úteis.
+ B) 25 (vinte e cinco) dias úteis.
+ C) 30 (trinta) dias úteis.
+ D) 45 (quarenta e cinco) dias corridos.
+QUESTÃO 136. Segundo a Lei de Regência da PGM (Lei Municipal nº 6.817/2025), o Procurador Municipal poderá, excepcionalmente, realizar o seu trabalho de forma remota (teletrabalho), seja de modo total ou parcial. Para que essa modalidade de trabalho seja autorizada, a lei exige, entre outras condições:
+A) Que o servidor resida a uma distância mínima de 100km da sede da Procuradoria.
+ B) A autorização individual e discricionária do Prefeito Municipal por meio de Decreto.
+ C) A observância de metas e condições previamente definidas pela chefia imediata.
+ D) Que o servidor possua, no mínimo, 10 anos de efetivo exercício na carreira.
+QUESTÃO 137. De acordo com a Lei Complementar nº 14/2025, que reestrutura o Regime Próprio de Previdência Social (RPPS) de Canoas, sobre o benefício de pensão por morte concedido aos dependentes de segurado falecido após a vigência da lei, assinale a alternativa que indica a regra de cálculo CORRETA:
+A) Será equivalente a 100% da média das remunerações de contribuição, limitada ao teto do RGPS.
+ B) Será equivalente a 80% do valor da aposentadoria recebida pelo segurado ou daquela a que teria direito se fosse aposentado por incapacidade permanente.
+ C) Corresponderá a uma cota familiar de 60%, acrescida de cotas de 10 pontos percentuais por dependente, até o limite de 100%.
+ D) Corresponderá a uma cota familiar de 50%, acrescida de cotas de 20 pontos percentuais por dependente, permitindo o acúmulo acima de 100%.
+QUESTÃO 138. Conforme o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), a respeito da posse em cargo público de provimento efetivo, é INCORRETO afirmar que:
+A) A posse ocorrerá no prazo de 05 dias úteis, contados da data de publicação do ato de provimento.
+ B) No ato da posse, o servidor apresentará, obrigatoriamente, declaração de bens e valores que constituem seu patrimônio.
+ C) A posse em cargo público municipal dependerá de prévia inspeção por junta médica oficial designada pelo Município.
+ D) É permitida a posse mediante procuração específica nos casos de servidores residentes fora do Estado.
+QUESTÃO 139. No que se refere ao Imposto Sobre Serviços de Qualquer Natureza (ISSQN) em Canoas, conforme a Lei Municipal nº 4.818/2003 e atualizações da Lei nº 6.824/2025, os serviços prestados sob a forma de trabalho pessoal do próprio contribuinte (profissionais liberais) são tributados mediante alíquota fixa anual. Para profissionais com curso superior, o valor anual fixado por profissional habilitado é de:
+A) 100 URM.
+ B) 150 URM.
+ C) 300 URM.
+ D) 500 URM.
+GABARITO COMENTADO
+QUESTÃO 134
+Alternativa Correta: B
+Explicação:
+ O Decreto Municipal nº 462/2016, que rege o PAD, estabelece em seu Artigo 12, inciso XIII (com redação dada pelo Decreto nº 68/2024), que a prorrogação do prazo para conclusão dos trabalhos deve ser solicitada com no mínimo 
+10 dias de antecedência
+ de seu término.
+Referências:
+ Decreto Municipal nº 462/2016, Art. 12, XIII.
+QUESTÃO 135
+Alternativa Correta: B
+Explicação:
+ No regulamento local para o diálogo competitivo, Canoas fixou o prazo mínimo de 
+25 dias úteis
+ para a fase de qualificação (apresentação de candidaturas). Este prazo é específico da norma municipal que regulamenta o Art. 32 da Lei Federal nº 14.133/2021.
+Referências:
+ Decreto Municipal nº 60/2024, Art. 7º, § 1º.
+QUESTÃO 136
+Alternativa Correta: C
+Explicação:
+ A Lei de Regência da PGM permite o trabalho remoto (total ou parcial) para os Procuradores, vinculando-o obrigatoriamente à observância de 
+metas e condições definidas pela chefia imediata
+, visando garantir a eficiência do serviço jurídico.
+Referências:
+ Lei Municipal nº 6.817/2025, Art. 20, § 2º.
+QUESTÃO 137
+Alternativa Correta: C
+Explicação:
+ A Reforma Previdenciária de Canoas de 2025 instituiu o sistema de cotas para a pensão por morte: 
+60% de cota familiar
+ somados a 
+10% por dependente
+, respeitando o limite máximo de 100%.
+Referências:
+ Lei Complementar nº 14/2025, Art. 55.
+QUESTÃO 138
+Alternativa Correta: D
+Explicação:
+ A alternativa 
+D
+ está incorreta porque o Estatuto de Canoas prevê que a posse é um ato personalíssimo, 
+não admitindo a posse por procuração
+. As demais alternativas citam corretamente o prazo de 5 dias úteis (atualizado pela Lei 6.484/21), a exigência de declaração de bens e a inspeção médica obrigatória.
+Referências:
+ Lei nº 2.214/1984, Art. 65 e Art. 66.
+QUESTÃO 139
+Alternativa Correta: C
+Explicação:
+ De acordo com a Tabela de Incidência atualizada da legislação do ISSQN em Canoas, as sociedades ou profissionais com curso superior submetidos à tributação fixa devem recolher o valor correspondente a 
+300 URM
+ por profissional habilitado ao ano.
+Referências:
+ Lei Municipal nº 4.818/2003, Anexo I "B", item 5.

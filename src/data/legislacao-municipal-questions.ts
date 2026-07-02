@@ -3,13 +3,13 @@
 // Adaptadas à legislação municipal de Canoas/RS conforme edital
 
 export interface Question {
-  id: number;,
-  qid: string;,
-  topic: string;,
-  year: number;,
-  text: string;,
-  options: { label: string; text: string }[];,
-  correctAnswer: string;,
+  id: number;
+  qid: string;
+  topic: string;
+  year: number;
+  text: string;
+  options: { label: string; text: string }[];
+  correctAnswer: string;
   explanation: string;
 }
 
@@ -980,7 +980,8 @@ export const questionsData: Question[] = [
     year: 2025,
     text: "Conforme a Lei de Regência da PGM (Lei nº 6.817/2025), a formulação de consultas jurídicas à Procuradoria-Geral pelos secretários e subprefeitos deve observar requisitos formais. Assinale a alternativa que apresenta um desses requisitos previstos no Art. 29 da referida lei:",
     options: [      { label: "A", text: "Fundamentação técnica e conclusiva do órgão ou autoridade consulente." }, { label: "B", text: "Solicitação verbal prévia em audiência com o Procurador-Geral." }, { label: "C", text: "Dispensa de documentos anexos para garantir o sigilo dos fatos." }, { label: "D", text: "Indicação obrigatória do Procurador que deve realizar a análise." },
-      { label: "D", text: "Indicação obrigatória do Procurador que deve realizar a análise." },    ],    correctAnswer: "A",    explanation: "A formulação de consultas à PGM deve, obrigatoriamente, conter fundamentação técnica e conclusiva do órgão ou autoridade consulente. Referências: Lei nº 6.817/2025, Art. 29, I.",    id: 122, qid: "PGM-C122", topic: "Legislação da PGM", year: 2025,    text: "Com base na Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), a respeito das prerrogativas dos Procuradores e do regime de acordos judiciais, analise as assertivas abaixo:\n\nI. O Procurador Municipal deve abster-se de recorrer de decisões que estejam em conformidade com acórdãos em incidente de assunção de competência ou de resolução de demandas repetitivas, desde que a matéria fática não seja controversa.\nII. A proposta de acordo em processos judiciais ou extrajudiciais cujo proveito econômico seja superior a 1000 (mil) salários mínimos deve ser obrigatoriamente apreciada pelo Conselho Superior da PGM.\nIII. É permitido ao Procurador Municipal reconhecer a procedência do pedido da parte adversa, desde que tal providência esteja em conformidade com parecer vinculante da PGM e não haja controvérsia sobre matéria fática.\n\nEstá(ão) CORRETA(S):",    options: [      { label: "A", text: "Apenas os itens I e II." }, { label: "B", text: "Apenas os itens II e III." }, { label: "C", text: "Apenas os itens I e III." }, { label: "D", text: "Todos os itens." },    ],    correctAnswer: "D",    explanation: "Item I (Correto): Dever funcional do Procurador previsto no Art. 16, § 2º, visando evitar prolongamento inútil de lides que seguem teses pacificadas. Item II (Correto): O Conselho Superior da PGM detém competência para opinar sobre acordos de vulto superiores a 1.000 salários mínimos (Art. 12, II). Item III (Correto): A Lei de Regência autoriza o reconhecimento do pedido da parte adversa quando amparado em parecer vinculante ou jurisprudência consolidada (Art. 16, §§ 1º e 2º). Referências: Lei nº 6.817/2025, Art. 12, II; Art. 16, §§ 1º e 2º.",  },
+      { label: "D", text: "Indicação obrigatória do Procurador que deve realizar a análise." },    ],    correctAnswer: "A",    explanation: "A formulação de consultas à PGM deve, obrigatoriamente, conter fundamentação técnica e conclusiva do órgão ou autoridade consulente. Referências: Lei nº 6.817/2025, Art. 29, I.",  },
+  {  id: 122, qid: "PGM-C122", topic: "Legislação da PGM", year: 2025,    text: "Com base na Lei Municipal nº 6.817/2025 (Lei de Regência da PGM), a respeito das prerrogativas dos Procuradores e do regime de acordos judiciais, analise as assertivas abaixo:\n\nI. O Procurador Municipal deve abster-se de recorrer de decisões que estejam em conformidade com acórdãos em incidente de assunção de competência ou de resolução de demandas repetitivas, desde que a matéria fática não seja controversa.\nII. A proposta de acordo em processos judiciais ou extrajudiciais cujo proveito econômico seja superior a 1000 (mil) salários mínimos deve ser obrigatoriamente apreciada pelo Conselho Superior da PGM.\nIII. É permitido ao Procurador Municipal reconhecer a procedência do pedido da parte adversa, desde que tal providência esteja em conformidade com parecer vinculante da PGM e não haja controvérsia sobre matéria fática.\n\nEstá(ão) CORRETA(S):",    options: [      { label: "A", text: "Apenas os itens I e II." }, { label: "B", text: "Apenas os itens II e III." }, { label: "C", text: "Apenas os itens I e III." }, { label: "D", text: "Todos os itens." },    ],    correctAnswer: "D",    explanation: "Item I (Correto): Dever funcional do Procurador previsto no Art. 16, § 2º, visando evitar prolongamento inútil de lides que seguem teses pacificadas. Item II (Correto): O Conselho Superior da PGM detém competência para opinar sobre acordos de vulto superiores a 1.000 salários mínimos (Art. 12, II). Item III (Correto): A Lei de Regência autoriza o reconhecimento do pedido da parte adversa quando amparado em parecer vinculante ou jurisprudência consolidada (Art. 16, §§ 1º e 2º). Referências: Lei nº 6.817/2025, Art. 12, II; Art. 16, §§ 1º e 2º.",  },
 {    id: 123,
     qid: "PGM-C123",
     topic: "Direito Administrativo (Estatuto)",

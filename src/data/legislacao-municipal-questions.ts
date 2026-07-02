@@ -3,13 +3,13 @@
 // Adaptadas à legislação municipal de Canoas/RS conforme edital
 
 export interface Question {
-  id: number;
-  qid: string;
-  topic: string;
-  year: number;
-  text: string;
-  options: { label: string; text: string }[];
-  correctAnswer: string;
+  id: number;,
+  qid: string;,
+  topic: string;,
+  year: number;,
+  text: string;,
+  options: { label: string; text: string }[];,
+  correctAnswer: string;,
   explanation: string;
 }
 
@@ -66,7 +66,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C07",
     topic: "Direito Tributário Municipal",
     year: 2025,
+<<<<<<< HEAD
     text: "Segundo a Lei Municipal nº 5.503/2010, o Imposto de Transmissão Inter Vivos de Bens Imóveis (ITBI) tem como fato gerador a transmissão inter vivos, a qualquer título, por ato oneroso de:\n\nI. Bens imóveis, por natureza ou acessão física.\nII. Direitos reais sobre imóveis, inclusive os de garantia.\nIII. Cessão de direitos à aquisição de bens imóveis.\n\nEstá(ão) CORRETO(S):",
+=======
+    text: "Segundo a Lei Municipal nº 5.503/2010, o Imposto de Transmissão Inter Vivos de Bens Imóveis (ITBI) tem como fato gerador a transmissão inter vivos, a qualquer título, por ato oneroso,
+    de:\n\nI. Bens imóveis, por natureza ou acessão física.\nII. Direitos reais sobre imóveis, inclusive os de garantia.\nIII. Cessão de direitos à aquisição de bens imóveis.\n\nEstá(ão) CORRETO(S):",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "Apenas o item I." },      { label: "B", text: "Apenas os itens I e III." },      { label: "C", text: "Apenas os itens II e III." },      { label: "D", text: "Todos os itens." },    ],
     correctAnswer: "B",
     explanation: "I (Correto): Previsto como hipótese de incidência no caput do Art. 2º. II (Incorreto): O imposto incide sobre direitos reais, exceto os de garantia. III (Correto): A cessão de direitos à aquisição é expressamente tributada. Referências: Lei nº 5.503/2010, Art. 2º.",  },
@@ -82,7 +87,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C09",
     topic: "Direito Previdenciário Municipal",
     year: 2025,
+<<<<<<< HEAD
     text: "Com base na Lei Complementar nº 14/2025 (Regime Próprio de Previdência - RPPS), para a concessão de aposentadoria voluntária ao servidor efetivo (regra geral), exige-se, cumulativamente, as seguintes idades para mulheres e homens respectivamente:",
+=======
+    text: "Com base na Lei Complementar nº 14/2025 (Regime Próprio de Previdência - RPPS), para a concessão de aposentadoria voluntária ao servidor efetivo (regra geral), exige-se, cumulativamente, as seguintes idades para mulheres e homens,
+    respectivamente:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "60 anos e 65 anos." },      { label: "B", text: "62 anos e 65 anos." },      { label: "C", text: "55 anos e 60 anos." },      { label: "D", text: "62 anos e 67 anos." },    ],
     correctAnswer: "B",
     explanation: "A nova lei previdenciária de Canoas fixou a idade de 62 anos para mulheres e 65 anos para homens como requisito para a aposentadoria voluntária. Referências: LC nº 14/2025, Art. 42, I, 'a'.",  },
@@ -90,7 +100,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C10",
     topic: "Legislação da PGM",
     year: 2025,
+<<<<<<< HEAD
     text: "No que tange à estrutura da Procuradoria-Geral, conforme a Lei de Regência da PGM (Lei nº 6.817/2025), o Conselho Superior da PGM é composto, entre outros membros pelo:",
+=======
+    text: "No que tange à estrutura da Procuradoria-Geral, conforme a Lei de Regência da PGM (Lei nº 6.817/2025), o Conselho Superior da PGM é composto, entre outros membros,
+    pelo:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "Controlador-Geral do Município." },      { label: "B", text: "Presidente da Associação dos Procuradores do Município de Canoas." },      { label: "C", text: "Secretário Municipal da Fazenda." },      { label: "D", text: "Presidente da Câmara Municipal de Vereadores." },    ],
     correctAnswer: "B",
     explanation: "O Conselho Superior é presidido pelo Procurador-Geral e conta com a participação nata do Presidente da Associação dos Procuradores (APMC). Referências: Lei nº 6.817/2025, Art. 11, II.",  },
@@ -210,7 +225,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C25",
     topic: "Lei Orgânica Municipal",
     year: 2025,
+<<<<<<< HEAD
     text: "Com base na Lei Orgânica do Município de Canoas, sobre a fiscalização contábil e financeira, as contas do Município ficarão à disposição de qualquer contribuinte para exame e apreciação durante:",
+=======
+    text: "Com base na Lei Orgânica do Município de Canoas, sobre a fiscalização contábil e financeira, as contas do Município ficarão à disposição de qualquer contribuinte para exame e apreciação,
+    durante:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "15 dias, a partir de 1º de fevereiro." },      { label: "B", text: "30 dias, a partir de 15 de janeiro de cada exercício." },      { label: "C", text: "60 dias, logo após o encerramento do exercício financeiro." },      { label: "D", text: "Todo o período da sessão legislativa ordinária." },    ],
     correctAnswer: "B",
     explanation: "Conforme a Lei Orgânica de Canoas e o modelo observado nas questões da banca Objetiva (Modelos de Questões nº 484), as contas ficam disponíveis por 30 dias, a partir de 15 de janeiro, para qualquer cidadão. Referências: Lei Orgânica de Canoas, Art. ...",  },
@@ -226,7 +246,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C27",
     topic: "Direito Administrativo (PAD)",
     year: 2025,
+<<<<<<< HEAD
     text: "Segundo o Decreto Municipal nº 462/2016, que regulamenta o Processo Administrativo Disciplinar (PAD), nos casos em que a penalidade inicialmente prevista NÃO for a de demissão, o processo poderá ser instaurado pelas seguintes autoridades EXCETO:",
+=======
+    text: "Segundo o Decreto Municipal nº 462/2016, que regulamenta o Processo Administrativo Disciplinar (PAD), nos casos em que a penalidade inicialmente prevista NÃO for a de demissão, o processo poderá ser instaurado pelas seguintes autoridades,
+    EXCETO:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "Pelo Procurador-Geral do Município." },      { label: "B", text: "Pelo Controlador-Geral do Município." },      { label: "C", text: "Pelo Secretário Municipal, mediante delegação específica do Prefeito." },      { label: "D", text: "Pelo Presidente da Associação dos Procuradores do Município de Canoas." },    ],
     correctAnswer: "D",
     explanation: "O Decreto nº 462/2016 elenca as autoridades com competência para instaurar o PAD (Prefeito, PGM, Controlador e Secretários delegados). A Associação dos Procuradores, por ser entidade de classe e não órgão da estrutura administrativa, não possui poder hierárquico para instaurar procedimentos disciplinares. Referências: Decreto Municipal nº 462/2016, Art. 11-B, § 1º.",  },
@@ -506,7 +531,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C62",
     topic: "Lei Orgânica Municipal",
     year: 2025,
+<<<<<<< HEAD
     text: "Segundo a Lei Orgânica do Município de Canoas, compete privativamente ao Prefeito Municipal EXCETO:",
+=======
+    text: "Segundo a Lei Orgânica do Município de Canoas, compete privativamente ao Prefeito Municipal,
+    EXCETO:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "Representar o Município em juízo e fora dele." },      { label: "B", text: "Nomear e exonerar os Secretários Municipais e os Diretores de Autarquias." },      { label: "C", text: "Dispor sobre a organização e o funcionamento da administração municipal, na forma da lei." },      { label: "D", text: "Elaborar o Regimento Interno do Poder Legislativo e dispor sobre sua polícia." },    ],
     correctAnswer: "D",
     explanation: "A competência para elaborar o Regimento Interno e dispor sobre sua organização e polícia é exclusiva da Câmara Municipal, não do Prefeito. Referências: LOM Canoas, Art. 18, II e III; Art. 66, I, II e VI.",  },
@@ -594,7 +624,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C73",
     topic: "Legislação da PGM",
     year: 2025,
+<<<<<<< HEAD
     text: "Conforme a Lei Municipal nº 6.817/2025 (Lei de Regência da PGM Canoas), integram o Conselho Superior da Procuradoria-Geral do Município EXCETO:",
+=======
+    text: "Conforme a Lei Municipal nº 6.817/2025 (Lei de Regência da PGM Canoas), integram o Conselho Superior da Procuradoria-Geral do Município,
+    EXCETO:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "O Procurador-Geral do Município, na qualidade de Presidente." },      { label: "B", text: "O Presidente da Associação dos Procuradores do Município de Canoas." },      { label: "C", text: "O Controlador-Geral do Município." },      { label: "D", text: "Um membro dentre os Procuradores de cada uma das diretorias da PGM, eleito por seus pares." },    ],
     correctAnswer: "C",
     explanation: "O Controlador-Geral não integra o Conselho Superior da PGM. O conselho é composto pelo Procurador-Geral, pelo Presidente da APMC e por representantes eleitos das diretorias. Referências: Lei nº 6.817/2025, Art. 11, I, II e III.",  },
@@ -610,7 +645,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C75",
     topic: "Legislação da PGM",
     year: 2025,
+<<<<<<< HEAD
     text: "Segundo o Decreto Municipal nº 240/2025, as consultas jurídicas à PGM são restritas a determinadas autoridades. Estão legitimados a formular consultas, conforme o referido decreto EXCETO:",
+=======
+    text: "Segundo o Decreto Municipal nº 240/2025, as consultas jurídicas à PGM são restritas a determinadas autoridades. Estão legitimados a formular consultas, conforme o referido decreto,
+    EXCETO:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "O Prefeito e o Vice-Prefeito." },      { label: "B", text: "Os Secretários Municipais, titulares ou adjuntos." },      { label: "C", text: "Os Presidentes de entidades da Administração Pública Indireta." },      { label: "D", text: "Qualquer Vereador, no exercício de sua função fiscalizadora." },    ],
     correctAnswer: "D",
     explanation: "O Decreto nº 240/2025 limita a legitimidade para consultas ao Prefeito, Vice-Prefeito, Secretários e Presidentes da Administração Indireta. O Legislativo não possui essa prerrogativa consultiva direta via decreto do Executivo. Referências: Decreto nº 240/2025, Art. 2º, Parágrafo Único.",  },
@@ -778,7 +818,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C96",
     topic: "Direito Urbanístico",
     year: 2025,
+<<<<<<< HEAD
     text: "Com base no Plano Diretor Urbano Ambiental (Lei nº 5.961/2015), as praças são classificadas, para fins de planejamento estratégico como:",
+=======
+    text: "Com base no Plano Diretor Urbano Ambiental (Lei nº 5.961/2015), as praças são classificadas, para fins de planejamento estratégico,
+    como:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "Equipamentos urbanos de infraestrutura básica." }, { label: "B", text: "Equipamentos comunitários de caráter local." }, { label: "C", text: "Áreas de preservação permanente de uso restrito." }, { label: "D", text: "Zonas de silêncio absoluto vinculadas ao aeródromo." },    ],
     correctAnswer: "B",
     explanation: "O PDUA distingue equipamentos urbanos (redes de água, luz, esgoto) de equipamentos comunitários, incluindo expressamente as praças neste último grupo, como espaços de convivência local. Referências: Lei nº 5.961/2015, Art. 219, VI e VII.",  },
@@ -834,7 +879,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C103",
     topic: "Direito Administrativo (Estatuto)",
     year: 2025,
+<<<<<<< HEAD
     text: "Conforme o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), com as alterações introduzidas pela Lei nº 6.484/2021, o prazo para que o nomeado tome posse no cargo público e o prazo para o início do efetivo exercício são respectivamente:",
+=======
+    text: "Conforme o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), com as alterações introduzidas pela Lei nº 6.484/2021, o prazo para que o nomeado tome posse no cargo público e o prazo para o início do efetivo exercício são,
+    respectivamente:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "05 dias úteis e o primeiro dia útil subsequente à posse." }, { label: "B", text: "10 dias úteis e 05 dias úteis." }, { label: "C", text: "30 dias corridos e 15 dias corridos." }, { label: "D", text: "15 dias úteis e 10 dias úteis." },    ],
     correctAnswer: "A",
     explanation: "Conforme a redação atualizada do Estatuto pela Lei 6.484/2021, o prazo de posse foi reduzido para 5 dias úteis e o exercício deve ocorrer no primeiro dia útil subsequente. Referências: Lei nº 2.214/1984, Art. 65 e Art. 69.",  },
@@ -985,7 +1035,12 @@ export const questionsData: Question[] = [
     qid: "PGM-C123",
     topic: "Direito Administrativo (Estatuto)",
     year: 2025,
+<<<<<<< HEAD
     text: "Segundo o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), atualizado pela Lei nº 6.698/2023, o servidor que perder o cônjuge, companheiro, pais, madrasta, padrasto, filhos, enteados, menor sob guarda ou tutela e irmãos, terá direito a afastamento (luto), considerado como de efetivo exercício por:",
+=======
+    text: "Segundo o Estatuto dos Funcionários Públicos (Lei nº 2.214/1984), atualizado pela Lei nº 6.698/2023, o servidor que perder o cônjuge, companheiro, pais, madrasta, padrasto, filhos, enteados, menor sob guarda ou tutela e irmãos, terá direito a afastamento (luto), considerado como de efetivo exercício,
+    por:",
+>>>>>>> d03cecc5167f53e6467f9fffb44739cf4136436a
     options: [      { label: "A", text: "02 dias." }, { label: "B", text: "05 dias." }, { label: "C", text: "08 dias." }, { label: "D", text: "15 dias." },    ],
     correctAnswer: "C",
     explanation: "Para o rol de parentes mais próximos (cônjuge, pais, filhos, irmãos), o Estatuto de Canoas prevê o afastamento de 08 dias. A mesma alteração de 2023 fixou prazo de apenas 02 dias para falecimento de tios, padrasto e madrasta. Referências: Lei nº 2.214/1984, Art. 75, IV (redação da Lei nº 6.698/2023).",  },

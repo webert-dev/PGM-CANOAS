@@ -3,11 +3,7 @@ import {
   type ElementType,
 } from "react";
 import { motion } from "framer-motion";
-import {
-  Search, ArrowLeft, BookOpen, Eye, EyeOff,
-  Scale, Building2, Gavel, Landmark, Briefcase, Heart,
-  PiggyBank, ScrollText, Shield, Menu, ChevronRight, Loader2, FileText,
-} from "lucide-react";
+import { BookOpen, Scale, FileText, Gavel, FileCheck, Building2, Map, Users, ChevronRight, FileDown, Search, ArrowLeft, MoreVertical, Bookmark, Check, History, LayoutDashboard, Landmark, Briefcase, Heart, Shield, ScrollText } from "lucide-react";
 import { Link } from "react-router";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -32,7 +28,7 @@ type SidebarTab = "estrutura" | "disciplinas";
 
 interface DiscItem {
   label: string;
-  normaId: "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab";
+  normaId: "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab" | "edital" | "lei-9868" | "lei-9882" | "lei-11417" | "lei-9507" | "lei-12016" | "lei-13300" | "ec-132" | "lei-14133" | "lei-8080" | "lei-8429" | "lei-8987" | "lei-9784" | "lei-10257" | "lei-11079" | "lei-11107" | "lei-12232" | "lei-12462" | "lei-12527" | "lei-12846" | "lei-13019" | "lei-13303" | "dl-3365" | "dl-201" | "decreto-11462" | "lei-13465" | "lei-13655" | "lei-13709";
   sectionId: string;
   artigos?: string;
 }
@@ -55,6 +51,13 @@ const DISCIPLINAS: Disc[] = [
       { label: "CF88 > Título IV — Org. dos Poderes", normaId: "cf88", sectionId: "titulo-iv", artigos: "Arts. 44–135" },
       { label: "CF88 > Título V — Defesa do Estado", normaId: "cf88", sectionId: "titulo-v", artigos: "Arts. 136–144" },
       { label: "CF88 > Título IX — Disposições Gerais", normaId: "cf88", sectionId: "titulo-ix", artigos: "Arts. 235–246" },
+      { label: "Lei 9.507/97 > Habeas Data", normaId: "lei-9507", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 12.016/09 > Mandado de Segurança", normaId: "lei-12016", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 13.300/16 > Mandado de Injunção", normaId: "lei-13300", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 9.868/99 > ADI, ADC e ADO", normaId: "lei-9868", sectionId: "capitulo-i", artigos: "Inteiro teor" },
+      { label: "Lei 9.882/99 > ADPF", normaId: "lei-9882", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 11.417/06 > Súmula Vinculante", normaId: "lei-11417", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "EC 132/23 > Reforma Tributária (IBS/CBS)", normaId: "ec-132", sectionId: "art-1", artigos: "Emenda Const." },
     ],
   },
   {
@@ -68,10 +71,50 @@ const DISCIPLINAS: Disc[] = [
     ],
   },
   {
-    id: "tributario", label: "Direito Tributário e Financeiro", icon: PiggyBank, color: "text-emerald-500",
+    id: "administrativo", label: "Direito Administrativo", icon: Building2, color: "text-amber-500",
+    items: [
+      { label: "Lei 14.133/21 > Licitações", normaId: "lei-14133", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Decreto 11.462/23 > Registro de Preços", normaId: "decreto-11462", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 12.462/11 > RDC", normaId: "lei-12462", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 12.232/10 > Pub. e Propaganda", normaId: "lei-12232", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 13.303/16 > Estatais", normaId: "lei-13303", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 11.079/04 > PPP", normaId: "lei-11079", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 8.987/95 > Concessões", normaId: "lei-8987", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 11.107/05 > Consórcios", normaId: "lei-11107", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 13.019/14 > Terceiro Setor", normaId: "lei-13019", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "DL 3.365/41 > Desapropriação", normaId: "dl-3365", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 9.784/99 > Processo Administrativo", normaId: "lei-9784", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 8.429/92 > Improbidade", normaId: "lei-8429", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 12.846/13 > Anticorrupção", normaId: "lei-12846", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "DL 201/67 > Crimes de Prefeitos", normaId: "dl-201", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 12.527/11 > LAI", normaId: "lei-12527", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 8.080/90 > SUS", normaId: "lei-8080", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 10.257/01 > Estatuto da Cidade", normaId: "lei-10257", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 13.655/18 > LINDB", normaId: "lei-13655", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 13.709/18 > LGPD", normaId: "lei-13709", sectionId: "art-1", artigos: "Inteiro teor" },
+    ],
+  },
+  {
+    id: "civil", label: "Direito Civil e Empresarial", icon: Users, color: "text-purple-500",
+    items: [
+      { label: "Lei 13.655/18 > LINDB", normaId: "lei-13655", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 13.709/18 > LGPD", normaId: "lei-13709", sectionId: "art-1", artigos: "Inteiro teor" },
+    ],
+  },
+  {
+    id: "urbanistico", label: "Direito Urbanístico e Ambiental", icon: Map, color: "text-orange-500",
+    items: [
+      { label: "Lei 10.257/01 > Estatuto da Cidade", normaId: "lei-10257", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 13.465/17 > REURB", normaId: "lei-13465", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "DL 3.365/41 > Desapropriação", normaId: "dl-3365", sectionId: "art-1", artigos: "Inteiro teor" },
+    ],
+  },
+  {
+    id: "tributario", label: "Direito Tributário e Financeiro", icon: Scale, color: "text-green-500",
     items: [
       { label: "CF88 > Título VI — Tributação e Orçamento", normaId: "cf88", sectionId: "titulo-vi", artigos: "Arts. 145–169" },
       { label: "CTN > Código Tributário Nacional (Inteiro)", normaId: "ctn", sectionId: "livro-primeiro", artigos: "Lei nº 5.172/1966" },
+      { label: "EC 132/23 > Reforma Tributária (IBS/CBS)", normaId: "ec-132", sectionId: "art-1", artigos: "Emenda Const." },
     ],
   },
   {
@@ -143,6 +186,12 @@ const DISCIPLINAS: Disc[] = [
       { label: "PGM > Competência, Estrutura e Organização", normaId: "pgm-canoas", sectionId: "livro-i", artigos: "Livro I" },
       { label: "PGM > Das Carreiras", normaId: "pgm-canoas", sectionId: "livro-ii", artigos: "Livro II" },
       { label: "PGM > Disposições Finais e Transitórias", normaId: "pgm-canoas", sectionId: "livro-iii", artigos: "Livro III" },
+    ],
+  },
+  {
+    id: "concurso", label: "Concurso PGM Canoas", icon: FileText, color: "text-slate-800",
+    items: [
+      { label: "Edital de Abertura nº 125/2026", normaId: "edital", sectionId: "capitulo-i", artigos: "Edital" },
     ],
   },
 ];
@@ -378,7 +427,7 @@ const BlockEl = memo(function BlockEl({
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Legislacoes() {
-  const [selectedNorma, setSelectedNorma] = useState<"intro" | "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab">("intro");
+  const [selectedNorma, setSelectedNorma] = useState<"intro" | "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab" | "edital" | "lei-9868" | "lei-9882" | "lei-11417" | "lei-9507" | "lei-12016" | "lei-13300" | "ec-132" | "lei-14133" | "lei-8080" | "lei-8429" | "lei-8987" | "lei-9784" | "lei-10257" | "lei-11079" | "lei-11107" | "lei-12232" | "lei-12462" | "lei-12527" | "lei-12846" | "lei-13019" | "lei-13303" | "dl-3365" | "dl-201" | "decreto-11462" | "lei-13465" | "lei-13655" | "lei-13709">("intro");
   const [doc, setDoc] = useState<ParseResult | null>(null);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -419,6 +468,34 @@ export default function Legislacoes() {
     else if (selectedNorma === "oab") fileName = "estatuto-oab.md";
     else if (selectedNorma === "regulamento-oab") fileName = "regulamento-geral-oab.md";
     else if (selectedNorma === "codigo-etica-oab") fileName = "codigo-etica-oab.md";
+    else if (selectedNorma === "edital") fileName = "edital-pgm-canoas.md";
+    else if (selectedNorma === "lei-9868") fileName = "lei-9868.md";
+    else if (selectedNorma === "lei-9882") fileName = "lei-9882.md";
+    else if (selectedNorma === "lei-11417") fileName = "lei-11417.md";
+    else if (selectedNorma === "lei-9507") fileName = "lei-9507.md";
+    else if (selectedNorma === "lei-12016") fileName = "lei-12016.md";
+    else if (selectedNorma === "lei-13300") fileName = "lei-13300.md";
+    else if (selectedNorma === "ec-132") fileName = "ec-132.md";
+    else if (selectedNorma === "lei-14133") fileName = "lei-14133.md";
+    else if (selectedNorma === "lei-8080") fileName = "lei-8080.md";
+    else if (selectedNorma === "lei-8429") fileName = "lei-8429.md";
+    else if (selectedNorma === "lei-8987") fileName = "lei-8987.md";
+    else if (selectedNorma === "lei-9784") fileName = "lei-9784.md";
+    else if (selectedNorma === "lei-10257") fileName = "lei-10257.md";
+    else if (selectedNorma === "lei-11079") fileName = "lei-11079.md";
+    else if (selectedNorma === "lei-11107") fileName = "lei-11107.md";
+    else if (selectedNorma === "lei-12232") fileName = "lei-12232.md";
+    else if (selectedNorma === "lei-12462") fileName = "lei-12462.md";
+    else if (selectedNorma === "lei-12527") fileName = "lei-12527.md";
+    else if (selectedNorma === "lei-12846") fileName = "lei-12846.md";
+    else if (selectedNorma === "lei-13019") fileName = "lei-13019.md";
+    else if (selectedNorma === "lei-13303") fileName = "lei-13303.md";
+    else if (selectedNorma === "dl-3365") fileName = "dl-3365.md";
+    else if (selectedNorma === "dl-201") fileName = "dl-201.md";
+    else if (selectedNorma === "decreto-11462") fileName = "decreto-11462.md";
+    else if (selectedNorma === "lei-13465") fileName = "lei-13465.md";
+    else if (selectedNorma === "lei-13655") fileName = "lei-13655.md";
+    else if (selectedNorma === "lei-13709") fileName = "lei-13709.md";
 
     fetch(`/documentos/${fileName}`)
       .then(r => {
@@ -498,7 +575,7 @@ export default function Legislacoes() {
     setSidebarOpen(false);
   }, []);
 
-  const navigateToDisc = useCallback((normaId: "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab", sectionId: string) => {
+  const navigateToDisc = useCallback((normaId: "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab" | "edital" | "lei-9868" | "lei-9882" | "lei-11417" | "lei-9507" | "lei-12016" | "lei-13300" | "ec-132" | "lei-14133" | "lei-8080" | "lei-8429" | "lei-8987" | "lei-9784" | "lei-10257" | "lei-11079" | "lei-11107" | "lei-12232" | "lei-12462" | "lei-12527" | "lei-12846" | "lei-13019" | "lei-13303" | "dl-3365" | "dl-201" | "decreto-11462" | "lei-13465" | "lei-13655" | "lei-13709", sectionId: string) => {
     if (selectedNorma !== normaId) {
       setPendingNavId(sectionId);
       setSelectedNorma(normaId);
@@ -596,14 +673,64 @@ export default function Legislacoes() {
             onChange={(e) => setSelectedNorma(e.target.value as any)}
             className="w-full text-[11px] font-medium bg-background border border-border rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-primary/50 text-foreground cursor-pointer"
           >
-            <option value="intro">Selecione uma norma...</option>
-            <option value="cf88">Constituição Federal (CF/88)</option>
-            <option value="ctn">Código Tributário Nacional (CTN)</option>
-            <option value="cpc">Código de Processo Civil (CPC)</option>
-            <option value="pgm-canoas">Lei PGM Canoas (nº 6.817/2025)</option>
-            <option value="oab">Estatuto da OAB</option>
-            <option value="regulamento-oab">Regulamento Geral da OAB</option>
-            <option value="codigo-etica-oab">Código de Ética da OAB</option>
+            <option value="intro">Página Inicial</option>
+            <option value="edital">Edital do Concurso</option>
+            
+            <optgroup label="Direito Constitucional">
+              <option value="cf88">Constituição Federal</option>
+              <option value="lei-9868">Lei 9.868/99 (ADI, ADC e ADO)</option>
+              <option value="lei-9882">Lei 9.882/99 (ADPF)</option>
+              <option value="lei-11417">Lei 11.417/06 (Súmula Vinculante)</option>
+              <option value="lei-9507">Lei 9.507/97 (Habeas Data)</option>
+              <option value="lei-12016">Lei 12.016/09 (Mandado de Segurança)</option>
+              <option value="lei-13300">Lei 13.300/16 (Mandado de Injunção)</option>
+            </optgroup>
+
+            <optgroup label="Direito Administrativo">
+              <option value="lei-14133">Lei 14.133/21 (Licitações)</option>
+              <option value="decreto-11462">Decreto 11.462/23 (Registro de Preços)</option>
+              <option value="lei-12462">Lei 12.462/11 (RDC)</option>
+              <option value="lei-12232">Lei 12.232/10 (Publicidade)</option>
+              <option value="lei-13303">Lei 13.303/16 (Estatais)</option>
+              <option value="lei-11079">Lei 11.079/04 (PPP)</option>
+              <option value="lei-8987">Lei 8.987/95 (Concessões)</option>
+              <option value="lei-11107">Lei 11.107/05 (Consórcios)</option>
+              <option value="lei-13019">Lei 13.019/14 (Terceiro Setor)</option>
+              <option value="dl-3365">DL 3.365/41 (Desapropriação)</option>
+              <option value="lei-9784">Lei 9.784/99 (Processo Administrativo)</option>
+              <option value="lei-8429">Lei 8.429/92 (Improbidade)</option>
+              <option value="lei-12846">Lei 12.846/13 (Anticorrupção)</option>
+              <option value="dl-201">DL 201/67 (Crimes de Prefeitos)</option>
+              <option value="lei-12527">Lei 12.527/11 (LAI)</option>
+              <option value="lei-8080">Lei 8.080/90 (SUS)</option>
+              <option value="lei-10257">Lei 10.257/01 (Estatuto da Cidade)</option>
+              <option value="lei-13655">Lei 13.655/18 (LINDB)</option>
+              <option value="lei-13709">Lei 13.709/18 (LGPD)</option>
+            </optgroup>
+
+            <optgroup label="Direito Civil e Empresarial">
+              <option value="lei-13655">Lei 13.655/18 (LINDB)</option>
+              <option value="lei-13709">Lei 13.709/18 (LGPD)</option>
+            </optgroup>
+
+            <optgroup label="Direito Urbanístico e Ambiental">
+              <option value="lei-10257">Lei 10.257/01 (Estatuto da Cidade)</option>
+              <option value="lei-13465">Lei 13.465/17 (REURB)</option>
+              <option value="dl-3365">DL 3.365/41 (Desapropriação)</option>
+            </optgroup>
+
+            <optgroup label="Direito Tributário e Financeiro">
+              <option value="ctn">Código Tributário Nacional (CTN)</option>
+              <option value="ec-132">EC 132/23 (Reforma Tributária)</option>
+            </optgroup>
+            
+            <optgroup label="Outras">
+              <option value="cpc">Código de Processo Civil (CPC)</option>
+              <option value="pgm-canoas">Lei PGM Canoas (nº 6.817/2025)</option>
+              <option value="oab">Estatuto da OAB</option>
+              <option value="regulamento-oab">Regulamento Geral OAB</option>
+              <option value="codigo-etica-oab">Código de Ética OAB</option>
+            </optgroup>
           </select>
         </div>
 
@@ -763,6 +890,34 @@ export default function Legislacoes() {
                  selectedNorma === "oab" ? "Estatuto da Advocacia e da OAB" :
                  selectedNorma === "regulamento-oab" ? "Regulamento Geral do EAOAB" :
                  selectedNorma === "codigo-etica-oab" ? "Código de Ética e Disciplina da OAB" :
+                 selectedNorma === "edital" ? "Edital de Abertura" :
+                 selectedNorma === "lei-9868" ? "Controle Concentrado (ADI, ADC)" :
+                 selectedNorma === "lei-9882" ? "Arguição de Descumprimento de Preceito Fundamental" :
+                 selectedNorma === "lei-11417" ? "Súmula Vinculante" :
+                 selectedNorma === "lei-9507" ? "Habeas Data" :
+                 selectedNorma === "lei-12016" ? "Mandado de Segurança" :
+                 selectedNorma === "lei-13300" ? "Mandado de Injunção" :
+                 selectedNorma === "ec-132" ? "Reforma Tributária" :
+                 selectedNorma === "lei-14133" ? "Licitações e Contratos" :
+                 selectedNorma === "decreto-11462" ? "Sistema de Registro de Preços" :
+                 selectedNorma === "lei-12462" ? "Regime Diferenciado de Contratações" :
+                 selectedNorma === "lei-12232" ? "Licitação de Publicidade" :
+                 selectedNorma === "lei-13303" ? "Estatuto das Estatais" :
+                 selectedNorma === "lei-11079" ? "Parcerias Público-Privadas" :
+                 selectedNorma === "lei-8987" ? "Concessões e Permissões" :
+                 selectedNorma === "lei-11107" ? "Consórcios Públicos" :
+                 selectedNorma === "lei-13019" ? "Marco Regulatório do Terceiro Setor" :
+                 selectedNorma === "dl-3365" ? "Desapropriação por Utilidade Pública" :
+                 selectedNorma === "lei-9784" ? "Processo Administrativo" :
+                 selectedNorma === "lei-8429" ? "Improbidade Administrativa" :
+                 selectedNorma === "lei-12846" ? "Lei Anticorrupção" :
+                 selectedNorma === "dl-201" ? "Crimes de Prefeitos e Vereadores" :
+                 selectedNorma === "lei-12527" ? "Lei de Acesso à Informação" :
+                 selectedNorma === "lei-8080" ? "Sistema Único de Saúde" :
+                 selectedNorma === "lei-10257" ? "Estatuto da Cidade" :
+                 selectedNorma === "lei-13655" ? "Lei de Introdução às Normas" :
+                 selectedNorma === "lei-13709" ? "Lei Geral de Proteção de Dados" :
+                 selectedNorma === "lei-13465" ? "Regularização Fundiária Urbana" :
                  "Vade Mecum Digital"}
               </p>
               <p className="text-[10px] text-muted-foreground hidden md:block leading-tight">
@@ -773,6 +928,34 @@ export default function Legislacoes() {
                  selectedNorma === "oab" ? "Lei nº 8.906/1994" :
                  selectedNorma === "regulamento-oab" ? "Regulamento Geral do Estatuto da Advocacia e da OAB" :
                  selectedNorma === "codigo-etica-oab" ? "Resolução nº 02/2015" :
+                 selectedNorma === "edital" ? "Edital nº 125/2026 - Concurso Público PGM Canoas" :
+                 selectedNorma === "lei-9868" ? "Lei nº 9.868/1999" :
+                 selectedNorma === "lei-9882" ? "Lei nº 9.882/1999" :
+                 selectedNorma === "lei-11417" ? "Lei nº 11.417/2006" :
+                 selectedNorma === "lei-9507" ? "Lei nº 9.507/1997" :
+                 selectedNorma === "lei-12016" ? "Lei nº 12.016/2009" :
+                 selectedNorma === "lei-13300" ? "Lei nº 13.300/2016" :
+                 selectedNorma === "ec-132" ? "Emenda Constitucional nº 132/2023" :
+                 selectedNorma === "lei-14133" ? "Lei nº 14.133/2021" :
+                 selectedNorma === "decreto-11462" ? "Decreto nº 11.462/2023" :
+                 selectedNorma === "lei-12462" ? "Lei nº 12.462/2011" :
+                 selectedNorma === "lei-12232" ? "Lei nº 12.232/2010" :
+                 selectedNorma === "lei-13303" ? "Lei nº 13.303/2016" :
+                 selectedNorma === "lei-11079" ? "Lei nº 11.079/2004" :
+                 selectedNorma === "lei-8987" ? "Lei nº 8.987/1995" :
+                 selectedNorma === "lei-11107" ? "Lei nº 11.107/2005" :
+                 selectedNorma === "lei-13019" ? "Lei nº 13.019/2014" :
+                 selectedNorma === "dl-3365" ? "Decreto-Lei nº 3.365/1941" :
+                 selectedNorma === "lei-9784" ? "Lei nº 9.784/1999" :
+                 selectedNorma === "lei-8429" ? "Lei nº 8.429/1992" :
+                 selectedNorma === "lei-12846" ? "Lei nº 12.846/2013" :
+                 selectedNorma === "dl-201" ? "Decreto-Lei nº 201/1967" :
+                 selectedNorma === "lei-12527" ? "Lei nº 12.527/2011" :
+                 selectedNorma === "lei-8080" ? "Lei nº 8.080/1990" :
+                 selectedNorma === "lei-10257" ? "Lei nº 10.257/2001" :
+                 selectedNorma === "lei-13655" ? "Lei nº 13.655/2018" :
+                 selectedNorma === "lei-13709" ? "Lei nº 13.709/2018" :
+                 selectedNorma === "lei-13465" ? "Lei nº 13.465/2017" :
                  "PGM Canoas"}
               </p>
             </div>
@@ -825,7 +1008,23 @@ export default function Legislacoes() {
                 <p className="text-muted-foreground text-[15px] mb-10 max-w-lg">
                   Bem-vindo ao seu ambiente de estudos otimizado. Navegue pela estrutura das normas ou pelos tópicos do edital na barra lateral.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 w-full">
+                {/* EDITAL */}
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4 w-full mb-8">
+                  <button
+                    onClick={() => setSelectedNorma("edital")}
+                    className="col-span-1 sm:col-span-2 md:col-span-4 flex items-center gap-4 p-5 rounded-xl border border-border bg-gradient-to-r from-blue-500/10 to-transparent hover:border-primary/50 hover:shadow-sm transition-all text-left"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-blue-500/20 text-blue-500 flex items-center justify-center shrink-0">
+                      <FileText className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground text-lg mb-1">Edital de Abertura nº 125/2026</h3>
+                      <p className="text-sm text-muted-foreground">Regras e disposições do Concurso Público para a PGM Canoas.</p>
+                    </div>
+                  </button>
+                </div>
+
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4 w-full">
                   <button
                     onClick={() => setSelectedNorma("cf88")}
                     className="flex flex-col items-start p-5 rounded-xl border border-border bg-card hover:border-primary/50 hover:shadow-sm transition-all text-left"
@@ -919,9 +1118,13 @@ export default function Legislacoes() {
                 {/* Document header */}
                 <div className="mb-10 pb-8 border-b border-border">
                   <span className="text-[9.5px] font-bold tracking-[0.3em] uppercase text-muted-foreground/40 block mb-3">
-                    {selectedNorma === "cf88" ? "Vade Mecum · Direito Constitucional" :
-                     selectedNorma === "ctn" ? "Vade Mecum · Direito Tributário" :
+                    {(selectedNorma === "cf88" || selectedNorma === "lei-9868" || selectedNorma === "lei-9882" || selectedNorma === "lei-11417" || selectedNorma === "lei-9507" || selectedNorma === "lei-12016" || selectedNorma === "lei-13300") ? "Vade Mecum · Direito Constitucional" :
+                     (selectedNorma === "ctn" || selectedNorma === "ec-132") ? "Vade Mecum · Direito Tributário" :
+                     (selectedNorma === "lei-14133" || selectedNorma === "decreto-11462" || selectedNorma === "lei-12462" || selectedNorma === "lei-12232" || selectedNorma === "lei-13303" || selectedNorma === "lei-11079" || selectedNorma === "lei-8987" || selectedNorma === "lei-11107" || selectedNorma === "lei-13019" || selectedNorma === "dl-3365" || selectedNorma === "lei-9784" || selectedNorma === "lei-8429" || selectedNorma === "lei-12846" || selectedNorma === "dl-201" || selectedNorma === "lei-12527" || selectedNorma === "lei-8080" || selectedNorma === "lei-10257" || selectedNorma === "lei-13655" || selectedNorma === "lei-13709") ? "Vade Mecum · Direito Administrativo" :
+                     (selectedNorma === "lei-10257" || selectedNorma === "dl-3365" || selectedNorma === "lei-13465") ? "Vade Mecum · Direito Urbanístico e Ambiental" :
+                     (selectedNorma === "lei-13655" || selectedNorma === "lei-13709") ? "Vade Mecum · Direito Civil e Empresarial" :
                      selectedNorma === "cpc" ? "Vade Mecum · Direito Processual Civil" :
+                     selectedNorma === "edital" ? "Concurso · Edital" :
                      (selectedNorma === "oab" || selectedNorma === "regulamento-oab" || selectedNorma === "codigo-etica-oab") ? "Vade Mecum · Legislação Profissional" :
                      "Vade Mecum · Legislação Municipal"}
                   </span>
@@ -941,6 +1144,62 @@ export default function Legislacoes() {
                       <>Regulamento Geral<br />da OAB</>
                     ) : selectedNorma === "codigo-etica-oab" ? (
                       <>Código de Ética e<br />Disciplina da OAB</>
+                    ) : selectedNorma === "edital" ? (
+                      <>Edital nº 125/2026<br />PGM Canoas</>
+                    ) : selectedNorma === "lei-9868" ? (
+                      <>Lei das ADIs e ADCs<br />(Lei 9.868/99)</>
+                    ) : selectedNorma === "lei-9882" ? (
+                      <>Lei da ADPF<br />(Lei 9.882/99)</>
+                    ) : selectedNorma === "lei-11417" ? (
+                      <>Lei da Súmula Vinculante<br />(Lei 11.417/06)</>
+                    ) : selectedNorma === "lei-9507" ? (
+                      <>Lei do Habeas Data<br />(Lei 9.507/97)</>
+                    ) : selectedNorma === "lei-12016" ? (
+                      <>Lei do Mandado de Segurança<br />(Lei 12.016/09)</>
+                    ) : selectedNorma === "lei-13300" ? (
+                      <>Lei do Mandado de Injunção<br />(Lei 13.300/16)</>
+                    ) : selectedNorma === "ec-132" ? (
+                      <>Reforma Tributária<br />(EC 132/23)</>
+                    ) : selectedNorma === "lei-14133" ? (
+                      <>Lei de Licitações<br />(Lei 14.133/21)</>
+                    ) : selectedNorma === "decreto-11462" ? (
+                      <>Registro de Preços<br />(Decreto 11.462/23)</>
+                    ) : selectedNorma === "lei-12462" ? (
+                      <>Regime Diferenciado de Contratações<br />(Lei 12.462/11)</>
+                    ) : selectedNorma === "lei-12232" ? (
+                      <>Licitação de Publicidade<br />(Lei 12.232/10)</>
+                    ) : selectedNorma === "lei-13303" ? (
+                      <>Estatuto das Estatais<br />(Lei 13.303/16)</>
+                    ) : selectedNorma === "lei-11079" ? (
+                      <>Parcerias Público-Privadas<br />(Lei 11.079/04)</>
+                    ) : selectedNorma === "lei-8987" ? (
+                      <>Lei de Concessões<br />(Lei 8.987/95)</>
+                    ) : selectedNorma === "lei-11107" ? (
+                      <>Consórcios Públicos<br />(Lei 11.107/05)</>
+                    ) : selectedNorma === "lei-13019" ? (
+                      <>Terceiro Setor<br />(Lei 13.019/14)</>
+                    ) : selectedNorma === "dl-3365" ? (
+                      <>Lei da Desapropriação<br />(DL 3.365/41)</>
+                    ) : selectedNorma === "lei-9784" ? (
+                      <>Processo Administrativo<br />(Lei 9.784/99)</>
+                    ) : selectedNorma === "lei-8429" ? (
+                      <>Lei de Improbidade<br />(Lei 8.429/92)</>
+                    ) : selectedNorma === "lei-12846" ? (
+                      <>Lei Anticorrupção<br />(Lei 12.846/13)</>
+                    ) : selectedNorma === "dl-201" ? (
+                      <>Crimes de Prefeitos<br />(DL 201/67)</>
+                    ) : selectedNorma === "lei-12527" ? (
+                      <>Lei de Acesso à Informação<br />(Lei 12.527/11)</>
+                    ) : selectedNorma === "lei-8080" ? (
+                      <>Lei Orgânica da Saúde<br />(Lei 8.080/90)</>
+                    ) : selectedNorma === "lei-10257" ? (
+                      <>Estatuto da Cidade<br />(Lei 10.257/01)</>
+                    ) : selectedNorma === "lei-13465" ? (
+                      <>REURB<br />(Lei 13.465/17)</>
+                    ) : selectedNorma === "lei-13655" ? (
+                      <>LINDB<br />(Lei 13.655/18)</>
+                    ) : selectedNorma === "lei-13709" ? (
+                      <>LGPD<br />(Lei 13.709/18)</>
                     ) : (
                       <>Lei de Regência da PGM<br />Canoas</>
                     )}
@@ -958,6 +1217,62 @@ export default function Legislacoes() {
                       ? "Regulamento Geral do Estatuto da Advocacia e da OAB"
                       : selectedNorma === "codigo-etica-oab"
                       ? "Resolução n. 02/2015 do Conselho Federal da OAB"
+                      : selectedNorma === "edital"
+                      ? "Concurso Público PGM - Edital nº 125/2026 (Instituto Objetiva)"
+                      : selectedNorma === "lei-9868"
+                      ? "Lei nº 9.868, de 10 de novembro de 1999 · Planalto.gov.br"
+                      : selectedNorma === "lei-9882"
+                      ? "Lei nº 9.882, de 3 de dezembro de 1999 · Planalto.gov.br"
+                      : selectedNorma === "lei-11417"
+                      ? "Lei nº 11.417, de 19 de dezembro de 2006 · Planalto.gov.br"
+                      : selectedNorma === "lei-9507"
+                      ? "Lei nº 9.507, de 12 de novembro de 1997 · Planalto.gov.br"
+                      : selectedNorma === "lei-12016"
+                      ? "Lei nº 12.016, de 7 de agosto de 2009 · Planalto.gov.br"
+                      : selectedNorma === "lei-13300"
+                      ? "Lei nº 13.300, de 23 de junho de 2016 · Planalto.gov.br"
+                      : selectedNorma === "ec-132"
+                      ? "Emenda Constitucional nº 132, de 20 de dezembro de 2023 · Planalto.gov.br"
+                      : selectedNorma === "lei-14133"
+                      ? "Lei nº 14.133, de 1º de abril de 2021 · Planalto.gov.br"
+                      : selectedNorma === "decreto-11462"
+                      ? "Decreto nº 11.462, de 31 de março de 2023 · Planalto.gov.br"
+                      : selectedNorma === "lei-12462"
+                      ? "Lei nº 12.462, de 4 de agosto de 2011 · Planalto.gov.br"
+                      : selectedNorma === "lei-12232"
+                      ? "Lei nº 12.232, de 29 de abril de 2010 · Planalto.gov.br"
+                      : selectedNorma === "lei-13303"
+                      ? "Lei nº 13.303, de 30 de junho de 2016 · Planalto.gov.br"
+                      : selectedNorma === "lei-11079"
+                      ? "Lei nº 11.079, de 30 de dezembro de 2004 · Planalto.gov.br"
+                      : selectedNorma === "lei-8987"
+                      ? "Lei nº 8.987, de 13 de fevereiro de 1995 · Planalto.gov.br"
+                      : selectedNorma === "lei-11107"
+                      ? "Lei nº 11.107, de 6 de abril de 2005 · Planalto.gov.br"
+                      : selectedNorma === "lei-13019"
+                      ? "Lei nº 13.019, de 31 de julho de 2014 · Planalto.gov.br"
+                      : selectedNorma === "dl-3365"
+                      ? "Decreto-Lei nº 3.365, de 21 de junho de 1941 · Planalto.gov.br"
+                      : selectedNorma === "lei-9784"
+                      ? "Lei nº 9.784, de 29 de janeiro de 1999 · Planalto.gov.br"
+                      : selectedNorma === "lei-8429"
+                      ? "Lei nº 8.429, de 2 de junho de 1992 · Planalto.gov.br"
+                      : selectedNorma === "lei-12846"
+                      ? "Lei nº 12.846, de 1º de agosto de 2013 · Planalto.gov.br"
+                      : selectedNorma === "dl-201"
+                      ? "Decreto-Lei nº 201, de 27 de fevereiro de 1967 · Planalto.gov.br"
+                      : selectedNorma === "lei-12527"
+                      ? "Lei nº 12.527, de 18 de novembro de 2011 · Planalto.gov.br"
+                      : selectedNorma === "lei-8080"
+                      ? "Lei nº 8.080, de 19 de setembro de 1990 · Planalto.gov.br"
+                      : selectedNorma === "lei-10257"
+                      ? "Lei nº 10.257, de 10 de julho de 2001 · Planalto.gov.br"
+                      : selectedNorma === "lei-13465"
+                      ? "Lei nº 13.465, de 11 de julho de 2017 · Planalto.gov.br"
+                      : selectedNorma === "lei-13655"
+                      ? "Lei nº 13.655, de 25 de abril de 2018 · Planalto.gov.br"
+                      : selectedNorma === "lei-13709"
+                      ? "Lei nº 13.709, de 14 de agosto de 2018 · Planalto.gov.br"
                       : "Lei Municipal nº 6.817, de 16 de junho de 2025 · Canoas/RS"}
                   </p>
                   <div className="flex flex-wrap gap-3 mt-4 text-[10px] text-muted-foreground/60">

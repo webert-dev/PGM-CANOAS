@@ -28,7 +28,7 @@ type SidebarTab = "estrutura" | "disciplinas";
 
 interface DiscItem {
   label: string;
-  normaId: "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab" | "edital" | "lei-9868" | "lei-9882" | "lei-11417" | "lei-9507" | "lei-12016" | "lei-13300" | "ec-132" | "lei-14133" | "lei-8080" | "lei-8429" | "lei-8987" | "lei-9784" | "lei-10257" | "lei-11079" | "lei-11107" | "lei-12232" | "lei-12462" | "lei-12527" | "lei-12846" | "lei-13019" | "lei-13303" | "dl-3365" | "dl-201" | "decreto-11462" | "lei-13465" | "lei-13655" | "lei-13709";
+  normaId: "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab" | "edital" | "lei-9868" | "lei-9882" | "lei-11417" | "lei-9507" | "lei-12016" | "lei-13300" | "ec-132" | "lei-14133" | "lei-8080" | "lei-8429" | "lei-8987" | "lei-9784" | "lei-10257" | "lei-11079" | "lei-11107" | "lei-12232" | "lei-12462" | "lei-12527" | "lei-12846" | "lei-13019" | "lei-13303" | "dl-3365" | "dl-201" | "decreto-11462" | "lei-13465" | "lei-13655" | "lei-13709" | "lei-canoas-1943-1979" | "lei-canoas-1783-1977" | "lei-canoas-4818-2003" | "lei-canoas-5503-2010" | "decreto-canoas-701-2009" | "decreto-canoas-684-2003" | "lei-canoas-4328-1998" | "lei-canoas-4739-2003" | "lc-canoas-14-2025" | "lc-canoas-6-2016" | "decreto-canoas-88-2013" | "decreto-canoas-110-2024" | "decreto-canoas-549-2023" | "decreto-canoas-45-2024" | "decreto-canoas-60-2024" | "decreto-canoas-240-2025" | "decreto-canoas-59-2024" | "decreto-canoas-462-2016";
   sectionId: string;
   artigos?: string;
 }
@@ -42,6 +42,30 @@ interface Disc {
 }
 
 const DISCIPLINAS: Disc[] = [
+  {
+    id: "municipal", label: "Legislação Municipal", icon: Landmark, color: "text-emerald-500",
+    items: [
+      { label: "CTM Canoas (Lei 1.943/79)", normaId: "lei-canoas-1943-1979", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "CTM Antigo (Lei 1.783/77)", normaId: "lei-canoas-1783-1977", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "ISSQN Canoas (Lei 4.818/03)", normaId: "lei-canoas-4818-2003", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "ITBI Canoas (Lei 5.503/10)", normaId: "lei-canoas-5503-2010", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Refis/Parcelamento (Dec. 701/09)", normaId: "decreto-canoas-701-2009", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Parcelamento Créditos (Dec. 684/03)", normaId: "decreto-canoas-684-2003", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Código Ambiental (Lei 4.328/98)", normaId: "lei-canoas-4328-1998", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "CANOASPREV (Lei 4.739/03)", normaId: "lei-canoas-4739-2003", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Reestruturação RPPS (LC 14/25)", normaId: "lc-canoas-14-2025", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Guarda Municipal (LC 6/16)", normaId: "lc-canoas-6-2016", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Procedimentos Administrativos (Dec. 88/13)", normaId: "decreto-canoas-88-2013", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Tratamento ME e EPP (Dec. 110/24)", normaId: "decreto-canoas-110-2024", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Fase Interna Licitações (Dec. 549/23)", normaId: "decreto-canoas-549-2023", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Sistema Registro Preços (Dec. 45/24)", normaId: "decreto-canoas-45-2024", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Diálogo Competitivo (Dec. 60/24)", normaId: "decreto-canoas-60-2024", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Regulamento PGM (Dec. 240/25)", normaId: "decreto-canoas-240-2025", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "PAEP Punição (Dec. 59/24)", normaId: "decreto-canoas-59-2024", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "PAD Canoas (Dec. 462/16)", normaId: "decreto-canoas-462-2016", sectionId: "art-1", artigos: "Inteiro teor" },
+    ],
+  },
+
   {
     id: "constitucional", label: "Direito Constitucional", icon: Gavel, color: "text-blue-500",
     items: [
@@ -91,7 +115,7 @@ const DISCIPLINAS: Disc[] = [
       { label: "Lei 8.080/90 > SUS", normaId: "lei-8080", sectionId: "art-1", artigos: "Inteiro teor" },
       { label: "Lei 10.257/01 > Estatuto da Cidade", normaId: "lei-10257", sectionId: "art-1", artigos: "Inteiro teor" },
       { label: "Lei 13.655/18 > LINDB", normaId: "lei-13655", sectionId: "art-1", artigos: "Inteiro teor" },
-      { label: "Lei 13.709/18 > LGPD", normaId: "lei-13709", sectionId: "art-1", artigos: "Inteiro teor" },
+      { label: "Lei 13.709/18 > LGPD", normaId: "lei-13709" | "lei-canoas-1943-1979" | "lei-canoas-1783-1977" | "lei-canoas-4818-2003" | "lei-canoas-5503-2010" | "decreto-canoas-701-2009" | "decreto-canoas-684-2003" | "lei-canoas-4328-1998" | "lei-canoas-4739-2003" | "lc-canoas-14-2025" | "lc-canoas-6-2016" | "decreto-canoas-88-2013" | "decreto-canoas-110-2024" | "decreto-canoas-549-2023" | "decreto-canoas-45-2024" | "decreto-canoas-60-2024" | "decreto-canoas-240-2025" | "decreto-canoas-59-2024" | "decreto-canoas-462-2016", sectionId: "art-1", artigos: "Inteiro teor" },
     ],
   },
   {
@@ -427,7 +451,7 @@ const BlockEl = memo(function BlockEl({
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Legislacoes() {
-  const [selectedNorma, setSelectedNorma] = useState<"intro" | "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab" | "edital" | "lei-9868" | "lei-9882" | "lei-11417" | "lei-9507" | "lei-12016" | "lei-13300" | "ec-132" | "lei-14133" | "lei-8080" | "lei-8429" | "lei-8987" | "lei-9784" | "lei-10257" | "lei-11079" | "lei-11107" | "lei-12232" | "lei-12462" | "lei-12527" | "lei-12846" | "lei-13019" | "lei-13303" | "dl-3365" | "dl-201" | "decreto-11462" | "lei-13465" | "lei-13655" | "lei-13709">("intro");
+  const [selectedNorma, setSelectedNorma] = useState<"intro" | "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab" | "edital" | "lei-9868" | "lei-9882" | "lei-11417" | "lei-9507" | "lei-12016" | "lei-13300" | "ec-132" | "lei-14133" | "lei-8080" | "lei-8429" | "lei-8987" | "lei-9784" | "lei-10257" | "lei-11079" | "lei-11107" | "lei-12232" | "lei-12462" | "lei-12527" | "lei-12846" | "lei-13019" | "lei-13303" | "dl-3365" | "dl-201" | "decreto-11462" | "lei-13465" | "lei-13655" | "lei-13709" | "lei-canoas-1943-1979" | "lei-canoas-1783-1977" | "lei-canoas-4818-2003" | "lei-canoas-5503-2010" | "decreto-canoas-701-2009" | "decreto-canoas-684-2003" | "lei-canoas-4328-1998" | "lei-canoas-4739-2003" | "lc-canoas-14-2025" | "lc-canoas-6-2016" | "decreto-canoas-88-2013" | "decreto-canoas-110-2024" | "decreto-canoas-549-2023" | "decreto-canoas-45-2024" | "decreto-canoas-60-2024" | "decreto-canoas-240-2025" | "decreto-canoas-59-2024" | "decreto-canoas-462-2016">("intro");
   const [doc, setDoc] = useState<ParseResult | null>(null);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -496,6 +520,25 @@ export default function Legislacoes() {
     else if (selectedNorma === "lei-13465") fileName = "lei-13465.md";
     else if (selectedNorma === "lei-13655") fileName = "lei-13655.md";
     else if (selectedNorma === "lei-13709") fileName = "lei-13709.md";
+    else if (selectedNorma === "lei-canoas-1943-1979") fileName = "lei-canoas-1943-1979.md";
+    else if (selectedNorma === "lei-canoas-1783-1977") fileName = "lei-canoas-1783-1977.md";
+    else if (selectedNorma === "lei-canoas-4818-2003") fileName = "lei-canoas-4818-2003.md";
+    else if (selectedNorma === "lei-canoas-5503-2010") fileName = "lei-canoas-5503-2010.md";
+    else if (selectedNorma === "decreto-canoas-701-2009") fileName = "decreto-canoas-701-2009.md";
+    else if (selectedNorma === "decreto-canoas-684-2003") fileName = "decreto-canoas-684-2003.md";
+    else if (selectedNorma === "lei-canoas-4328-1998") fileName = "lei-canoas-4328-1998.md";
+    else if (selectedNorma === "lei-canoas-4739-2003") fileName = "lei-canoas-4739-2003.md";
+    else if (selectedNorma === "lc-canoas-14-2025") fileName = "lc-canoas-14-2025.md";
+    else if (selectedNorma === "lc-canoas-6-2016") fileName = "lc-canoas-6-2016.md";
+    else if (selectedNorma === "decreto-canoas-88-2013") fileName = "decreto-canoas-88-2013.md";
+    else if (selectedNorma === "decreto-canoas-110-2024") fileName = "decreto-canoas-110-2024.md";
+    else if (selectedNorma === "decreto-canoas-549-2023") fileName = "decreto-canoas-549-2023.md";
+    else if (selectedNorma === "decreto-canoas-45-2024") fileName = "decreto-canoas-45-2024.md";
+    else if (selectedNorma === "decreto-canoas-60-2024") fileName = "decreto-canoas-60-2024.md";
+    else if (selectedNorma === "decreto-canoas-240-2025") fileName = "decreto-canoas-240-2025.md";
+    else if (selectedNorma === "decreto-canoas-59-2024") fileName = "decreto-canoas-59-2024.md";
+    else if (selectedNorma === "decreto-canoas-462-2016") fileName = "decreto-canoas-462-2016.md";
+
 
     fetch(`/documentos/${fileName}`)
       .then(r => {
@@ -575,7 +618,7 @@ export default function Legislacoes() {
     setSidebarOpen(false);
   }, []);
 
-  const navigateToDisc = useCallback((normaId: "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab" | "edital" | "lei-9868" | "lei-9882" | "lei-11417" | "lei-9507" | "lei-12016" | "lei-13300" | "ec-132" | "lei-14133" | "lei-8080" | "lei-8429" | "lei-8987" | "lei-9784" | "lei-10257" | "lei-11079" | "lei-11107" | "lei-12232" | "lei-12462" | "lei-12527" | "lei-12846" | "lei-13019" | "lei-13303" | "dl-3365" | "dl-201" | "decreto-11462" | "lei-13465" | "lei-13655" | "lei-13709", sectionId: string) => {
+  const navigateToDisc = useCallback((normaId: "cf88" | "ctn" | "cpc" | "pgm-canoas" | "oab" | "regulamento-oab" | "codigo-etica-oab" | "edital" | "lei-9868" | "lei-9882" | "lei-11417" | "lei-9507" | "lei-12016" | "lei-13300" | "ec-132" | "lei-14133" | "lei-8080" | "lei-8429" | "lei-8987" | "lei-9784" | "lei-10257" | "lei-11079" | "lei-11107" | "lei-12232" | "lei-12462" | "lei-12527" | "lei-12846" | "lei-13019" | "lei-13303" | "dl-3365" | "dl-201" | "decreto-11462" | "lei-13465" | "lei-13655" | "lei-13709" | "lei-canoas-1943-1979" | "lei-canoas-1783-1977" | "lei-canoas-4818-2003" | "lei-canoas-5503-2010" | "decreto-canoas-701-2009" | "decreto-canoas-684-2003" | "lei-canoas-4328-1998" | "lei-canoas-4739-2003" | "lc-canoas-14-2025" | "lc-canoas-6-2016" | "decreto-canoas-88-2013" | "decreto-canoas-110-2024" | "decreto-canoas-549-2023" | "decreto-canoas-45-2024" | "decreto-canoas-60-2024" | "decreto-canoas-240-2025" | "decreto-canoas-59-2024" | "decreto-canoas-462-2016", sectionId: string) => {
     if (selectedNorma !== normaId) {
       setPendingNavId(sectionId);
       setSelectedNorma(normaId);

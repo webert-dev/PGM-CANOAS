@@ -3,7 +3,7 @@ import {
   type ElementType,
 } from "react";
 import { motion } from "framer-motion";
-import { BookOpen, Scale, FileText, Gavel, FileCheck, Building2, Map, Users, ChevronRight, FileDown, Search, ArrowLeft, MoreVertical, Bookmark, Check, History, LayoutDashboard, Landmark, Briefcase, Heart, Shield, ScrollText } from "lucide-react";
+import { BookOpen, Scale, FileText, Gavel, FileCheck, Building2, Map, Users, ChevronRight, FileDown, Search, ArrowLeft, MoreVertical, Bookmark, Check, History, LayoutDashboard, Landmark, Briefcase, Heart, Shield, ScrollText, Loader2, Menu, Eye, EyeOff, PiggyBank } from "lucide-react";
 import { Link } from "react-router";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -635,7 +635,10 @@ export default function Legislacoes() {
             <ArrowLeft className="w-3 h-3" />
             Início
           </Link>
-          <div className="flex items-center gap-2.5">
+          <button 
+            onClick={() => { setSelectedNorma("intro"); setSidebarOpen(false); }}
+            className="flex items-center gap-2.5 text-left hover:opacity-80 transition-opacity"
+          >
             <div className="w-7 h-7 rounded-md bg-primary/10 flex items-center justify-center shrink-0">
               <BookOpen className="w-3.5 h-3.5 text-primary" />
             </div>
@@ -643,7 +646,7 @@ export default function Legislacoes() {
               <p className="text-[12px] font-semibold text-foreground leading-tight">Vade Mecum</p>
               <p className="text-[10px] text-muted-foreground">PGM Canoas · 2026</p>
             </div>
-          </div>
+          </button>
         </div>
 
         {/* Search */}
